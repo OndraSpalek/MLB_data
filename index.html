@@ -1827,6 +1827,16 @@
 <!-- STEP 1: UPLOAD -->
 <div class="section-title">01 · Nahrání dat</div>
 
+<!-- GITHUB AUTO-FETCH BANNER -->
+<div id="ghFetchBanner" style="display:none;background:rgba(42,127,192,0.10);border:1px solid rgba(42,127,192,0.35);border-radius:8px;padding:0.9rem 1.1rem;margin-bottom:0.8rem;display:flex;align-items:center;gap:0.8rem;flex-wrap:wrap;">
+  <span style="font-size:1.3rem;">🔄</span>
+  <div style="flex:1;min-width:160px;">
+    <div id="ghFetchTitle" style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;letter-spacing:0.06em;color:var(--blue-light);">Načítám data z GitHubu…</div>
+    <div id="ghFetchSub" style="font-size:0.78rem;color:var(--text-dim);margin-top:0.15rem;">OndraSpalek/MLB_data</div>
+  </div>
+  <button id="ghRetryBtn" onclick="fetchFromGitHub(true)" style="display:none;font-family:'Barlow Condensed',sans-serif;font-size:0.85rem;letter-spacing:0.05em;padding:0.35rem 0.8rem;border:1px solid rgba(42,127,192,0.5);background:rgba(42,127,192,0.12);color:var(--blue-light);border-radius:5px;cursor:pointer;">↺ Zkusit znovu</button>
+</div>
+
 <div id="uploadWrap">
   <div class="upload-zone" id="dropZone">
     <input type="file" id="fileInput" accept=".csv,.xlsx,.xls">
@@ -1845,6 +1855,7 @@
     <div class="fl-meta" id="fl-meta">—</div>
   </div>
   <button class="fl-clear" onclick="clearData()">Smazat</button>
+  <button class="fl-clear" onclick="fetchFromGitHub(true)" style="background:rgba(42,127,192,0.12);border-color:rgba(42,127,192,0.4);color:var(--blue-light);" title="Znovu stáhnout z GitHubu">↺ GitHub</button>
 </div>
 
 <!-- PRIORS UPLOAD (volitelné, v9) -->
@@ -7815,6 +7826,297 @@ function evalClearAll() {
 })();
 
 loadV9SettingsUI();
+
+// ═══════════════════════════════════════════════
+//  GITHUB AUTO-FETCH (OndraSpalek/MLB_data)
+// ═══════════════════════════════════════════════
+(function() {
+  const GITHUB_BASE = 'https://raw.githubusercontent.com/OndraSpalek/MLB_data/main/';
+  const PROXIES = [
+    url => url,
+    url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
+    url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+    url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
+  ];
+
+  const banner   = document.getElementById('ghFetchBanner');
+  const titleEl  = document.getElementById('ghFetchTitle');
+  const subEl    = document.getElementById('ghFetchSub');
+  const retryBtn = document.getElementById('ghRetryBtn');
+
+  function setBanner(title, sub, showRetry) {
+    titleEl.textContent = title;
+    subEl.textContent   = sub || '';
+    retryBtn.style.display = showRetry ? 'inline-block' : 'none';
+    banner.style.display = 'flex';
+  }
+  function hideBanner() { banner.style.display = 'none'; }
+
+  async function fetchWithFallback(filename) {
+    const url = GITHUB_BASE + filename + '?t=' + Date.now();
+    for (let i = 0; i < PROXIES.length; i++) {
+      try {
+        const proxyUrl = PROXIES[i](url);
+        const resp = await fetch(proxyUrl, { signal: AbortSignal.timeout(15000) });
+        if (!resp.ok) continue;
+        const buf = await resp.arrayBuffer();
+        if (buf.byteLength < 100) continue;
+        return buf;
+      } catch(e) { /* try next proxy */ }
+    }
+    return null;
+  }
+
+  async function parseAndApplyFangraphs(buf) {
+    const tmpFile = { name: 'fangraphs.xlsx (GitHub)', arrayBuffer: async () => buf };
+    // Reuse internal parse logic via ArrayBuffer directly
+    return new Promise((resolve, reject) => {
+      try {
+        const wb = XLSX.read(buf, { type:'array', cellDates:true });
+
+        // ── PITCHER ──
+        const pitcherSheetName = wb.SheetNames.find(n =>
+          /^(starting\s*pitcher|pitcher)$/i.test(n.trim())
+        ) || wb.SheetNames.find(n =>
+          /pitcher/i.test(n) && !/hand/i.test(n) && !/reliev/i.test(n) && !/bullpen/i.test(n)
+        ) || wb.SheetNames[0];
+        const rows = XLSX.utils.sheet_to_json(wb.Sheets[pitcherSheetName], { defval:'' });
+        if (!rows.length) { reject('Pitcher sheet prázdný'); return; }
+        const REQUIRED_LOCAL = ['Name','Team','FIP','xFIP','SIERA','BABIP','K-BB%'];
+        const cols = Object.keys(rows[0]);
+        const missing = REQUIRED_LOCAL.filter(c => !cols.includes(c));
+        if (missing.length) { reject('Chybí sloupce: ' + missing.join(', ')); return; }
+        const clean = rows.map(r => ({
+          Name:  String(r.Name||'').trim(),
+          Team:  String(r.Team||'').trim(),
+          ERA:   parseFloat(fixExcelDate(r.ERA)),
+          FIP:   parseFloat(fixExcelDate(r.FIP)),
+          xFIP:  parseFloat(fixExcelDate(r.xFIP)),
+          SIERA: parseFloat(fixExcelDate(r.SIERA)),
+          BABIP: parseFloat(fixExcelDate(r.BABIP)),
+          KBB:   parsePercent(r['K-BB%']),
+          IP:    parseFloat(r.IP)||30,
+        })).filter(r => r.Name && r.Team && !isNaN(r.FIP) && !isNaN(r.xFIP) && !isNaN(r.SIERA) && !isNaN(r.BABIP) && !isNaN(r.KBB));
+        if (!clean.length) { reject('Žádný nadhazovač s kompletními daty'); return; }
+
+        // ── BATTING ──
+        battingMap = {};
+        const batSN = wb.SheetNames.find(n => { const t=n.trim().toLowerCase(); return (t==='batting'||t==='batter')&&!/(lhp|rhp|vs)/i.test(n); });
+        if (batSN) XLSX.utils.sheet_to_json(wb.Sheets[batSN],{defval:''}).forEach(r => {
+          const team=String(r.Tm||r.Team||r.team||'').trim(); const wrc=parseFloat(fixExcelDate(r['wRC+'])); const pa=parseFloat(r.PA)||200;
+          if(team&&!isNaN(wrc)) battingMap[team]={wRC:wrc,PA:pa};
+        });
+
+        // ── BATTING vs LHP / RHP ──
+        battingVsLHPMap = {}; battingVsRHPMap = {};
+        const lhpSN = wb.SheetNames.find(n => /batting.*lhp/i.test(n));
+        if (lhpSN) XLSX.utils.sheet_to_json(wb.Sheets[lhpSN],{defval:''}).forEach(r => {
+          const team=String(r.Tm||r.Team||r.team||'').trim(); const wrc=parseFloat(fixExcelDate(r['wRC+'])); const pa=parseFloat(r.PA)||100;
+          if(team&&!isNaN(wrc)) battingVsLHPMap[team]={wRC:wrc,PA:pa};
+        });
+        const rhpSN = wb.SheetNames.find(n => /batting.*rhp/i.test(n));
+        if (rhpSN) XLSX.utils.sheet_to_json(wb.Sheets[rhpSN],{defval:''}).forEach(r => {
+          const team=String(r.Tm||r.Team||r.team||'').trim(); const wrc=parseFloat(fixExcelDate(r['wRC+'])); const pa=parseFloat(r.PA)||300;
+          if(team&&!isNaN(wrc)) battingVsRHPMap[team]={wRC:wrc,PA:pa};
+        });
+
+        // ── PITCHER HAND ──
+        pitcherHandMap = {};
+        const handSN = wb.SheetNames.find(n => /pitcher.*hand|hand/i.test(n)&&/hand/i.test(n));
+        if (handSN) XLSX.utils.sheet_to_json(wb.Sheets[handSN],{defval:''}).forEach(r => {
+          const name=String(r.Name||r.name||r.pitcher_name||'').trim(); const hand=String(r['Pitcher hand']||r['Hand']||r['hand']||'').trim().toUpperCase();
+          if(name&&(hand==='LH'||hand==='RH')) pitcherHandMap[name]=hand;
+        });
+
+        // ── BULLPEN ──
+        bullpenMap = {};
+        const relSN = wb.SheetNames.find(n => /relieving|bullpen/i.test(n));
+        if (relSN) XLSX.utils.sheet_to_json(wb.Sheets[relSN],{defval:''}).forEach(r => {
+          const team=String(r.Team||r.Tm||r.team||'').trim(); const siera=parseFloat(fixExcelDate(r.SIERA));
+          if(team&&!isNaN(siera)) bullpenMap[team]={ERA:parseFloat(fixExcelDate(r.ERA))||4.50,FIP:parseFloat(fixExcelDate(r.FIP))||4.20,xFIP:parseFloat(fixExcelDate(r.xFIP))||4.20,SIERA:siera,KBB:parsePercent(r['K-BB%'])||17,BABIP:parseFloat(fixExcelDate(r.BABIP))||0.290,IP:parseFloat(r.IP)||15};
+        });
+
+        // ── PARK FACTORS ──
+        parkFactorMap = {};
+        const pfSN = wb.SheetNames.find(n => /park/i.test(n));
+        if (pfSN) XLSX.utils.sheet_to_json(wb.Sheets[pfSN],{defval:''}).forEach(r => {
+          const fullName=String(r.Team||'').trim(); const pf=parseFloat(r['Basic (5yr)']);
+          if(fullName&&!isNaN(pf)&&typeof PARK_FACTOR_TEAM_MAP!=='undefined') {
+            const abbr=PARK_FACTOR_TEAM_MAP[fullName];
+            if(abbr){parkFactorMap[abbr]=pf;if(abbr==='KC')parkFactorMap['KCR']=pf;if(abbr==='WSH')parkFactorMap['WSN']=pf;}
+          }
+        });
+
+        // ── LAST 14 DAYS ──
+        last14Map = {};
+        const l14SN = wb.SheetNames.find(n => /pitcher_last14days|last.?14/i.test(n));
+        if (l14SN) XLSX.utils.sheet_to_json(wb.Sheets[l14SN],{defval:''}).forEach(r => {
+          const name=String(r.Name||r.name||'').trim(); const fip=parseFloat(fixExcelDate(r.FIP||r.fip||''));
+          if(name&&!isNaN(fip)){last14Map[name]=fip;last14Map[name.toLowerCase().trim()]=fip;const ln=name.toLowerCase().trim().split(' ').pop();if(ln)last14Map['__last__'+ln]=fip;}
+        });
+
+        pitcherData = clean;
+        buildTeamsMap();
+        saveToStorage('fangraphs.xlsx (GitHub)');
+        populateUI('fangraphs.xlsx (GitHub)', clean.length, 'GitHub · ' + new Date().toLocaleTimeString('cs-CZ',{hour:'2-digit',minute:'2-digit'}));
+        if (typeof checkDailyPrereqs === 'function') checkDailyPrereqs();
+        resolve(clean.length);
+      } catch(ex) { reject(ex.message); }
+    });
+  }
+
+  async function parseAndApplySchedule(buf) {
+    return new Promise((resolve, reject) => {
+      try {
+        const wb = XLSX.read(buf, { type:'array', cellDates:true });
+        const ws = wb.Sheets[wb.SheetNames[0]];
+        const rows = XLSX.utils.sheet_to_json(ws, { defval:'' });
+        if (!rows.length) { reject('Schedule prázdný'); return; }
+        const sample = rows[0];
+        const colKeys = {};
+        for (const [field, aliases] of Object.entries(SCH_COL_ALIASES)) {
+          colKeys[field] = findCol(sample, aliases);
+        }
+        const parsed = rows.map(r => ({
+          date:      formatScheduleDate(colKeys.date  ? r[colKeys.date]  : ''),
+          time:      formatTime(colKeys.time  ? r[colKeys.time]  : ''),
+          awayFull:  colKeys.awayFull  ? String(r[colKeys.awayFull] ||'').trim() : '',
+          awayAbbr:  colKeys.awayAbbr  ? String(r[colKeys.awayAbbr]||'').trim().toUpperCase() : '',
+          homeFull:  colKeys.homeFull  ? String(r[colKeys.homeFull] ||'').trim() : '',
+          homeAbbr:  colKeys.homeAbbr  ? String(r[colKeys.homeAbbr]||'').trim().toUpperCase() : '',
+          venue:     colKeys.venue     ? String(r[colKeys.venue]    ||'').trim() : '',
+          status:    colKeys.status    ? String(r[colKeys.status]   ||'').trim() : '',
+          scoreAway: colKeys.scoreAway ? parseFloat(r[colKeys.scoreAway]) : null,
+          scoreHome: colKeys.scoreHome ? parseFloat(r[colKeys.scoreHome]) : null,
+        })).filter(g => g.date && (g.awayAbbr || g.awayFull));
+        if (!parsed.length) { reject('Žádné zápasy v schedule'); return; }
+        scheduleData = parsed;
+        try {
+          localStorage.setItem(LS_KEY_SCHEDULE, JSON.stringify(scheduleData));
+          localStorage.setItem(LS_KEY_SCHED_META, JSON.stringify({ fileName:'schedule.xlsx (GitHub)', savedAt: new Date().toISOString() }));
+        } catch(e) {}
+        const dates = getAvailableDates();
+        const todayISO = new Date().toISOString().slice(0,10);
+        document.getElementById('scheduleUploadWrap').style.display = 'none';
+        document.getElementById('scheduleLoaded').style.display = 'flex';
+        document.getElementById('sch-name').textContent = 'schedule.xlsx (GitHub)';
+        document.getElementById('sch-meta').textContent = `${parsed.length} zápasů · ${dates.length} dnů`;
+        document.getElementById('scheduleSection').style.display = 'block';
+        const picker = document.getElementById('scheduleDatePicker');
+        const closest = dates.includes(todayISO) ? todayISO : (dates[0]||'');
+        picker.value = closest;
+        onScheduleDateChange();
+        if (typeof checkDailyPrereqs === 'function') checkDailyPrereqs();
+        if (typeof refreshDailyDateDisplay === 'function') refreshDailyDateDisplay();
+        resolve(parsed.length);
+      } catch(ex) { reject(ex.message); }
+    });
+  }
+
+  async function parseAndApplyPriors(buf) {
+    return new Promise((resolve, reject) => {
+      try {
+        const wb = XLSX.read(buf, { type:'array', cellDates:true });
+        const ws = wb.Sheets[wb.SheetNames[0]];
+        const rows = XLSX.utils.sheet_to_json(ws, { defval:'' });
+        if (!rows.length) { resolve(0); return; }
+        const map = {};
+        rows.forEach(r => {
+          const name = String(r.pitcher_name||r.Name||r.name||'').trim();
+          if (!name) return;
+          map[name] = {
+            SIERA: parseFloat(r.SIERA_proj)||null,
+            KBB:   parseFloat(r.KBB_proj)||null,
+            xFIP:  parseFloat(r.xFIP_proj)||null,
+            FIP:   parseFloat(r.FIP_proj)||null,
+          };
+        });
+        const count = Object.keys(map).length;
+        if (count > 0) {
+          priorsMap = map;
+          try { localStorage.setItem(LS_KEY_PRIORS, JSON.stringify(priorsMap)); } catch(e) {}
+          document.getElementById('priorsUploadWrap').style.display = 'none';
+          document.getElementById('priorsLoaded').style.display = 'flex';
+          document.getElementById('priors-name').textContent = 'priors.xlsx (GitHub)';
+          document.getElementById('priors-meta').textContent = `${count} pitcher priors`;
+        }
+        resolve(count);
+      } catch(ex) { resolve(0); }
+    });
+  }
+
+  window.fetchFromGitHub = async function(forceRefresh) {
+    // Pokud nejsme force refresh a cache je čerstvá (<6h), přeskočíme fetch
+    if (!forceRefresh) {
+      const meta = localStorage.getItem(LS_KEY_META);
+      if (meta) {
+        try {
+          const { savedAt, fileName } = JSON.parse(meta);
+          if (fileName && fileName.includes('GitHub')) {
+            const age = Date.now() - new Date(savedAt).getTime();
+            if (age < 6 * 3600 * 1000) {
+              // Cache je čerstvá, loadFromStorage se postará
+              return;
+            }
+          }
+        } catch(e) {}
+      }
+    }
+
+    setBanner('Načítám data z GitHubu…', 'OndraSpalek/MLB_data · fangraphs.xlsx', false);
+    banner.style.display = 'flex';
+    retryBtn.style.display = 'none';
+
+    let fgOk = false, schOk = false;
+
+    // 1. fangraphs.xlsx
+    setBanner('Načítám fangraphs.xlsx z GitHubu…', 'OndraSpalek/MLB_data', false);
+    const fgBuf = await fetchWithFallback('fangraphs.xlsx');
+    if (fgBuf) {
+      try {
+        const count = await parseAndApplyFangraphs(fgBuf);
+        fgOk = true;
+        setBanner(`✅ fangraphs.xlsx načten (${count} nadhazovačů)`, 'Načítám schedule.xlsx…', false);
+      } catch(err) {
+        setBanner('⚠️ fangraphs.xlsx — chyba parsování', err, true);
+      }
+    } else {
+      setBanner('⚠️ fangraphs.xlsx nedostupný', 'Zkontroluj připojení nebo nahraj soubor ručně', true);
+    }
+
+    // 2. schedule.xlsx
+    const schBuf = await fetchWithFallback('schedule.xlsx');
+    if (schBuf) {
+      try {
+        const count = await parseAndApplySchedule(schBuf);
+        schOk = true;
+        setBanner(fgOk ? `✅ Data načtena z GitHubu` : '⚠️ schedule.xlsx načten, fangraphs selhalo',
+          `${count} zápasů načteno · schedule.xlsx`, false);
+      } catch(err) {
+        setBanner('⚠️ schedule.xlsx — chyba parsování', err, true);
+      }
+    } else {
+      setBanner(fgOk ? '✅ fangraphs.xlsx načten · schedule nedostupný' : '⚠️ Soubory nedostupné', 'Nahraj soubory ručně', true);
+    }
+
+    // 3. priors.xlsx (volitelné, tiché selhání)
+    const prBuf = await fetchWithFallback('priors.xlsx');
+    if (prBuf) {
+      try { await parseAndApplyPriors(prBuf); } catch(e) {}
+    }
+
+    // Zavři banner po 4s pokud vše OK
+    if (fgOk && schOk) {
+      setTimeout(hideBanner, 4000);
+    }
+  };
+
+  // Spustit auto-fetch při načtení
+  window.addEventListener('DOMContentLoaded', () => {
+    fetchFromGitHub(false);
+  });
+})();
+
 loadFromStorage();
 loadScheduleFromStorage();
 loadOwmKey();
