@@ -2972,26 +2972,41 @@
     </div>
   </div>
 
-  <!-- v26: Google Drive záloha -->
+  <!-- v26: GitHub Sync záloha -->
   <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem 1.2rem;margin-bottom:1.2rem;">
     <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:0.06em;color:var(--text);margin-bottom:0.3rem;">
-      ☁️ Google Drive záloha
+      ☁️ GitHub Sync — automatická záloha sázek
     </div>
     <div style="font-size:0.82rem;color:var(--text-dim);margin-bottom:0.8rem;line-height:1.5;">
-      Záloha obsahuje: Sázkovník, Přehled sázek, Tipy dle modelu, Nastavení modelu.<br>
-      <strong style="color:var(--text);">Export:</strong> stáhni JSON → nahraj do Claude chatu → napiš „Ulož zálohu na Drive".<br>
-      <strong style="color:var(--text);">Import:</strong> stáhni zálohu z Drive → načti sem.
+      Sázky, přehled sázek a tipy se ukládají do <strong style="color:var(--text);">MLB_data/baseball_bets_sync.json</strong>.<br>
+      Funguje na PC i mobilu — data jsou vždy sdílená přes GitHub.
     </div>
+    <!-- PAT input -->
+    <div style="margin-bottom:0.8rem;">
+      <label style="font-size:0.78rem;color:var(--text-dim);display:block;margin-bottom:0.3rem;">GitHub Personal Access Token (uloží se lokálně)</label>
+      <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;">
+        <input type="password" id="ghPatInput" placeholder="github_pat_..." autocomplete="off"
+          style="flex:1;min-width:200px;padding:0.4rem 0.7rem;background:var(--bg2);border:1px solid var(--border);border-radius:6px;color:var(--text);font-family:monospace;font-size:0.85rem;"
+          oninput="ghSavePat()">
+        <span id="ghPatStatus" style="font-size:0.78rem;color:var(--text-dim);"></span>
+      </div>
+    </div>
+    <!-- Sync tlačítka -->
     <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center;">
-      <button onclick="gdriveExportJSON()"
-        style="padding:0.5rem 1.2rem;background:rgba(66,133,244,0.15);color:#4285f4;border:1px solid #4285f4;border-radius:6px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:0.95rem;font-weight:600;letter-spacing:0.05em;white-space:nowrap;">
-        ☁️ Exportovat zálohu (JSON)
+      <button onclick="ghSyncPush()"
+        style="padding:0.5rem 1.2rem;background:rgba(90,176,106,0.15);color:var(--green);border:1px solid var(--green);border-radius:6px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:0.95rem;font-weight:600;letter-spacing:0.05em;white-space:nowrap;">
+        ⬆️ Uložit na GitHub
+      </button>
+      <button onclick="ghSyncPull()"
+        style="padding:0.5rem 1.2rem;background:rgba(42,127,192,0.15);color:var(--blue-light);border:1px solid var(--blue-light);border-radius:6px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:0.95rem;font-weight:600;letter-spacing:0.05em;white-space:nowrap;">
+        ⬇️ Načíst z GitHubu
       </button>
       <label style="padding:0.5rem 1.2rem;background:rgba(66,133,244,0.08);color:var(--text-dim);border:1px solid var(--border);border-radius:6px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:0.88rem;letter-spacing:0.04em;white-space:nowrap;display:inline-flex;align-items:center;">
         📂 Načíst zálohu (JSON)
         <input type="file" accept=".json" onchange="gdriveImportJSON(event)" style="display:none;">
       </label>
     </div>
+    <div id="ghSyncMsg" style="display:none;margin-top:0.7rem;padding:0.6rem 0.8rem;border-radius:6px;font-size:0.84rem;line-height:1.6;"></div>
     <div id="driveMsg" style="display:none;margin-top:0.7rem;padding:0.6rem 0.8rem;border-radius:6px;background:rgba(66,133,244,0.08);border:1px solid rgba(66,133,244,0.3);color:var(--text);font-size:0.84rem;line-height:1.6;"></div>
   </div>
 
@@ -5061,6 +5076,7 @@ const DRIVE_BACKUP_KEYS = [
 ];
 
 function gdriveExportJSON() {
+  // Zachováno pro zpětnou kompatibilitu — stáhne JSON lokálně
   const backup = {
     version: 'v26',
     exportedAt: new Date().toISOString(),
@@ -5079,14 +5095,6 @@ function gdriveExportJSON() {
   a.download = `baseball_backup_${new Date().toISOString().slice(0,10)}.json`;
   a.click();
   URL.revokeObjectURL(url);
-
-  // Zobraz instrukce pro Drive upload
-  const msg = document.getElementById('driveMsg');
-  if (msg) {
-    msg.style.display = 'block';
-    msg.innerHTML = `✅ Soubor stažen: <strong>baseball_backup_${new Date().toISOString().slice(0,10)}.json</strong><br>
-      Nahraj ho do Claude chatu a napiš: <em>"Ulož tuto zálohu na Google Drive"</em>`;
-  }
 }
 
 function gdriveImportJSON(event) {
@@ -5113,7 +5121,6 @@ function gdriveImportJSON(event) {
           <span style="color:var(--text-dim);font-size:0.82rem;">Obnoveno: ${DRIVE_BACKUP_KEYS.filter(({key}) => backup.data[key] !== null).map(x => x.label).join(', ')}</span>`;
       }
 
-      // Refresh zobrazení
       if (typeof updateBetCount === 'function') updateBetCount();
       if (typeof dbRefresh === 'function') dbRefresh();
       if (typeof evalRefresh === 'function') evalRefresh();
@@ -5122,15 +5129,174 @@ function gdriveImportJSON(event) {
     } catch(err) {
       alert('❌ Chyba při načítání zálohy: ' + err.message);
     }
-    // Reset input
     event.target.value = '';
   };
   reader.readAsText(file);
 }
 // ─────────────────────────────────────────────
 
+// ═══════════════════════════════════════════════
+//  GITHUB SYNC — záloha sázek do MLB_data repo
+// ═══════════════════════════════════════════════
+const GH_OWNER   = 'OndraSpalek';
+const GH_REPO    = 'MLB_data';
+const GH_FILE    = 'baseball_bets_sync.json';
+const GH_BRANCH  = 'main';
+const LS_KEY_PAT = 'baseball_gh_pat';
+
+const GH_SYNC_KEYS = [
+  { key: 'baseball_v26_bets',       label: 'Sázkovník' },
+  { key: 'baseball_v26_daily_bets', label: 'Přehled sázek' },
+  { key: 'baseball_v26_picks',      label: 'Tipy dle modelu' },
+];
+
+function ghSavePat() {
+  const val = document.getElementById('ghPatInput').value.trim();
+  if (val) {
+    localStorage.setItem(LS_KEY_PAT, btoa(val));
+    document.getElementById('ghPatStatus').textContent = '✅ Token uložen';
+    document.getElementById('ghPatStatus').style.color = 'var(--green)';
+  } else {
+    localStorage.removeItem(LS_KEY_PAT);
+    document.getElementById('ghPatStatus').textContent = '';
+  }
+}
+
+function ghLoadPat() {
+  try {
+    const raw = localStorage.getItem(LS_KEY_PAT);
+    if (raw) {
+      const val = atob(raw);
+      const inp = document.getElementById('ghPatInput');
+      if (inp) inp.value = val;
+      const st = document.getElementById('ghPatStatus');
+      if (st) { st.textContent = '✅ Token načten'; st.style.color = 'var(--green)'; }
+      return val;
+    }
+  } catch(e) {}
+  return null;
+}
+
+function ghGetPat() {
+  try {
+    const raw = localStorage.getItem(LS_KEY_PAT);
+    return raw ? atob(raw) : null;
+  } catch(e) { return null; }
+}
+
+function ghShowMsg(html, type) {
+  const el = document.getElementById('ghSyncMsg');
+  if (!el) return;
+  el.style.display = 'block';
+  const colors = {
+    ok:   'background:rgba(90,176,106,0.12);border:1px solid var(--green);color:var(--green)',
+    err:  'background:rgba(220,80,80,0.12);border:1px solid #e05;color:#f88',
+    info: 'background:rgba(42,127,192,0.12);border:1px solid var(--blue-light);color:var(--blue-light)',
+  };
+  el.setAttribute('style', `display:block;margin-top:0.7rem;padding:0.6rem 0.8rem;border-radius:6px;font-size:0.84rem;line-height:1.6;${colors[type] || colors.info}`);
+  el.innerHTML = html;
+}
+
+async function ghGetFileSha(pat) {
+  const url = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}?ref=${GH_BRANCH}`;
+  const res = await fetch(url, {
+    headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json' }
+  });
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+  const data = await res.json();
+  return data.sha;
+}
+
+async function ghSyncPush() {
+  const pat = ghGetPat();
+  if (!pat) { ghShowMsg('❌ Nejdřív zadej GitHub Personal Access Token výše.', 'err'); return; }
+  ghShowMsg('⏳ Ukládám na GitHub…', 'info');
+  try {
+    const backup = { version: 'v26', savedAt: new Date().toISOString(), data: {} };
+    GH_SYNC_KEYS.forEach(({ key }) => {
+      const raw = localStorage.getItem(key);
+      backup.data[key] = raw ? JSON.parse(raw) : null;
+    });
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(backup, null, 2))));
+    const sha = await ghGetFileSha(pat);
+    const body = { message: `sync: baseball bets ${new Date().toISOString().slice(0,10)}`, content, branch: GH_BRANCH };
+    if (sha) body.sha = sha;
+    const res = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
+      method: 'PUT',
+      headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) { const err = await res.json(); throw new Error(err.message || `HTTP ${res.status}`); }
+    const counts = GH_SYNC_KEYS.map(({ key, label }) => {
+      const raw = localStorage.getItem(key);
+      const arr = raw ? JSON.parse(raw) : [];
+      return `${label}: ${Array.isArray(arr) ? arr.length : '?'}`;
+    }).join(' · ');
+    ghShowMsg(`✅ Uloženo na GitHub · ${new Date().toLocaleTimeString('cs-CZ')}<br><span style="font-size:0.78rem;opacity:0.8;">${counts}</span>`, 'ok');
+  } catch(e) {
+    ghShowMsg(`❌ Chyba při ukládání: ${e.message}`, 'err');
+  }
+}
+
+async function ghSyncPull() {
+  const pat = ghGetPat();
+  if (!pat) { ghShowMsg('❌ Nejdřív zadej GitHub Personal Access Token výše.', 'err'); return; }
+  ghShowMsg('⏳ Načítám z GitHubu…', 'info');
+  try {
+    const url = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}?ref=${GH_BRANCH}`;
+    const res = await fetch(url, {
+      headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json' }
+    });
+    if (res.status === 404) {
+      ghShowMsg('⚠️ Soubor baseball_bets_sync.json na GitHubu ještě neexistuje. Nejdřív použij ⬆️ Uložit na GitHub.', 'info');
+      return;
+    }
+    if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+    const meta = await res.json();
+    const backup = JSON.parse(decodeURIComponent(escape(atob(meta.content.replace(/\n/g, '')))));
+    if (!backup.data) throw new Error('Neplatný formát zálohy');
+    let restored = 0;
+    GH_SYNC_KEYS.forEach(({ key }) => {
+      if (backup.data[key] !== undefined && backup.data[key] !== null) {
+        localStorage.setItem(key, JSON.stringify(backup.data[key]));
+        restored++;
+      }
+    });
+    if (typeof updateBetCount === 'function') updateBetCount();
+    if (typeof dbRefresh === 'function') dbRefresh();
+    if (typeof evalRefresh === 'function') evalRefresh();
+    ghShowMsg(`✅ Načteno z GitHubu · záloha z ${backup.savedAt ? backup.savedAt.slice(0,10) : '?'}<br><span style="font-size:0.78rem;opacity:0.8;">Obnoveno ${restored} datových sad</span>`, 'ok');
+  } catch(e) {
+    ghShowMsg(`❌ Chyba při načítání: ${e.message}`, 'err');
+  }
+}
+
+// Auto-push po každém uložení sázek (tichý, bez alertu)
+async function ghAutoSync() {
+  const pat = ghGetPat();
+  if (!pat) return;
+  try {
+    const backup = { version: 'v26', savedAt: new Date().toISOString(), data: {} };
+    GH_SYNC_KEYS.forEach(({ key }) => {
+      const raw = localStorage.getItem(key);
+      backup.data[key] = raw ? JSON.parse(raw) : null;
+    });
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(backup, null, 2))));
+    const sha = await ghGetFileSha(pat);
+    const body = { message: `autosync: ${new Date().toISOString().slice(0,16)}`, content, branch: GH_BRANCH };
+    if (sha) body.sha = sha;
+    await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
+      method: 'PUT',
+      headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+  } catch(e) { console.warn('GitHub autosync selhal:', e.message); }
+}
+// ─────────────────────────────────────────────
+
 function loadBets() { try { return JSON.parse(localStorage.getItem(LS_KEY_BETS) || '[]'); } catch { return []; } }
-function saveBets(bets) { localStorage.setItem(LS_KEY_BETS, JSON.stringify(bets)); }
+function saveBets(bets) { localStorage.setItem(LS_KEY_BETS, JSON.stringify(bets)); ghAutoSync(); }
 function updateBetCount() {
   const bets = loadBets();
   const note = document.getElementById('betCountNote');
@@ -6613,6 +6779,7 @@ function loadAllPicks() {
 function saveAllPicks(picks) {
   try {
     localStorage.setItem(LS_KEY_PICKS, JSON.stringify(picks));
+    ghAutoSync();
     return true;
   } catch (e) {
     alert('Chyba při ukládání tipů do localStorage: ' + e.message + '\n\nDoporučujeme exportovat zálohu (📥 Export záloha JSON) a smazat staré tipy.');
@@ -8450,6 +8617,7 @@ loadScheduleFromStorage();
 if (pitcherData.length && scheduleData.length) maybeAutoRun();
 loadOwmKey();
 updateOwmTarget();
+ghLoadPat();
 
 // Načti priors z cache
 (function initPriors() {
@@ -8483,7 +8651,7 @@ try { evalRefresh(); } catch (e) { console.warn('Initial eval refresh failed:', 
 const LS_KEY_DAILY_BETS = 'baseball_v26_daily_bets';
 
 function dbLoad()   { try { return JSON.parse(localStorage.getItem(LS_KEY_DAILY_BETS) || '[]'); } catch { return []; } }
-function dbSave(d)  { localStorage.setItem(LS_KEY_DAILY_BETS, JSON.stringify(d)); }
+function dbSave(d)  { localStorage.setItem(LS_KEY_DAILY_BETS, JSON.stringify(d)); ghAutoSync(); }
 
 // Načte stav sázkovníku a zobrazí info
 function dbUpdateSlipStatus() {
