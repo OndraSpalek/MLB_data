@@ -1,8 +1,19 @@
 {
   "version": "v26",
-  "savedAt": "2026-06-27T07:01:20.968Z",
+  "savedAt": "2026-06-27T07:02:23.020Z",
   "data": {
-    "baseball_v26_bets": null,
+    "baseball_v26_bets": [
+      {
+        "date": "27. 6. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Houston Astros",
+        "tip": "Houston Astros",
+        "prob": "56.2",
+        "odds": "1.78",
+        "marketOdds": "",
+        "model": "v9"
+      }
+    ],
     "baseball_v26_daily_bets": null,
     "baseball_v26_picks": [
       {
