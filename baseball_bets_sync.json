@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-06-27T08:03:58.969Z",
+  "savedAt": "2026-06-27T08:05:10.034Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -800,6 +800,66 @@
         "tip": "Houston Astros",
         "prob": "46.0",
         "odds": "2.17",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "27. 6. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "New York Yankees",
+        "tip": "New York Yankees",
+        "prob": "56.9",
+        "odds": "1.76",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "27. 6. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Texas Rangers",
+        "tip": "Texas Rangers",
+        "prob": "39.9",
+        "odds": "2.51",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "27. 6. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Cincinnati Reds",
+        "tip": "Pittsburgh Pirates",
+        "prob": "57.9",
+        "odds": "1.73",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "27. 6. 2026",
+        "homeTeam": "New York Mets",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Philadelphia Phillies",
+        "prob": "49.8",
+        "odds": "2.01",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "27. 6. 2026",
+        "homeTeam": "Baltimore Orioles",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "55.1",
+        "odds": "1.81",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "27. 6. 2026",
+        "homeTeam": "St. Louis Cardinals",
+        "awayTeam": "Miami Marlins",
+        "tip": "Miami Marlins",
+        "prob": "43.3",
+        "odds": "2.31",
         "marketOdds": "",
         "model": "v9"
       }
@@ -6834,6 +6894,84 @@
         "odds": "2.02",
         "marketOdds": "2.07",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782547438987.457,
+        "date": "27. 6. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Houston Astros",
+        "tip": "Houston Astros",
+        "prob": "46.0",
+        "odds": "2.17",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782547441859.9614,
+        "date": "27. 6. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "New York Yankees",
+        "tip": "New York Yankees",
+        "prob": "56.9",
+        "odds": "1.76",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782547446736.4124,
+        "date": "27. 6. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Texas Rangers",
+        "tip": "Texas Rangers",
+        "prob": "39.9",
+        "odds": "2.51",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782547458839.6367,
+        "date": "27. 6. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Cincinnati Reds",
+        "tip": "Pittsburgh Pirates",
+        "prob": "57.9",
+        "odds": "1.73",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782547468929.5813,
+        "date": "27. 6. 2026",
+        "homeTeam": "New York Mets",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Philadelphia Phillies",
+        "prob": "49.8",
+        "odds": "2.01",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782547475495.242,
+        "date": "27. 6. 2026",
+        "homeTeam": "Baltimore Orioles",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "55.1",
+        "odds": "1.81",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
