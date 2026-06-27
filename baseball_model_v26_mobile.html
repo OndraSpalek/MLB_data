@@ -9173,6 +9173,21 @@ function dbImportFile(event) {
 }
 
 // Renderuje tabulku + eval metriky
+// Parsování data pro řazení: zvládne ISO (2026-05-15), česky (15. 5. 2026) i US (5/15/2026)
+function parseDateSort(d) {
+  if (!d) return 0;
+  const s = String(d).trim();
+  // ISO: 2026-05-15
+  if (/^\d{4}-\d{2}-\d{2}/.test(s)) return new Date(s).getTime();
+  // Czech: 15. 5. 2026 nebo 15.5.2026
+  const czMatch = s.match(/(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4})/);
+  if (czMatch) return new Date(+czMatch[3], +czMatch[2]-1, +czMatch[1]).getTime();
+  // US: 5/15/2026
+  const usMatch = s.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+  if (usMatch) return new Date(+usMatch[3], +usMatch[1]-1, +usMatch[2]).getTime();
+  return new Date(s).getTime() || 0;
+}
+
 function dbRefresh() {
   dbUpdateSlipStatus();
   const bets = dbLoad();
@@ -9194,20 +9209,6 @@ function dbRefresh() {
   document.getElementById('dbBetCount').textContent = bets.length;
 
   // Sort by date desc
-  // Parsování data: zvládne ISO (2026-05-15), česky (15. 5. 2026) i US (5/15/2026)
-  const parseDateSort = d => {
-    if (!d) return 0;
-    const s = String(d).trim();
-    // ISO: 2026-05-15
-    if (/^\d{4}-\d{2}-\d{2}/.test(s)) return new Date(s).getTime();
-    // Czech: 15. 5. 2026 nebo 15.5.2026
-    const czMatch = s.match(/(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4})/);
-    if (czMatch) return new Date(+czMatch[3], +czMatch[2]-1, +czMatch[1]).getTime();
-    // US: 5/15/2026
-    const usMatch = s.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
-    if (usMatch) return new Date(+usMatch[3], +usMatch[1]-1, +usMatch[2]).getTime();
-    return new Date(s).getTime() || 0;
-  };
   const sorted = [...bets].sort((a,b) => parseDateSort(b.date) - parseDateSort(a.date));
 
   tbody.innerHTML = sorted.map(b => {
