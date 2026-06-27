@@ -5232,7 +5232,6 @@ function gdriveImportJSON(event) {
 
       if (typeof updateBetCount === 'function') updateBetCount();
       if (typeof dbRefresh === 'function') dbRefresh();
-      if (typeof evalRefresh === 'function') evalRefresh();
       if (typeof loadV9SettingsUI === 'function') loadV9SettingsUI();
 
     } catch(err) {
@@ -9425,7 +9424,8 @@ function dbRenderEval(bets) {
   }
 
   // ── TABULKA VÝSLEDKŮ ─────────────────────────────────────────
-  if (picksEl && resolved.length) {
+  // Tabulka tipů se v přehledu sázek nezobrazuje (skryta záměrně)
+  if (false && picksEl && resolved.length) {
     const sortedAll = [...resolved].sort((a,b) => parseDateSort(b.date) - parseDateSort(a.date));
     const tRows = sortedAll.map(b => {
       const mk = parseFloat(b.marketOdds);
