@@ -1411,8 +1411,32 @@
     margin-bottom: 1rem;
   }
   @media (max-width: 720px) {
-    .dc-teams { grid-template-columns: 1fr; }
-    .dc-vs { flex-direction: row; justify-content: space-around; }
+    /* dc-teams: home | away vedle sebe, vs řádek nahoře přes celou šířku */
+    .dc-teams {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 0.5rem;
+    }
+    /* VS blok — přes celou šířku nahoře */
+    .dc-vs {
+      grid-column: 1 / -1;
+      grid-row: 1;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0.4rem 0.6rem;
+      order: -1;
+    }
+    /* Týmové karty — vedle sebe na druhém řádku */
+    .dc-teams > .dc-team:nth-child(1) { grid-column: 1; grid-row: 2; }
+    .dc-teams > .dc-team:nth-child(3) { grid-column: 2; grid-row: 2; }
+    /* Menší fonty aby se vešly na displej */
+    .dc-prob { font-size: 1.6rem; }
+    .dc-pitcher { font-size: 0.82rem; }
+    .dc-pitcher-stats { font-size: 0.68rem; }
+    .dc-team { padding: 0.7rem 0.6rem; gap: 0.25rem; }
+    .dc-team-head { font-size: 0.85rem; }
+    .dc-odds { font-size: 0.75rem; }
+    .dc-odds strong { font-size: 0.9rem; }
   }
 
   /* ══════════════════════════════════════════════════
