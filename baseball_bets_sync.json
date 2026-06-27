@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-06-27T08:35:19.910Z",
+  "savedAt": "2026-06-27T20:12:33.617Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -790,76 +790,6 @@
         "tip": "Los Angeles Angels",
         "prob": "49.6",
         "odds": "2.02",
-        "marketOdds": "",
-        "model": "v9"
-      },
-      {
-        "date": "27. 6. 2026",
-        "homeTeam": "Boston Red Sox",
-        "awayTeam": "New York Yankees",
-        "tip": "New York Yankees",
-        "prob": "56.9",
-        "odds": "1.76",
-        "marketOdds": "",
-        "model": "v9"
-      },
-      {
-        "date": "27. 6. 2026",
-        "homeTeam": "Toronto Blue Jays",
-        "awayTeam": "Texas Rangers",
-        "tip": "Texas Rangers",
-        "prob": "39.9",
-        "odds": "2.51",
-        "marketOdds": "",
-        "model": "v9"
-      },
-      {
-        "date": "27. 6. 2026",
-        "homeTeam": "Pittsburgh Pirates",
-        "awayTeam": "Cincinnati Reds",
-        "tip": "Pittsburgh Pirates",
-        "prob": "57.9",
-        "odds": "1.73",
-        "marketOdds": "",
-        "model": "v9"
-      },
-      {
-        "date": "27. 6. 2026",
-        "homeTeam": "New York Mets",
-        "awayTeam": "Philadelphia Phillies",
-        "tip": "Philadelphia Phillies",
-        "prob": "49.8",
-        "odds": "2.01",
-        "marketOdds": "",
-        "model": "v9"
-      },
-      {
-        "date": "27. 6. 2026",
-        "homeTeam": "Baltimore Orioles",
-        "awayTeam": "Washington Nationals",
-        "tip": "Washington Nationals",
-        "prob": "55.1",
-        "odds": "1.81",
-        "marketOdds": "",
-        "model": "v9"
-      },
-      {
-        "date": "27. 6. 2026",
-        "homeTeam": "St. Louis Cardinals",
-        "awayTeam": "Miami Marlins",
-        "tip": "Miami Marlins",
-        "prob": "43.3",
-        "odds": "2.31",
-        "marketOdds": "",
-        "model": "v9"
-      },
-      {
-        "date": "27. 6. 2026",
-        "homeTeam": "San Francisco Giants",
-        "awayTeam": "Atlanta Braves",
-        "tip": "Atlanta Braves",
-        "prob": "42.8",
-        "odds": "2.34",
         "marketOdds": "",
         "model": "v9"
       }
@@ -12756,7 +12686,7 @@
         "awayAbbr": "HOU",
         "homeFull": "Detroit Tigers",
         "awayFull": "Houston Astros",
-        "gamePk": null,
+        "gamePk": 824257,
         "pitcherHome": "Framber Valdez",
         "pitcherAway": "Kai-Wei Teng",
         "pitcherTBD": false,
@@ -12785,11 +12715,11 @@
         "P_model_pick": 0.46,
         "oddsModel_pick": 2.1739130434782608,
         "bookmakerOdds": 2.32,
-        "result": null,
-        "scoreHome": null,
-        "scoreAway": null,
-        "isWin": null,
-        "profit": null,
+        "result": "away",
+        "scoreHome": 6,
+        "scoreAway": 8,
+        "isWin": true,
+        "profit": 1.3199999999999998,
         "modelVersion": "v9",
         "savedAt": "2026-06-27T08:17:08.131Z"
       },
@@ -12801,7 +12731,7 @@
         "awayAbbr": "NYY",
         "homeFull": "Boston Red Sox",
         "awayFull": "New York Yankees",
-        "gamePk": null,
+        "gamePk": 824745,
         "pitcherHome": "Jake Bennett",
         "pitcherAway": "Gerrit Cole",
         "pitcherTBD": false,
@@ -12830,11 +12760,11 @@
         "P_model_pick": 0.5670000000000001,
         "oddsModel_pick": 1.763668430335097,
         "bookmakerOdds": 1.94,
-        "result": null,
-        "scoreHome": null,
-        "scoreAway": null,
-        "isWin": null,
-        "profit": null,
+        "result": "home",
+        "scoreHome": 4,
+        "scoreAway": 1,
+        "isWin": false,
+        "profit": -1,
         "modelVersion": "v9",
         "savedAt": "2026-06-27T08:17:08.131Z"
       },
