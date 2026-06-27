@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-06-27T07:02:23.020Z",
+  "savedAt": "2026-06-27T07:03:42.487Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -12,9 +12,125 @@
         "odds": "1.78",
         "marketOdds": "",
         "model": "v9"
+      },
+      {
+        "date": "27. 6. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "New York Yankees",
+        "tip": "New York Yankees",
+        "prob": "62.1",
+        "odds": "1.61",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "27. 6. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Texas Rangers",
+        "tip": "Texas Rangers",
+        "prob": "49.0",
+        "odds": "2.04",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "27. 6. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Cincinnati Reds",
+        "tip": "Pittsburgh Pirates",
+        "prob": "55.4",
+        "odds": "1.80",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "27. 6. 2026",
+        "homeTeam": "New York Mets",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Philadelphia Phillies",
+        "prob": "58.1",
+        "odds": "1.72",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "27. 6. 2026",
+        "homeTeam": "Baltimore Orioles",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "54.0",
+        "odds": "1.85",
+        "marketOdds": "",
+        "model": "v9"
       }
     ],
-    "baseball_v26_daily_bets": null,
+    "baseball_v26_daily_bets": [
+      {
+        "id": 1782543743052.3977,
+        "date": "27. 6. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Houston Astros",
+        "tip": "Houston Astros",
+        "prob": "56.2",
+        "odds": "1.78",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782543755847.5242,
+        "date": "27. 6. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "New York Yankees",
+        "tip": "New York Yankees",
+        "prob": "62.1",
+        "odds": "1.61",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782543787719.5608,
+        "date": "27. 6. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Texas Rangers",
+        "tip": "Texas Rangers",
+        "prob": "49.0",
+        "odds": "2.04",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782543794877.5903,
+        "date": "27. 6. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Cincinnati Reds",
+        "tip": "Pittsburgh Pirates",
+        "prob": "55.4",
+        "odds": "1.80",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782543802565.0327,
+        "date": "27. 6. 2026",
+        "homeTeam": "New York Mets",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Philadelphia Phillies",
+        "prob": "58.1",
+        "odds": "1.72",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      }
+    ],
     "baseball_v26_picks": [
       {
         "id": "2026-04-27_CLE_TBR",
