@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-06-27T07:33:19.521Z",
+  "savedAt": "2026-06-27T08:02:43.056Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -6783,8 +6783,8 @@
         "tip": "Tampa Bay Rays",
         "prob": "61.7",
         "odds": "1.62",
-        "marketOdds": "",
-        "result": "pending",
+        "marketOdds": "1.73",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
