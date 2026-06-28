@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-06-28T09:13:19.400Z",
+  "savedAt": "2026-06-28T09:16:06.155Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -800,6 +800,46 @@
         "tip": "Pittsburgh Pirates",
         "prob": "60.1",
         "odds": "1.66",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "28. 6. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Texas Rangers",
+        "tip": "Texas Rangers",
+        "prob": "56.9",
+        "odds": "1.76",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "28. 6. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Houston Astros",
+        "tip": "Detroit Tigers",
+        "prob": "48.5",
+        "odds": "2.06",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "28. 6. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Seattle Mariners",
+        "tip": "Seattle Mariners",
+        "prob": "54.7",
+        "odds": "1.83",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "28. 6. 2026",
+        "homeTeam": "San Francisco Giants",
+        "awayTeam": "Atlanta Braves",
+        "tip": "San Francisco Giants",
+        "prob": "46.2",
+        "odds": "2.16",
         "marketOdds": "",
         "model": "v9"
       }
@@ -6949,6 +6989,58 @@
         "tip": "Pittsburgh Pirates",
         "prob": "60.1",
         "odds": "1.66",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782638007311.126,
+        "date": "28. 6. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Texas Rangers",
+        "tip": "Texas Rangers",
+        "prob": "56.9",
+        "odds": "1.76",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782638022365.1648,
+        "date": "28. 6. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Houston Astros",
+        "tip": "Detroit Tigers",
+        "prob": "48.5",
+        "odds": "2.06",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782638029544.9453,
+        "date": "28. 6. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Seattle Mariners",
+        "tip": "Seattle Mariners",
+        "prob": "54.7",
+        "odds": "1.83",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782638166153.3284,
+        "date": "28. 6. 2026",
+        "homeTeam": "San Francisco Giants",
+        "awayTeam": "Atlanta Braves",
+        "tip": "San Francisco Giants",
+        "prob": "46.2",
+        "odds": "2.16",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
