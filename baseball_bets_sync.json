@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-06-29T18:24:03.588Z",
+  "savedAt": "2026-06-29T18:26:07.864Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -850,6 +850,16 @@
         "tip": "Chicago Cubs",
         "prob": "51.2",
         "odds": "1.95",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "29. 6. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "61.1",
+        "odds": "1.64",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7066,6 +7076,19 @@
         "odds": "1.95",
         "marketOdds": "2.32",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782757567863.4607,
+        "date": "29. 6. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "61.1",
+        "odds": "1.64",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
