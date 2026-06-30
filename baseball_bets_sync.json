@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-06-30T09:59:06.298Z",
+  "savedAt": "2026-06-30T10:01:16.987Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -920,6 +920,26 @@
         "tip": "San Francisco Giants",
         "prob": "55.7",
         "odds": "1.80",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "30. 6. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Texas Rangers",
+        "tip": "Texas Rangers",
+        "prob": "54.7",
+        "odds": "1.83",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "30. 6. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "55.2",
+        "odds": "1.81",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7226,6 +7246,19 @@
         "prob": "55.7",
         "odds": "1.80",
         "marketOdds": "2.14",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782813578181.6533,
+        "date": "30. 6. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Texas Rangers",
+        "tip": "Texas Rangers",
+        "prob": "54.7",
+        "odds": "1.83",
+        "marketOdds": "",
         "result": "pending",
         "model": "v9",
         "stake": 2
