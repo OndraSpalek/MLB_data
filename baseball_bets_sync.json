@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-06-30T10:04:41.509Z",
+  "savedAt": "2026-06-30T10:07:44.347Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -970,6 +970,26 @@
         "tip": "New York Yankees",
         "prob": "60.3",
         "odds": "1.66",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "30. 6. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "61.1",
+        "odds": "1.64",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "30. 6. 2026",
+        "homeTeam": "Kansas City Royals",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Kansas City Royals",
+        "prob": "52.5",
+        "odds": "1.90",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7327,6 +7347,45 @@
         "tip": "Athletics",
         "prob": "48.0",
         "odds": "2.08",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782813881536.314,
+        "date": "30. 6. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Detroit Tigers",
+        "tip": "New York Yankees",
+        "prob": "60.3",
+        "odds": "1.66",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782813886451.4905,
+        "date": "30. 6. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "61.1",
+        "odds": "1.64",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782813894872.4924,
+        "date": "30. 6. 2026",
+        "homeTeam": "Kansas City Royals",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Kansas City Royals",
+        "prob": "52.5",
+        "odds": "1.90",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
@@ -14016,11 +14075,11 @@
         "P_model_pick": 0.545,
         "oddsModel_pick": 1.8348623853211008,
         "bookmakerOdds": 1.85,
-        "result": null,
-        "scoreHome": null,
-        "scoreAway": null,
-        "isWin": null,
-        "profit": null,
+        "result": "away",
+        "scoreHome": 2,
+        "scoreAway": 8,
+        "isWin": false,
+        "profit": -1,
         "modelVersion": "v9",
         "savedAt": "2026-06-29T18:42:16.379Z"
       },
