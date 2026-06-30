@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-06-30T10:01:16.987Z",
+  "savedAt": "2026-06-30T10:04:41.509Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -940,6 +940,36 @@
         "tip": "Minnesota Twins",
         "prob": "55.2",
         "odds": "1.81",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "30. 6. 2026",
+        "homeTeam": "Colorado Rockies",
+        "awayTeam": "Miami Marlins",
+        "tip": "Colorado Rockies",
+        "prob": "51.7",
+        "odds": "1.93",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "30. 6. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Los Angeles Dodgers",
+        "tip": "Athletics",
+        "prob": "48.0",
+        "odds": "2.08",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "30. 6. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Detroit Tigers",
+        "tip": "New York Yankees",
+        "prob": "60.3",
+        "odds": "1.66",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7258,6 +7288,45 @@
         "tip": "Texas Rangers",
         "prob": "54.7",
         "odds": "1.83",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782813677010.1565,
+        "date": "30. 6. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "55.2",
+        "odds": "1.81",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782813683305.9563,
+        "date": "30. 6. 2026",
+        "homeTeam": "Colorado Rockies",
+        "awayTeam": "Miami Marlins",
+        "tip": "Colorado Rockies",
+        "prob": "51.7",
+        "odds": "1.93",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1782813696609.1235,
+        "date": "30. 6. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Los Angeles Dodgers",
+        "tip": "Athletics",
+        "prob": "48.0",
+        "odds": "2.08",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
