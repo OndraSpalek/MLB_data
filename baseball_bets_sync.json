@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-02T16:57:36.521Z",
+  "savedAt": "2026-07-02T17:03:35.680Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1130,6 +1130,16 @@
         "tip": "Tampa Bay Rays",
         "prob": "69.4",
         "odds": "1.44",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "2. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Detroit Tigers",
+        "tip": "Texas Rangers",
+        "prob": "55.2",
+        "odds": "1.81",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7539,8 +7549,8 @@
         "tip": "Baltimore Orioles",
         "prob": "51.2",
         "odds": "1.95",
-        "marketOdds": "",
-        "result": "pending",
+        "marketOdds": "2.10",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -7708,6 +7718,19 @@
         "tip": "Tampa Bay Rays",
         "prob": "69.4",
         "odds": "1.44",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783011464413.282,
+        "date": "2. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Detroit Tigers",
+        "tip": "Texas Rangers",
+        "prob": "55.2",
+        "odds": "1.81",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
