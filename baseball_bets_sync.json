@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-02T16:56:24.752Z",
+  "savedAt": "2026-07-02T16:57:36.521Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1110,6 +1110,26 @@
         "tip": "Colorado Rockies",
         "prob": "48.3",
         "odds": "2.07",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "2. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Chicago White Sox",
+        "tip": "Chicago White Sox",
+        "prob": "56.1",
+        "odds": "1.78",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "2. 7. 2026",
+        "homeTeam": "Kansas City Royals",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "69.4",
+        "odds": "1.44",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7662,6 +7682,32 @@
         "tip": "Colorado Rockies",
         "prob": "48.3",
         "odds": "2.07",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783011441884.7166,
+        "date": "2. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Chicago White Sox",
+        "tip": "Chicago White Sox",
+        "prob": "56.1",
+        "odds": "1.78",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783011456520.9985,
+        "date": "2. 7. 2026",
+        "homeTeam": "Kansas City Royals",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "69.4",
+        "odds": "1.44",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
