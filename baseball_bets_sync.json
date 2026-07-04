@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-04T10:42:53.406Z",
+  "savedAt": "2026-07-04T10:43:37.779Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1200,6 +1200,46 @@
         "tip": "Chicago White Sox",
         "prob": "52.3",
         "odds": "1.91",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "4. 7. 2026",
+        "homeTeam": "Chicago Cubs",
+        "awayTeam": "St. Louis Cardinals",
+        "tip": "St. Louis Cardinals",
+        "prob": "46.4",
+        "odds": "2.15",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "4. 7. 2026",
+        "homeTeam": "Atlanta Braves",
+        "awayTeam": "New York Mets",
+        "tip": "New York Mets",
+        "prob": "45.9",
+        "odds": "2.18",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "4. 7. 2026",
+        "homeTeam": "Colorado Rockies",
+        "awayTeam": "San Francisco Giants",
+        "tip": "San Francisco Giants",
+        "prob": "59.2",
+        "odds": "1.69",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "4. 7. 2026",
+        "homeTeam": "Kansas City Royals",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Kansas City Royals",
+        "prob": "46.1",
+        "odds": "2.17",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7856,6 +7896,71 @@
         "tip": "Texas Rangers",
         "prob": "51.4",
         "odds": "1.95",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783161773432.878,
+        "date": "4. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Chicago White Sox",
+        "tip": "Chicago White Sox",
+        "prob": "52.3",
+        "odds": "1.91",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783161789277.0942,
+        "date": "4. 7. 2026",
+        "homeTeam": "Chicago Cubs",
+        "awayTeam": "St. Louis Cardinals",
+        "tip": "St. Louis Cardinals",
+        "prob": "46.4",
+        "odds": "2.15",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783161799436.388,
+        "date": "4. 7. 2026",
+        "homeTeam": "Atlanta Braves",
+        "awayTeam": "New York Mets",
+        "tip": "New York Mets",
+        "prob": "45.9",
+        "odds": "2.18",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783161807271.3748,
+        "date": "4. 7. 2026",
+        "homeTeam": "Colorado Rockies",
+        "awayTeam": "San Francisco Giants",
+        "tip": "San Francisco Giants",
+        "prob": "59.2",
+        "odds": "1.69",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783161817778.8794,
+        "date": "4. 7. 2026",
+        "homeTeam": "Kansas City Royals",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Kansas City Royals",
+        "prob": "46.1",
+        "odds": "2.17",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
