@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-04T10:43:37.779Z",
+  "savedAt": "2026-07-04T10:45:46.083Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1240,6 +1240,26 @@
         "tip": "Kansas City Royals",
         "prob": "46.1",
         "odds": "2.17",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "4. 7. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Miami Marlins",
+        "tip": "Athletics",
+        "prob": "49.6",
+        "odds": "2.02",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "4. 7. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "56.6",
+        "odds": "1.77",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7961,6 +7981,19 @@
         "tip": "Kansas City Royals",
         "prob": "46.1",
         "odds": "2.17",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783161833981.3596,
+        "date": "4. 7. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Miami Marlins",
+        "tip": "Athletics",
+        "prob": "49.6",
+        "odds": "2.02",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
