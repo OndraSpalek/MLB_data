@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-04T11:05:32.144Z",
+  "savedAt": "2026-07-04T11:08:08.698Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -16226,11 +16226,11 @@
         "P_model_pick": 0.5835051546391752,
         "oddsModel_pick": 1.7137809187279154,
         "bookmakerOdds": 2.21,
-        "result": null,
-        "scoreHome": null,
-        "scoreAway": null,
-        "isWin": null,
-        "profit": null,
+        "result": "away",
+        "scoreHome": 4,
+        "scoreAway": 6,
+        "isWin": true,
+        "profit": 1.21,
         "modelVersion": "v9",
         "savedAt": "2026-07-01T18:04:12.460Z"
       },
