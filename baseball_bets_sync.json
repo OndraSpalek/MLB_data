@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-04T10:55:56.459Z",
+  "savedAt": "2026-07-04T10:56:55.086Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -7864,8 +7864,8 @@
         "tip": "Tampa Bay Rays",
         "prob": "56.5",
         "odds": "1.77",
-        "marketOdds": "",
-        "result": "pending",
+        "marketOdds": "1:93",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -7877,8 +7877,8 @@
         "tip": "Boston Red Sox",
         "prob": "51.4",
         "odds": "1.95",
-        "marketOdds": "",
-        "result": "pending",
+        "marketOdds": "1.95",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -7890,8 +7890,8 @@
         "tip": "Athletics",
         "prob": "55.8",
         "odds": "1.79",
-        "marketOdds": "",
-        "result": "pending",
+        "marketOdds": "1.80",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
