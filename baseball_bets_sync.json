@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-04T10:41:42.811Z",
+  "savedAt": "2026-07-04T10:42:53.406Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1180,6 +1180,26 @@
         "tip": "Minnesota Twins",
         "prob": "57.5",
         "odds": "1.74",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "4. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Detroit Tigers",
+        "tip": "Texas Rangers",
+        "prob": "51.4",
+        "odds": "1.95",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "4. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Chicago White Sox",
+        "tip": "Chicago White Sox",
+        "prob": "52.3",
+        "odds": "1.91",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7810,6 +7830,32 @@
         "tip": "Athletics",
         "prob": "55.8",
         "odds": "1.79",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783161702836.7231,
+        "date": "4. 7. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "57.5",
+        "odds": "1.74",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783161709732.1812,
+        "date": "4. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Detroit Tigers",
+        "tip": "Texas Rangers",
+        "prob": "51.4",
+        "odds": "1.95",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
