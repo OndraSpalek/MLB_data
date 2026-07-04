@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-03T09:27:36.672Z",
+  "savedAt": "2026-07-04T10:41:42.811Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1170,6 +1170,16 @@
         "tip": "Athletics",
         "prob": "55.8",
         "odds": "1.79",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "4. 7. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "57.5",
+        "odds": "1.74",
         "marketOdds": "",
         "model": "v9"
       }
