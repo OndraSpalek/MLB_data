@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-05T08:00:37.437Z",
+  "savedAt": "2026-07-05T08:01:17.360Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1260,6 +1260,36 @@
         "tip": "Tampa Bay Rays",
         "prob": "56.6",
         "odds": "1.77",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "5. 7. 2026",
+        "homeTeam": "Atlanta Braves",
+        "awayTeam": "New York Mets",
+        "tip": "New York Mets",
+        "prob": "53.4",
+        "odds": "1.87",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "5. 7. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Baltimore Orioles",
+        "prob": "52.9",
+        "odds": "1.89",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "5. 7. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "50.0",
+        "odds": "2.00",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7904,7 +7934,7 @@
         "prob": "57.5",
         "odds": "1.74",
         "marketOdds": "2.34",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -7917,7 +7947,7 @@
         "prob": "51.4",
         "odds": "1.95",
         "marketOdds": "1.98",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -7943,7 +7973,7 @@
         "prob": "46.4",
         "odds": "2.15",
         "marketOdds": "2.28",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -7956,7 +7986,7 @@
         "prob": "45.9",
         "odds": "2.18",
         "marketOdds": "2.43",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -7969,7 +7999,7 @@
         "prob": "59.2",
         "odds": "1.69",
         "marketOdds": "1.80",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -7982,7 +8012,7 @@
         "prob": "46.1",
         "odds": "2.17",
         "marketOdds": "2.25",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -7995,7 +8025,7 @@
         "prob": "49.6",
         "odds": "2.02",
         "marketOdds": "2.04",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -8008,6 +8038,45 @@
         "prob": "56.6",
         "odds": "1.77",
         "marketOdds": "1.93",
+        "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783238458152.8958,
+        "date": "5. 7. 2026",
+        "homeTeam": "Atlanta Braves",
+        "awayTeam": "New York Mets",
+        "tip": "New York Mets",
+        "prob": "53.4",
+        "odds": "1.87",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783238468703.915,
+        "date": "5. 7. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Baltimore Orioles",
+        "prob": "52.9",
+        "odds": "1.89",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783238477358.4944,
+        "date": "5. 7. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "50.0",
+        "odds": "2.00",
+        "marketOdds": "",
         "result": "pending",
         "model": "v9",
         "stake": 2
