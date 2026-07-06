@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-06T07:07:00.881Z",
+  "savedAt": "2026-07-06T07:08:07.190Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -7252,8 +7252,8 @@
         "tip": "Chicago Cubs",
         "prob": "61.1",
         "odds": "1.64",
-        "marketOdds": "",
-        "result": "pending",
+        "marketOdds": "1.00",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
