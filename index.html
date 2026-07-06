@@ -3,8 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MLB Monte Carlo Simulator v23 · BE6PLAYER</title>
+<title>MLB Monte Carlo Simulator v26 · BE6PLAYER</title>
 <!--
+  ════════════════════════════════════════════════════════════════
+  MODEL v26 — NOVINKY OPROTI v25
+  ════════════════════════════════════════════════════════════════
+  GOOGLE DRIVE ZÁLOHA (přes Claude MCP):
+  · Nový panel "☁️ Google Drive záloha" v záložce Přehled sázek.
+  · Export: stáhne JSON zálohu (Sázkovník, Přehled sázek, Tipy,
+    Nastavení) → uživatel nahraje do Claude → Claude uloží na Drive.
+  · Import: načte JSON zálohu staženu z Drive → obnoví všechna data
+    do localStorage bez nutnosti ručně vyplňovat cokoliv.
+  · Zálohované klíče: baseball_model_bets, baseball_daily_bets_v23,
+    baseball_model_picks_v19, baseball_v9_settings.
+  · Modelová data (pitcher/batting/bullpen/park) se nezálohují —
+    jsou velká a lze je kdykoli znovu nahrát z XLSX.
+
+  PNG EXPORT — denní predikce karty:
+  · html2canvas 1.4.1 přidán přes CDN.
+  · Tlačítko "📸 PNG" se zobrazí při najetí myší na každou kartu.
+  · Snapshot zachová celý BE6PLAYER dark theme CSS styling (scale 2x).
+  · Soubor pojmenován: predikce_HOME_vs_AWAY_YYYY-MM-DD.png
   ════════════════════════════════════════════════════════════════
   MODEL v23.1 — NOVINKY OPROTI v23.0
   ════════════════════════════════════════════════════════════════
@@ -276,6 +295,7 @@
 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -921,6 +941,91 @@
     .calib-chart { grid-template-columns:repeat(2,1fr); }
   }
 
+  /* ── MOBILNÍ OPTIMALIZACE (Android Chrome) ── */
+  @media (max-width: 600px) {
+
+    /* Záložky — horizontální scroll místo přetékání */
+    .tab-nav {
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      flex-wrap: nowrap;
+      gap: 0.2rem;
+      margin: 0.8rem 0 1rem;
+      padding-bottom: 2px;
+    }
+    .tab-nav::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      flex-shrink: 0;
+      padding: 0.65rem 0.9rem;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+
+    /* App container — menší okraje */
+    .app { padding: 0 0.75rem 3rem; }
+
+    /* Prob-karty — kompaktnější na mobilu */
+    .prob-card { padding: 1rem 0.9rem; }
+    .prob-pct { font-size: 2.6rem; margin-bottom: 0.3rem; }
+    .fair-odds-val { font-size: 1.4rem; }
+    .prob-pitcher { font-size: 0.82rem; margin-bottom: 0.5rem; }
+    .avg-runs-note { font-size: 0.7rem; margin-top: 0.5rem; }
+
+    /* Total card kompaktnější */
+    .total-card { padding: 0.9rem 0.8rem; }
+
+    /* Prob-row — domácí a hosté vedle sebe, total nahoře */
+    .prob-row {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+    .prob-row .total-card {
+      grid-column: 1 / -1;
+      order: -1;
+    }
+
+    /* Pitcher stats — 3 sloupce místo 5 */
+    .pitcher-stats { grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+
+    /* Weather result grid */
+    .weather-result-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .weather-result-card { padding: 0.7rem 0.6rem; }
+    .weather-result-card .wrc-final { font-size: 1.4rem; }
+
+    /* Slider wrap — vertikálně na mobilu */
+    .slider-wrap { flex-direction: column; gap: 0.8rem; align-items: stretch; }
+
+    /* Tlačítko Spustit simulaci */
+    .run-btn { font-size: 1rem; padding: 0.85rem; }
+
+    /* Upload zóny — menší padding */
+    .upload-zone { padding: 1.2rem 0.8rem; }
+
+    /* Section title */
+    .section-title { font-size: 0.72rem; }
+
+    /* Game cards v denní predikci */
+    .game-card { padding: 0.8rem 0.9rem; }
+
+    /* Tabulky — horizontální scroll */
+    .db-table-wrap, table { overflow-x: auto; display: block; }
+
+    /* Inputy a selecty — větší pro dotyk */
+    input[type="text"], input[type="number"], input[type="date"],
+    input[type="password"], select {
+      min-height: 44px;
+      font-size: 16px;
+    }
+
+    /* Tlačítka v panelech — větší touch target */
+    .weather-fetch-btn { min-height: 44px; padding: 0.6rem 1rem; }
+
+    /* GitHub sync panel input */
+    #ghPatInput { min-height: 44px; font-size: 14px; }
+  }
+
   /* ── LIGHT MODE OVERRIDES ── */
   :root.light .upload-zone { background:var(--bg2); }
   :root.light .team-card { box-shadow:0 2px 12px var(--shadow); }
@@ -974,6 +1079,59 @@
     border-bottom-color: var(--gold);
     background: rgba(212,160,80,0.04);
   }
+  /* v25: notifikační badge na záložkách */
+  .tab-btn { position: relative; }
+  .tab-badge {
+    position: absolute;
+    top: 4px; right: 4px;
+    min-width: 18px; height: 18px;
+    background: var(--red);
+    color: #fff;
+    border-radius: 9px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    display: flex; align-items: center; justify-content: center;
+    padding: 0 4px;
+    pointer-events: none;
+    animation: badgePop 0.25s ease;
+  }
+  @keyframes badgePop {
+    from { transform: scale(0.5); opacity: 0; }
+    to   { transform: scale(1);   opacity: 1; }
+  }
+  /* v25: auto-poll banner */
+  .autopoll-banner {
+    padding: 0.65rem 1.1rem;
+    background: rgba(90,176,106,0.08);
+    border: 1px solid rgba(90,176,106,0.3);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.88rem;
+    letter-spacing: 0.04em;
+    color: var(--green);
+    display: none;
+    align-items: center;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+  }
+  .autopoll-banner.visible { display: flex; }
+  .autopoll-banner.warn { color: var(--gold); background: rgba(212,160,80,0.08); border-color: rgba(212,160,80,0.3); }
+  .autopoll-close {
+    margin-left: auto;
+    background: none;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    color: inherit;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  .autopoll-close:hover { opacity: 1; }
   .daily-panel {
     background: var(--bg2); border: 1px solid var(--border);
     border-radius: 12px; padding: 1.4rem; margin-bottom: 1.5rem;
@@ -1037,8 +1195,26 @@
     background: var(--bg2); border: 1px solid var(--border);
     border-radius: 10px; padding: 1.1rem 1.3rem;
     transition: border-color 0.2s, box-shadow 0.2s;
+    position: relative;
   }
   .daily-card:hover { border-color: var(--border2); box-shadow: 0 4px 16px var(--shadow); }
+  .dc-png-btn {
+    position: absolute; top: 0.7rem; right: 0.7rem;
+    padding: 0.25rem 0.6rem;
+    background: rgba(212,160,80,0.12);
+    color: var(--gold);
+    border: 1px solid rgba(212,160,80,0.35);
+    border-radius: 5px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.78rem; font-weight: 600; letter-spacing: 0.05em;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s, background 0.15s;
+    z-index: 10;
+  }
+  .daily-card:hover .dc-png-btn { opacity: 1; }
+  .dc-png-btn:hover { background: rgba(212,160,80,0.25) !important; }
+  .dc-png-btn.saving { opacity: 1; color: var(--green); border-color: var(--green); }
   .dc-header {
     display: flex; justify-content: space-between; align-items: center;
     padding-bottom: 0.6rem; margin-bottom: 0.8rem;
@@ -1235,8 +1411,32 @@
     margin-bottom: 1rem;
   }
   @media (max-width: 720px) {
-    .dc-teams { grid-template-columns: 1fr; }
-    .dc-vs { flex-direction: row; justify-content: space-around; }
+    /* dc-teams: home | away vedle sebe, vs řádek nahoře přes celou šířku */
+    .dc-teams {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 0.5rem;
+    }
+    /* VS blok — přes celou šířku nahoře */
+    .dc-vs {
+      grid-column: 1 / -1;
+      grid-row: 1;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0.4rem 0.6rem;
+      order: -1;
+    }
+    /* Týmové karty — vedle sebe na druhém řádku */
+    .dc-teams > .dc-team:nth-child(1) { grid-column: 1; grid-row: 2; }
+    .dc-teams > .dc-team:nth-child(3) { grid-column: 2; grid-row: 2; }
+    /* Menší fonty aby se vešly na displej */
+    .dc-prob { font-size: 1.6rem; }
+    .dc-pitcher { font-size: 0.82rem; }
+    .dc-pitcher-stats { font-size: 0.68rem; }
+    .dc-team { padding: 0.7rem 0.6rem; gap: 0.25rem; }
+    .dc-team-head { font-size: 0.85rem; }
+    .dc-odds { font-size: 0.75rem; }
+    .dc-odds strong { font-size: 0.9rem; }
   }
 
   /* ══════════════════════════════════════════════════
@@ -1446,6 +1646,26 @@
     transition: border-color 0.15s, color 0.15s;
   }
   .dc-unskip-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* ── SKIP RULES BANNER (Bod 3) ── */
+  .skip-rules-banner {
+    display: flex; align-items: flex-start; gap: 0.6rem;
+    background: rgba(200,95,0,0.10); border: 1px solid rgba(200,95,0,0.40);
+    border-radius: 7px; padding: 0.5rem 0.75rem;
+    margin: 0 0.4rem 0.5rem; font-size: 0.78rem; color: var(--gold-light);
+    line-height: 1.5;
+  }
+  .skip-rules-banner .srb-icon { font-size: 1rem; flex-shrink: 0; margin-top: 0.05rem; }
+  .skip-rules-banner .srb-text { flex: 1; }
+  .skip-rules-banner .srb-text strong { color: var(--gold); }
+  .skip-rules-banner .srb-skip {
+    flex-shrink: 0; background: none; border: 1px solid rgba(200,95,0,0.5);
+    border-radius: 5px; color: var(--gold); font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em;
+    padding: 0.25rem 0.6rem; cursor: pointer; transition: all 0.15s;
+  }
+  .skip-rules-banner .srb-skip:hover { background: rgba(200,95,0,0.2); border-color: var(--gold); }
+
   @media (max-width: 720px) {
     .manual-pitcher-grid { grid-template-columns: 1fr; }
   }
@@ -1731,7 +1951,7 @@
   <div class="header-logo">⚾</div>
   <div class="header-text">
     <h1>MLB Monte Carlo Simulator</h1>
-    <p>Model v18 · Denní predikce · NegBin + Bayes · Weather Adjust · BE6PLAYER Analytics</p>
+    <p>Model v25 · Auto-run · Auto-poll výsledků · 100K simulací · NegBin + Bayes · Weather Adjust · BE6PLAYER Analytics</p>
   </div>
   <div class="header-badge">BE6PLAYER</div>
   <div style="display:flex;gap:0.5rem;align-items:center;">
@@ -1827,16 +2047,6 @@
 <!-- STEP 1: UPLOAD -->
 <div class="section-title">01 · Nahrání dat</div>
 
-<!-- GITHUB AUTO-FETCH BANNER -->
-<div id="ghFetchBanner" style="display:none;background:rgba(42,127,192,0.10);border:1px solid rgba(42,127,192,0.35);border-radius:8px;padding:0.9rem 1.1rem;margin-bottom:0.8rem;display:flex;align-items:center;gap:0.8rem;flex-wrap:wrap;">
-  <span style="font-size:1.3rem;">🔄</span>
-  <div style="flex:1;min-width:160px;">
-    <div id="ghFetchTitle" style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;letter-spacing:0.06em;color:var(--blue-light);">Načítám data z GitHubu…</div>
-    <div id="ghFetchSub" style="font-size:0.78rem;color:var(--text-dim);margin-top:0.15rem;">OndraSpalek/MLB_data</div>
-  </div>
-  <button id="ghRetryBtn" onclick="fetchFromGitHub(true)" style="display:none;font-family:'Barlow Condensed',sans-serif;font-size:0.85rem;letter-spacing:0.05em;padding:0.35rem 0.8rem;border:1px solid rgba(42,127,192,0.5);background:rgba(42,127,192,0.12);color:var(--blue-light);border-radius:5px;cursor:pointer;">↺ Zkusit znovu</button>
-</div>
-
 <div id="uploadWrap">
   <div class="upload-zone" id="dropZone">
     <input type="file" id="fileInput" accept=".csv,.xlsx,.xls">
@@ -1855,7 +2065,6 @@
     <div class="fl-meta" id="fl-meta">—</div>
   </div>
   <button class="fl-clear" onclick="clearData()">Smazat</button>
-  <button class="fl-clear" onclick="fetchFromGitHub(true)" style="background:rgba(42,127,192,0.12);border-color:rgba(42,127,192,0.4);color:var(--blue-light);" title="Znovu stáhnout z GitHubu">↺ GitHub</button>
 </div>
 
 <!-- PRIORS UPLOAD (volitelné, v9) -->
@@ -2166,6 +2375,7 @@
         <div class="setting-item"><label>NegBin Dispersion</label><input type="number" id="sDispersion" value="1.3" min="1.0" max="3.0" step="0.05" oninput="saveV9Settings()"></div>
         <div class="setting-item"><label>Logit k shrinkage</label><input type="number" id="sKShrinkage" value="0.80" min="0.3" max="1.0" step="0.05" oninput="saveV9Settings()"></div>
         <div class="setting-item"><label>Default cap (%)</label><input type="number" id="sDefaultCap" value="68" min="55" max="80" oninput="saveV9Settings()"></div>
+        <div class="setting-item"><label>Min. Edge filtr (%)</label><input type="number" id="sMinEdge" value="3" min="0" max="30" step="0.5" oninput="saveV9Settings(); refreshAllPickEdges();" title="Tipy s edge pod tímto prahem budou označeny varováním"></div>
       </div>
       <div class="debug-toggle">
         <input type="checkbox" id="debugMode" onchange="saveV9Settings()">
@@ -2388,7 +2598,7 @@
       </div>
       <div class="daily-ctrl-field">
         <label>🎲 Počet simulací</label>
-        <input type="number" id="dailySimCount" value="10000" min="1000" max="100000" step="1000" style="width:110px;">
+        <input type="number" id="dailySimCount" value="100000" min="1000" max="100000" step="1000" style="width:110px;">
       </div>
       <div class="daily-weather-toggle">
         <input type="checkbox" id="dailyUseWeather" checked>
@@ -2397,6 +2607,19 @@
       <button class="daily-run-btn" id="dailyRunBtn" onclick="runDailyPredictions()">
         🚀 Spustit predikci pro všechny zápasy
       </button>
+    </div>
+
+    <!-- AUTO-RUN TOGGLE (v24) -->
+    <div id="autoRunPanel" style="margin-top:0.8rem;padding:0.75rem 1rem;background:rgba(90,176,106,0.06);border:1px solid rgba(90,176,106,0.25);border-radius:8px;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:0.55rem;cursor:pointer;" onclick="toggleAutoRun()">
+        <div id="autoRunToggleOuter" style="width:42px;height:22px;border-radius:11px;background:var(--bg3);border:1px solid var(--border2);position:relative;transition:background 0.2s;flex-shrink:0;cursor:pointer;">
+          <div id="autoRunToggleKnob" style="width:16px;height:16px;border-radius:50%;background:#fff;position:absolute;top:2px;left:2px;transition:left 0.2s,background 0.2s;box-shadow:0 1px 4px rgba(0,0,0,0.3);"></div>
+        </div>
+        <span style="font-family:'Barlow Condensed',sans-serif;font-size:0.9rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--text);">⚡ Spustit automaticky při otevření</span>
+      </div>
+      <div id="autoRunStatus" style="font-size:0.78rem;color:var(--text-dim);flex:1;min-width:200px;">
+        Vypnuto · predikce se nespustí automaticky
+      </div>
     </div>
 
     <div id="dailyDateInfo" style="font-size:0.82rem;color:var(--text-dim);margin-top:0.2rem;"></div>
@@ -2408,6 +2631,13 @@
     <div class="section-title" style="margin-top:1.6rem;">Přehled predikcí</div>
     <div style="font-size:0.82rem;color:var(--text-dim);margin-bottom:0.8rem;line-height:1.5;">
       💡 <strong style="color:var(--text);">Tip:</strong> klikni na kartu týmu pro přidání do sázkovníku. Druhým kliknutím tip odebereš. Pak stiskni <strong style="color:var(--red-light);">📥 Export sázkovník</strong> dole.
+    </div>
+    <div style="margin-bottom:0.8rem;">
+      <button id="dailyPngAllBtn" onclick="exportAllCardsAsPNG()"
+        style="padding:0.45rem 1.1rem;background:rgba(212,160,80,0.12);color:var(--gold);border:1px solid rgba(212,160,80,0.4);border-radius:6px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:0.9rem;font-weight:700;letter-spacing:0.06em;display:none;">
+        📸 Stáhnout všechny karty jako PNG
+      </button>
+      <span id="dailyPngAllStatus" style="margin-left:0.7rem;font-size:0.82rem;color:var(--text-dim);vertical-align:middle;"></span>
     </div>
     <div class="daily-results" id="dailyResults"></div>
     <div class="daily-summary" id="dailySummary">
@@ -2455,7 +2685,7 @@
       </div>
       <div class="daily-ctrl-field">
         <label>🎲 Počet simulací</label>
-        <input type="number" id="picksSimCount" value="10000" min="1000" max="100000" step="1000" style="width:110px;">
+        <input type="number" id="picksSimCount" value="100000" min="1000" max="100000" step="1000" style="width:110px;">
       </div>
       <div class="daily-weather-toggle">
         <input type="checkbox" id="picksUseWeather" checked>
@@ -2500,6 +2730,12 @@
 <div id="tabContentEval" style="display:none;">
 
   <div class="section-title">📈 Vyhodnocení tipy</div>
+
+  <!-- v25: auto-poll banner -->
+  <div class="autopoll-banner" id="evalPollBanner">
+    <span id="evalPollBannerText">—</span>
+    <button class="autopoll-close" onclick="document.getElementById('evalPollBanner').classList.remove('visible')">✕ Zavřít</button>
+  </div>
 
   <div class="eval-info-panel">
     <div style="font-size:0.88rem;color:var(--text-dim);line-height:1.6;">
@@ -2853,11 +3089,55 @@
 
   <div class="section-title">🗒️ Přehled sázek · z denní predikce</div>
 
+  <!-- v25: auto-poll banner -->
+  <div class="autopoll-banner" id="dbPollBanner">
+    <span id="dbPollBannerText">—</span>
+    <button class="autopoll-close" onclick="document.getElementById('dbPollBanner').classList.remove('visible')">✕ Zavřít</button>
+  </div>
+
   <div class="eval-info-panel" style="margin-bottom:1rem;">
     <div style="font-size:0.88rem;color:var(--text-dim);line-height:1.6;">
       Tipy vybrané v záložce <strong style="color:var(--text);">Denní predikce</strong> se přenáší sem automaticky.
       Doplň kurz ručně a po odehrání zápasu označ výsledek — bilance se uloží okamžitě bez klikání na Uložit.
     </div>
+  </div>
+
+  <!-- v26: GitHub Sync záloha -->
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem 1.2rem;margin-bottom:1.2rem;">
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:0.06em;color:var(--text);margin-bottom:0.3rem;">
+      ☁️ GitHub Sync — automatická záloha sázek
+    </div>
+    <div style="font-size:0.82rem;color:var(--text-dim);margin-bottom:0.8rem;line-height:1.5;">
+      Sázky, přehled sázek a tipy se ukládají do <strong style="color:var(--text);">MLB_data/baseball_bets_sync.json</strong>.<br>
+      Funguje na PC i mobilu — data jsou vždy sdílená přes GitHub.
+    </div>
+    <!-- PAT input -->
+    <div style="margin-bottom:0.8rem;">
+      <label style="font-size:0.78rem;color:var(--text-dim);display:block;margin-bottom:0.3rem;">GitHub Personal Access Token (uloží se lokálně)</label>
+      <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;">
+        <input type="password" id="ghPatInput" placeholder="github_pat_..." autocomplete="off"
+          style="flex:1;min-width:200px;padding:0.4rem 0.7rem;background:var(--bg2);border:1px solid var(--border);border-radius:6px;color:var(--text);font-family:monospace;font-size:0.85rem;"
+          oninput="ghSavePat()">
+        <span id="ghPatStatus" style="font-size:0.78rem;color:var(--text-dim);"></span>
+      </div>
+    </div>
+    <!-- Sync tlačítka -->
+    <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center;">
+      <button onclick="ghSyncPush()"
+        style="padding:0.5rem 1.2rem;background:rgba(90,176,106,0.15);color:var(--green);border:1px solid var(--green);border-radius:6px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:0.95rem;font-weight:600;letter-spacing:0.05em;white-space:nowrap;">
+        ⬆️ Uložit na GitHub
+      </button>
+      <button onclick="ghSyncPull()"
+        style="padding:0.5rem 1.2rem;background:rgba(42,127,192,0.15);color:var(--blue-light);border:1px solid var(--blue-light);border-radius:6px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:0.95rem;font-weight:600;letter-spacing:0.05em;white-space:nowrap;">
+        ⬇️ Načíst z GitHubu
+      </button>
+      <label style="padding:0.5rem 1.2rem;background:rgba(66,133,244,0.08);color:var(--text-dim);border:1px solid var(--border);border-radius:6px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:0.88rem;letter-spacing:0.04em;white-space:nowrap;display:inline-flex;align-items:center;">
+        📂 Načíst zálohu (JSON)
+        <input type="file" accept=".json" onchange="gdriveImportJSON(event)" style="display:none;">
+      </label>
+    </div>
+    <div id="ghSyncMsg" style="display:none;margin-top:0.7rem;padding:0.6rem 0.8rem;border-radius:6px;font-size:0.84rem;line-height:1.6;"></div>
+    <div id="driveMsg" style="display:none;margin-top:0.7rem;padding:0.6rem 0.8rem;border-radius:6px;background:rgba(66,133,244,0.08);border:1px solid rgba(66,133,244,0.3);color:var(--text);font-size:0.84rem;line-height:1.6;"></div>
   </div>
 
   <!-- Import ze sázkovníku -->
@@ -2952,12 +3232,44 @@
 
 <!-- FOOTER -->
 <div style="margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--border);text-align:center;font-size:0.72rem;color:var(--text-faint);font-family:'Barlow Condensed',sans-serif;letter-spacing:0.1em;text-transform:uppercase;">
-  BE6PLAYER Analytics · Model v21 — Manuální výběr nadhazovače (Denní predikce) + Bilance sloupec + Live bilance widget
+  BE6PLAYER Analytics · Model v25 — Auto-run on load · Auto-poll výsledků při otevření · Badge notifikace · 100K simulací default
 </div>
 
 </div><!-- /app -->
 
 <script>
+// ═══════════════════════════════════════════════
+//  MIGRACE DAT ze starých localStorage klíčů (v24/v25 → v26)
+//  Spustí se jednorázově při prvním otevření v26 souboru.
+// ═══════════════════════════════════════════════
+(function migrateFromOldKeys() {
+  const MIGRATION_FLAG = 'baseball_v26_migrated';
+  if (localStorage.getItem(MIGRATION_FLAG)) return; // již provedeno
+
+  const migrations = [
+    { from: 'baseball_model_bets',      to: 'baseball_v26_bets' },
+    { from: 'baseball_model_picks_v19', to: 'baseball_v26_picks' },
+    { from: 'baseball_daily_bets_v23',  to: 'baseball_v26_daily_bets' },
+    { from: 'baseball_poll_seen_eval',  to: 'baseball_v26_poll_seen_eval' },
+    { from: 'baseball_poll_seen_db',    to: 'baseball_v26_poll_seen_db' },
+  ];
+
+  let migratedCount = 0;
+  migrations.forEach(({ from, to }) => {
+    const existing = localStorage.getItem(to);
+    const old = localStorage.getItem(from);
+    if (old !== null && existing === null) {
+      localStorage.setItem(to, old);
+      migratedCount++;
+    }
+  });
+
+  localStorage.setItem(MIGRATION_FLAG, '1');
+  if (migratedCount > 0) {
+    console.info(`[BE6PLAYER v26] Migrace dokončena: ${migratedCount} klíčů přeneseno ze starých verzí.`);
+  }
+})();
+
 // ═══════════════════════════════════════════════
 //  UTILITY HELPERS
 // ═══════════════════════════════════════════════
@@ -2994,10 +3306,187 @@ function toggleTheme() {
   document.getElementById('themeIcon').textContent  = isLight ? '🌙' : '☀️';
   document.getElementById('themeLabel').textContent = isLight ? 'Tmavý' : 'Světlý';
 }
+// ═══════════════════════════════════════════════════════════════
+//  v25: BACKGROUND AUTO-POLL — výsledky při každém otevření
+// ═══════════════════════════════════════════════════════════════
+
+const LS_KEY_POLL_SEEN_EVAL = 'baseball_v26_poll_seen_eval'; // badge count eval
+const LS_KEY_POLL_SEEN_DB   = 'baseball_v26_poll_seen_db';   // badge count db
+
+// Nastav/smaž badge na záložce
+function setTabBadge(tabId, count) {
+  const btn = document.querySelector(`.tab-btn[onclick*="${tabId}"]`);
+  if (!btn) return;
+  let badge = btn.querySelector('.tab-badge');
+  if (count <= 0) {
+    if (badge) badge.remove();
+    return;
+  }
+  if (!badge) {
+    badge = document.createElement('div');
+    badge.className = 'tab-badge';
+    btn.appendChild(badge);
+  }
+  badge.textContent = count;
+}
+
+// Smaž badge při otevření záložky
+function clearTabBadge(tabId, lsKey) {
+  localStorage.removeItem(lsKey);
+  setTabBadge(tabId, 0);
+}
+
+// Zobraz banner v záložce
+function showPollBanner(bannerId, textId, msg, isWarn = false) {
+  const banner = document.getElementById(bannerId);
+  const text   = document.getElementById(textId);
+  if (!banner || !text) return;
+  text.textContent = msg;
+  banner.classList.toggle('warn', isWarn);
+  banner.classList.add('visible');
+}
+
+// ── TICHÉ AUTO-DOPLNĚNÍ: Moje tipy (LS_KEY_PICKS) ──────────────
+async function autoPollEvalPicks() {
+  const all     = loadAllPicks();
+  const pending = all.filter(p => p.result === null);
+  if (!pending.length) return { success: 0, notFinished: 0, failed: 0 };
+
+  const byDate = {};
+  pending.forEach(p => { (byDate[p.date] = byDate[p.date] || []).push(p); });
+
+  let success = 0, notFinished = 0, failed = 0;
+
+  for (const date of Object.keys(byDate).sort()) {
+    let apiGames;
+    try { apiGames = await fetchMLBResults(date); }
+    catch (e) { failed += byDate[date].length; continue; }
+    if (!apiGames || !apiGames.length) { failed += byDate[date].length; continue; }
+
+    byDate[date].forEach(p => {
+      const match = apiGames.find(g =>
+        normalizeTeamAbbr(g.homeAbbrRaw) === p.homeAbbr &&
+        normalizeTeamAbbr(g.awayAbbrRaw) === p.awayAbbr
+      );
+      if (!match)         { failed++;      return; }
+      if (!match.isFinal) { notFinished++; return; }
+      if (match.homeScore === null || match.awayScore === null) { failed++; return; }
+      applyResultToPick(p, match.homeScore, match.awayScore);
+      p.gamePk = match.gamePk;
+      success++;
+    });
+    await new Promise(r => setTimeout(r, 200));
+  }
+
+  if (success > 0) saveAllPicks(all);
+  return { success, notFinished, failed };
+}
+
+// ── TICHÉ AUTO-DOPLNĚNÍ: Přehled sázek (LS_KEY_DAILY_BETS) ─────
+async function autoPollDbBets() {
+  const bets    = dbLoad();
+  const pending = bets.filter(b => b.result === 'pending');
+  if (!pending.length) return { success: 0, notFinished: 0, failed: 0 };
+
+  const byDate = {};
+  pending.forEach(b => { (byDate[b.date] = byDate[b.date] || []).push(b); });
+
+  let success = 0, notFinished = 0, failed = 0;
+
+  for (const czDate of Object.keys(byDate).sort()) {
+    const isoDate = dbDateToISO(czDate);
+    let apiGames;
+    try { apiGames = await fetchMLBResults(isoDate); }
+    catch (e) { failed += byDate[czDate].length; continue; }
+    if (!apiGames || !apiGames.length) { failed += byDate[czDate].length; continue; }
+
+    byDate[czDate].forEach(b => {
+      const match = apiGames.find(g =>
+        fullTeamName(g.homeAbbrRaw) === b.homeTeam &&
+        fullTeamName(g.awayAbbrRaw) === b.awayTeam
+      );
+      if (!match)         { failed++;      return; }
+      if (!match.isFinal) { notFinished++; return; }
+      if (match.homeScore === null || match.awayScore === null) { failed++; return; }
+      const homeWon = match.homeScore > match.awayScore;
+      b.result = (b.tip === fullTeamName(match.homeAbbrRaw)) ? (homeWon ? 'win' : 'loss')
+                                                              : (homeWon ? 'loss' : 'win');
+      success++;
+    });
+    await new Promise(r => setTimeout(r, 200));
+  }
+
+  if (success > 0) dbSave(bets);
+  return { success, notFinished, failed };
+}
+
+// ── HLAVNÍ ENTRY POINT — voláno při načtení stránky ────────────
+async function runBackgroundPoll() {
+  // Krátká pauza aby se DOM stabilizoval
+  await new Promise(r => setTimeout(r, 800));
+
+  let evalResult = { success: 0, notFinished: 0, failed: 0 };
+  let dbResult   = { success: 0, notFinished: 0, failed: 0 };
+
+  try { evalResult = await autoPollEvalPicks(); } catch(e) { console.warn('AutoPoll eval error:', e); }
+  try { dbResult   = await autoPollDbBets();    } catch(e) { console.warn('AutoPoll db error:', e);   }
+
+  const totalSuccess = evalResult.success + dbResult.success;
+  if (totalSuccess === 0) return; // nic nového — ticho
+
+  const now = new Date().toLocaleTimeString('cs-CZ', { hour:'2-digit', minute:'2-digit' });
+
+  // ── Badge + banner pro Vyhodnocení tipy ──
+  if (evalResult.success > 0) {
+    const prev = parseInt(localStorage.getItem(LS_KEY_POLL_SEEN_EVAL) || '0');
+    const total = prev + evalResult.success;
+    localStorage.setItem(LS_KEY_POLL_SEEN_EVAL, total);
+    setTabBadge('eval', total);
+
+    let msg = `⚡ Auto-update ${now} · ${evalResult.success} nový${evalResult.success > 1 ? 'ch' : ''} výsledek${evalResult.success > 4 ? 'ů' : evalResult.success > 1 ? 'ů' : ''}`;
+    if (evalResult.notFinished) msg += ` · ${evalResult.notFinished} ještě hraje`;
+    showPollBanner('evalPollBanner', 'evalPollBannerText', msg);
+    // Překresli tabulku pokud je záložka aktivní
+    if (document.getElementById('tabContentEval')?.style.display !== 'none') {
+      evalRefresh();
+      clearTabBadge('eval', LS_KEY_POLL_SEEN_EVAL);
+    }
+  }
+
+  // ── Badge + banner pro Přehled sázek ──
+  if (dbResult.success > 0) {
+    const prev = parseInt(localStorage.getItem(LS_KEY_POLL_SEEN_DB) || '0');
+    const total = prev + dbResult.success;
+    localStorage.setItem(LS_KEY_POLL_SEEN_DB, total);
+    setTabBadge('dailyBets', total);
+
+    let msg = `⚡ Auto-update ${now} · ${dbResult.success} nový${dbResult.success > 1 ? 'ch' : ''} výsledek${dbResult.success > 4 ? 'ů' : dbResult.success > 1 ? 'ů' : ''}`;
+    if (dbResult.notFinished) msg += ` · ${dbResult.notFinished} ještě hraje`;
+    showPollBanner('dbPollBanner', 'dbPollBannerText', msg);
+    // Překresli tabulku pokud je záložka aktivní
+    if (document.getElementById('tabContentDailyBets')?.style.display !== 'none') {
+      dbRefresh();
+      clearTabBadge('dailyBets', LS_KEY_POLL_SEEN_DB);
+    }
+  }
+}
+
+// ── Při přepnutí záložky smaž badge ───────────────────────────
+const _origSwitchTab = typeof switchTab === 'function' ? switchTab : null;
+
 document.addEventListener('DOMContentLoaded', () => {
   const isLight = document.documentElement.classList.contains('light');
   document.getElementById('themeIcon').textContent  = isLight ? '🌙' : '☀️';
   document.getElementById('themeLabel').textContent = isLight ? 'Tmavý' : 'Světlý';
+  // v24: inicializuj stav auto-run přepínače
+  updateAutoRunUI(isAutoRunEnabled());
+  // v25: obnov badge ze storage (pro případ reload bez nového pole)
+  const evalBadge = parseInt(localStorage.getItem(LS_KEY_POLL_SEEN_EVAL) || '0');
+  const dbBadge   = parseInt(localStorage.getItem(LS_KEY_POLL_SEEN_DB)   || '0');
+  if (evalBadge > 0) setTabBadge('eval', evalBadge);
+  if (dbBadge   > 0) setTabBadge('dailyBets', dbBadge);
+  // v25: spusť background poll
+  runBackgroundPoll();
 });
 
 // ═══════════════════════════════════════════════
@@ -3087,7 +3576,7 @@ function getV9Settings() {
 }
 function getDefaultV9Settings() {
   return { K_SIERA:40, K_KBB:50, K_xFIP:50, K_FIP:60, K_BABIP:100,
-           dispersion:1.3, kShrinkage:0.80, defaultCap:68, debugMode:false };
+           dispersion:1.3, kShrinkage:0.80, defaultCap:68, debugMode:false, minEdge:3 };
 }
 function saveV9Settings() {
   const s = {
@@ -3100,6 +3589,7 @@ function saveV9Settings() {
     kShrinkage:  parseFloat(document.getElementById('sKShrinkage').value)  || 0.80,
     defaultCap:  parseFloat(document.getElementById('sDefaultCap').value)  || 68,
     debugMode:   document.getElementById('debugMode').checked,
+    minEdge:     parseFloat(document.getElementById('sMinEdge').value) ?? 3,
   };
   localStorage.setItem(LS_KEY_V9, JSON.stringify(s));
 }
@@ -3114,6 +3604,7 @@ function loadV9SettingsUI() {
   document.getElementById('sKShrinkage').value  = s.kShrinkage;
   document.getElementById('sDefaultCap').value  = s.defaultCap;
   document.getElementById('debugMode').checked  = s.debugMode || false;
+  document.getElementById('sMinEdge').value     = s.minEdge ?? 3;
 }
 function resetV9Settings() {
   localStorage.removeItem(LS_KEY_V9);
@@ -3561,6 +4052,8 @@ function parseFile(file) {
       saveToStorage(file.name);
       populateUI(file.name, clean.length);
       if (typeof checkDailyPrereqs === 'function') checkDailyPrereqs();
+      // v24: auto-run pokud je zapnutý a schedule je již nahrán
+      if (scheduleData.length) maybeAutoRun();
     } catch(ex) {
       showError('Chyba při čtení souboru: ' + ex.message);
     }
@@ -3719,6 +4212,8 @@ function parseScheduleFile(file) {
       onScheduleDateChange();
       if (typeof checkDailyPrereqs === 'function') checkDailyPrereqs();
       if (typeof refreshDailyDateDisplay === 'function') refreshDailyDateDisplay();
+      // v24: auto-run pokud je zapnutý a pitcher data jsou již nahrána
+      if (pitcherData.length) maybeAutoRun();
     } catch(ex) {
       showScheduleError('Chyba při čtení rozpisu: ' + ex.message);
     }
@@ -4698,11 +5193,264 @@ function renderResults(res, teamA, teamB, nameA, nameB, nSims, pA, pB) {
 // ═══════════════════════════════════════════════
 //  SÁZKOVNÍK
 // ═══════════════════════════════════════════════
-const LS_KEY_BETS = 'baseball_model_bets';
+const LS_KEY_BETS = 'baseball_v26_bets';
 let currentResult = null;
 
+// ═══════════════════════════════════════════════
+//  v26: GOOGLE DRIVE ZÁLOHA (přes Claude MCP)
+// ═══════════════════════════════════════════════
+
+const DRIVE_BACKUP_KEYS = [
+  { key: 'baseball_v26_bets',        label: 'Sázkovník' },
+  { key: 'baseball_v26_daily_bets',    label: 'Přehled sázek' },
+  { key: 'baseball_v26_picks',   label: 'Tipy dle modelu' },
+  { key: 'baseball_v9_settings',       label: 'Nastavení modelu' },
+];
+
+function gdriveExportJSON() {
+  // Zachováno pro zpětnou kompatibilitu — stáhne JSON lokálně
+  const backup = {
+    version: 'v26',
+    exportedAt: new Date().toISOString(),
+    data: {}
+  };
+  DRIVE_BACKUP_KEYS.forEach(({ key, label }) => {
+    const raw = localStorage.getItem(key);
+    backup.data[key] = raw ? JSON.parse(raw) : null;
+    backup.data[key + '__label'] = label;
+  });
+  const json = JSON.stringify(backup, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = `baseball_backup_${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function gdriveImportJSON(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const backup = JSON.parse(e.target.result);
+      if (!backup.data) throw new Error('Neplatný formát zálohy');
+
+      let restored = 0;
+      DRIVE_BACKUP_KEYS.forEach(({ key }) => {
+        if (backup.data[key] !== undefined && backup.data[key] !== null) {
+          localStorage.setItem(key, JSON.stringify(backup.data[key]));
+          restored++;
+        }
+      });
+
+      const msg = document.getElementById('driveMsg');
+      if (msg) {
+        msg.style.display = 'block';
+        msg.innerHTML = `✅ Záloha obnovena: <strong>${restored} datových sad</strong> z ${backup.exportedAt ? backup.exportedAt.slice(0,10) : '?'}<br>
+          <span style="color:var(--text-dim);font-size:0.82rem;">Obnoveno: ${DRIVE_BACKUP_KEYS.filter(({key}) => backup.data[key] !== null).map(x => x.label).join(', ')}</span>`;
+      }
+
+      if (typeof updateBetCount === 'function') updateBetCount();
+      if (typeof dbRefresh === 'function') dbRefresh();
+      if (typeof loadV9SettingsUI === 'function') loadV9SettingsUI();
+
+    } catch(err) {
+      alert('❌ Chyba při načítání zálohy: ' + err.message);
+    }
+    event.target.value = '';
+  };
+  reader.readAsText(file);
+}
+// ─────────────────────────────────────────────
+
+// ═══════════════════════════════════════════════
+//  GITHUB SYNC — záloha sázek do MLB_data repo
+// ═══════════════════════════════════════════════
+const GH_OWNER   = 'OndraSpalek';
+const GH_REPO    = 'MLB_data';
+const GH_FILE    = 'baseball_bets_sync.json';
+const GH_BRANCH  = 'main';
+const LS_KEY_PAT = 'baseball_gh_pat';
+
+const GH_SYNC_KEYS = [
+  { key: 'baseball_v26_bets',       label: 'Sázkovník' },
+  { key: 'baseball_v26_daily_bets', label: 'Přehled sázek' },
+  { key: 'baseball_v26_picks',      label: 'Tipy dle modelu' },
+];
+
+function ghSavePat() {
+  const val = document.getElementById('ghPatInput').value.trim();
+  if (val) {
+    localStorage.setItem(LS_KEY_PAT, btoa(val));
+    document.getElementById('ghPatStatus').textContent = '✅ Token uložen';
+    document.getElementById('ghPatStatus').style.color = 'var(--green)';
+  } else {
+    localStorage.removeItem(LS_KEY_PAT);
+    document.getElementById('ghPatStatus').textContent = '';
+  }
+}
+
+function ghLoadPat() {
+  try {
+    const raw = localStorage.getItem(LS_KEY_PAT);
+    if (raw) {
+      const val = atob(raw);
+      const inp = document.getElementById('ghPatInput');
+      if (inp) inp.value = val;
+      const st = document.getElementById('ghPatStatus');
+      if (st) { st.textContent = '✅ Token načten'; st.style.color = 'var(--green)'; }
+      return val;
+    }
+  } catch(e) {}
+  return null;
+}
+
+function ghGetPat() {
+  try {
+    const raw = localStorage.getItem(LS_KEY_PAT);
+    return raw ? atob(raw) : null;
+  } catch(e) { return null; }
+}
+
+function ghShowMsg(html, type) {
+  const el = document.getElementById('ghSyncMsg');
+  if (!el) return;
+  el.style.display = 'block';
+  const colors = {
+    ok:   'background:rgba(90,176,106,0.12);border:1px solid var(--green);color:var(--green)',
+    err:  'background:rgba(220,80,80,0.12);border:1px solid #e05;color:#f88',
+    info: 'background:rgba(42,127,192,0.12);border:1px solid var(--blue-light);color:var(--blue-light)',
+  };
+  el.setAttribute('style', `display:block;margin-top:0.7rem;padding:0.6rem 0.8rem;border-radius:6px;font-size:0.84rem;line-height:1.6;${colors[type] || colors.info}`);
+  el.innerHTML = html;
+}
+
+async function ghGetFileSha(pat) {
+  const url = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}?ref=${GH_BRANCH}`;
+  const res = await fetch(url, {
+    headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json' }
+  });
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+  const data = await res.json();
+  return data.sha;
+}
+
+// ── Zámek proti souběžným zápisům (ghSyncPush + ghAutoSync by si jinak mohly
+//    „šlápnout na SHA“, když se spustí ve stejnou chvíli) ──
+let _ghPushChain = Promise.resolve();
+
+// Sdílený push helper s retry při SHA konfliktu (409/422 „does not match“).
+// Při konfliktu si znovu stáhne aktuální SHA a zkusí to znovu (max 3×).
+async function ghPushContent(pat, message, content) {
+  const url = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`;
+  let lastErr;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    const sha = await ghGetFileSha(pat);
+    const body = { message, content, branch: GH_BRANCH };
+    if (sha) body.sha = sha;
+    const res = await fetch(url, {
+      method: 'PUT',
+      headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    if (res.ok) return await res.json();
+    const err = await res.json().catch(() => ({}));
+    const isShaConflict = res.status === 409 || res.status === 422 || /does not match|sha/i.test(err.message || '');
+    lastErr = new Error(err.message || `HTTP ${res.status}`);
+    if (!isShaConflict || attempt === 3) throw lastErr;
+    // Krátká pauza a zkusit znovu s čerstvým SHA
+    await new Promise(r => setTimeout(r, 300 * attempt));
+  }
+  throw lastErr;
+}
+
+// Zařadí push do fronty, aby se dva zápisy (ruční + auto) nikdy nepřekryly.
+function ghQueuePush(pat, message, content) {
+  const run = () => ghPushContent(pat, message, content);
+  const result = _ghPushChain.then(run, run);
+  // Řetěz pokračuje dál i po chybě, ať se fronta nezablokuje
+  _ghPushChain = result.catch(() => {});
+  return result;
+}
+
+async function ghSyncPush() {
+  const pat = ghGetPat();
+  if (!pat) { ghShowMsg('❌ Nejdřív zadej GitHub Personal Access Token výše.', 'err'); return; }
+  ghShowMsg('⏳ Ukládám na GitHub…', 'info');
+  try {
+    const backup = { version: 'v26', savedAt: new Date().toISOString(), data: {} };
+    GH_SYNC_KEYS.forEach(({ key }) => {
+      const raw = localStorage.getItem(key);
+      backup.data[key] = raw ? JSON.parse(raw) : null;
+    });
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(backup, null, 2))));
+    await ghQueuePush(pat, `sync: baseball bets ${new Date().toISOString().slice(0,10)}`, content);
+    const counts = GH_SYNC_KEYS.map(({ key, label }) => {
+      const raw = localStorage.getItem(key);
+      const arr = raw ? JSON.parse(raw) : [];
+      return `${label}: ${Array.isArray(arr) ? arr.length : '?'}`;
+    }).join(' · ');
+    ghShowMsg(`✅ Uloženo na GitHub · ${new Date().toLocaleTimeString('cs-CZ')}<br><span style="font-size:0.78rem;opacity:0.8;">${counts}</span>`, 'ok');
+  } catch(e) {
+    ghShowMsg(`❌ Chyba při ukládání: ${e.message}`, 'err');
+  }
+}
+
+async function ghSyncPull() {
+  const pat = ghGetPat();
+  if (!pat) { ghShowMsg('❌ Nejdřív zadej GitHub Personal Access Token výše.', 'err'); return; }
+  ghShowMsg('⏳ Načítám z GitHubu…', 'info');
+  try {
+    const url = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}?ref=${GH_BRANCH}`;
+    const res = await fetch(url, {
+      headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json' }
+    });
+    if (res.status === 404) {
+      ghShowMsg('⚠️ Soubor baseball_bets_sync.json na GitHubu ještě neexistuje. Nejdřív použij ⬆️ Uložit na GitHub.', 'info');
+      return;
+    }
+    if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+    const meta = await res.json();
+    const backup = JSON.parse(decodeURIComponent(escape(atob(meta.content.replace(/\n/g, '')))));
+    if (!backup.data) throw new Error('Neplatný formát zálohy');
+    let restored = 0;
+    GH_SYNC_KEYS.forEach(({ key }) => {
+      if (backup.data[key] !== undefined && backup.data[key] !== null) {
+        localStorage.setItem(key, JSON.stringify(backup.data[key]));
+        restored++;
+      }
+    });
+    if (typeof updateBetCount === 'function') updateBetCount();
+    if (typeof dbRefresh === 'function') dbRefresh();
+    if (typeof evalRefresh === 'function') evalRefresh();
+    ghShowMsg(`✅ Načteno z GitHubu · záloha z ${backup.savedAt ? backup.savedAt.slice(0,10) : '?'}<br><span style="font-size:0.78rem;opacity:0.8;">Obnoveno ${restored} datových sad</span>`, 'ok');
+  } catch(e) {
+    ghShowMsg(`❌ Chyba při načítání: ${e.message}`, 'err');
+  }
+}
+
+// Auto-push po každém uložení sázek (tichý, bez alertu)
+async function ghAutoSync() {
+  const pat = ghGetPat();
+  if (!pat) return;
+  try {
+    const backup = { version: 'v26', savedAt: new Date().toISOString(), data: {} };
+    GH_SYNC_KEYS.forEach(({ key }) => {
+      const raw = localStorage.getItem(key);
+      backup.data[key] = raw ? JSON.parse(raw) : null;
+    });
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(backup, null, 2))));
+    await ghQueuePush(pat, `autosync: ${new Date().toISOString().slice(0,16)}`, content);
+  } catch(e) { console.warn('GitHub autosync selhal:', e.message); }
+}
+// ─────────────────────────────────────────────
+
 function loadBets() { try { return JSON.parse(localStorage.getItem(LS_KEY_BETS) || '[]'); } catch { return []; } }
-function saveBets(bets) { localStorage.setItem(LS_KEY_BETS, JSON.stringify(bets)); }
+function saveBets(bets) { localStorage.setItem(LS_KEY_BETS, JSON.stringify(bets)); ghAutoSync(); }
 function updateBetCount() {
   const bets = loadBets();
   const note = document.getElementById('betCountNote');
@@ -5262,9 +6010,87 @@ function switchTab(tab) {
     checkPicksPrereqs();
   } else if (tab === 'eval') {
     evalRefresh();
+    // v25: smaž badge po otevření záložky
+    clearTabBadge('eval', LS_KEY_POLL_SEEN_EVAL);
   } else if (tab === 'dailyBets') {
     dbRefresh();
+    // v25: smaž badge po otevření záložky
+    clearTabBadge('dailyBets', LS_KEY_POLL_SEEN_DB);
   }
+}
+
+// ═══════════════════════════════════════════════
+//  v24: AUTO-RUN — localStorage toggle + spuštění
+// ═══════════════════════════════════════════════
+const LS_KEY_AUTORUN = 'baseball_autorun_enabled';
+
+function isAutoRunEnabled() {
+  return localStorage.getItem(LS_KEY_AUTORUN) === '1';
+}
+
+function toggleAutoRun() {
+  const enabled = !isAutoRunEnabled();
+  localStorage.setItem(LS_KEY_AUTORUN, enabled ? '1' : '0');
+  updateAutoRunUI(enabled);
+}
+
+function updateAutoRunUI(enabled) {
+  const outer = document.getElementById('autoRunToggleOuter');
+  const knob  = document.getElementById('autoRunToggleKnob');
+  const status = document.getElementById('autoRunStatus');
+  if (!outer) return;
+  if (enabled) {
+    outer.style.background = 'var(--green)';
+    outer.style.borderColor = 'var(--green)';
+    knob.style.left = '22px';
+    knob.style.background = '#fff';
+    status.innerHTML = '<span style="color:var(--green);font-weight:700;">Zapnuto</span> · při příštím otevření se spustí predikce pro dnešní den automaticky';
+  } else {
+    outer.style.background = 'var(--bg3)';
+    outer.style.borderColor = 'var(--border2)';
+    knob.style.left = '2px';
+    knob.style.background = '#fff';
+    status.innerHTML = 'Vypnuto · predikce se nespustí automaticky';
+  }
+}
+
+// Voláno po načtení dat (po uploadu XLSX) — zkontroluje zda spustit auto-run
+async function maybeAutoRun() {
+  if (!isAutoRunEnabled()) return;
+  if (!pitcherData.length || !scheduleData.length) return;
+
+  // Přepni na záložku Denní predikce
+  switchTab('daily');
+
+  // Nastav dnešní datum
+  const todayISO = new Date().toISOString().slice(0, 10);
+  const picker = document.getElementById('dailyDatePicker');
+  if (picker) {
+    const available = getAvailableDates();
+    picker.value = available.includes(todayISO) ? todayISO : (available[0] || todayISO);
+    onDailyDateChange();
+  }
+
+  // Počkej jeden tick aby se UI překreslilo, pak spusť predikci
+  await new Promise(r => setTimeout(r, 80));
+  const games = scheduleData.filter(g => g.date === (picker ? picker.value : todayISO));
+  if (!games.length) {
+    const progressEl = document.getElementById('dailyProgress');
+    if (progressEl) {
+      progressEl.style.display = 'block';
+      progressEl.innerHTML = '⚡ Auto-run: pro dnešní datum nejsou v rozpisu žádné zápasy.';
+    }
+    return;
+  }
+
+  // Vizuální oznámení
+  const progressEl = document.getElementById('dailyProgress');
+  if (progressEl) {
+    progressEl.style.display = 'block';
+    progressEl.innerHTML = '⚡ Auto-run · spouštím predikci pro dnešní den…';
+  }
+
+  await runDailyPredictions();
 }
 
 // ═══════════════════════════════════════════════
@@ -5693,6 +6519,9 @@ async function runDailyPredictions() {
 
     renderDailySummary();
     document.getElementById('dailyExportBtn').disabled = _dailyResults.filter(r => !r.error).length === 0;
+    const hasPredictions = _dailyResults.filter(r => !r.error).length > 0;
+    const pngAllBtn = document.getElementById('dailyPngAllBtn');
+    if (pngAllBtn) pngAllBtn.style.display = hasPredictions ? 'inline-block' : 'none';
     if (typeof updateDailyBetUI === 'function') updateDailyBetUI();
   } finally {
     btn.disabled = false;
@@ -5701,9 +6530,109 @@ async function runDailyPredictions() {
   }
 }
 
+// ═══════════════════════════════════════════════
+//  v26: PNG EXPORT — denní predikce karty
+// ═══════════════════════════════════════════════
+function exportCardAsPNG(btn, card, homeAbbr, awayAbbr) {
+  btn.classList.add('saving');
+  btn.textContent = '⏳';
+
+  // Dočasně skryj PNG tlačítko při screenshotu
+  btn.style.display = 'none';
+
+  html2canvas(card, {
+    scale: 2,
+    useCORS: true,
+    allowTaint: false,
+    backgroundColor: null,
+    logging: false,
+    onclone: (clonedDoc) => {
+      // Zajistí správné barvy v dark theme na klonovaném elementu
+      const clonedCard = clonedDoc.querySelector('.daily-card[data-png-target]');
+      if (clonedCard) {
+        clonedCard.style.borderRadius = '10px';
+        clonedCard.style.overflow = 'hidden';
+      }
+    }
+  }).then(canvas => {
+    const date = new Date().toISOString().slice(0, 10);
+    const filename = `predikce_${homeAbbr}_vs_${awayAbbr}_${date}.png`;
+    const link = document.createElement('a');
+    link.download = filename;
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+
+    btn.textContent = '✅';
+    setTimeout(() => {
+      btn.textContent = '📸 PNG';
+      btn.classList.remove('saving');
+      btn.style.display = '';
+    }, 1500);
+  }).catch(() => {
+    btn.textContent = '❌';
+    setTimeout(() => {
+      btn.textContent = '📸 PNG';
+      btn.classList.remove('saving');
+      btn.style.display = '';
+    }, 1500);
+  });
+}
+// ─────────────────────────────────────────────
+
+async function exportAllCardsAsPNG() {
+  const cards = document.querySelectorAll('#dailyResults .daily-card[data-png-target]');
+  if (!cards.length) return;
+
+  const allBtn   = document.getElementById('dailyPngAllBtn');
+  const statusEl = document.getElementById('dailyPngAllStatus');
+
+  allBtn.disabled = true;
+  allBtn.textContent = '⏳ Exportuji...';
+
+  let done = 0;
+  for (const card of cards) {
+    const innerBtn = card.querySelector('.dc-png-btn');
+    const homeAbbr = innerBtn ? (innerBtn.dataset.home || `home${done+1}`) : `home${done+1}`;
+    const awayAbbr = innerBtn ? (innerBtn.dataset.away || `away${done+1}`) : `away${done+1}`;
+
+    // Skryj PNG tlačítko při screenshotu
+    if (innerBtn) innerBtn.style.display = 'none';
+
+    await html2canvas(card, {
+      scale: 2,
+      useCORS: true,
+      allowTaint: false,
+      backgroundColor: null,
+      logging: false
+    }).then(canvas => {
+      const date = new Date().toISOString().slice(0, 10);
+      const link = document.createElement('a');
+      link.download = `predikce_${homeAbbr}_vs_${awayAbbr}_${date}.png`;
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }).catch(() => {});
+
+    if (innerBtn) innerBtn.style.display = '';
+    done++;
+    statusEl.textContent = `${done} / ${cards.length}`;
+
+    // Krátká pauza mezi stahováním (prohlížeče blokují burst)
+    await new Promise(res => setTimeout(res, 350));
+  }
+
+  allBtn.textContent = '✅ Hotovo';
+  statusEl.textContent = `Staženo ${done} PNG`;
+  setTimeout(() => {
+    allBtn.disabled = false;
+    allBtn.textContent = '📸 Stáhnout všechny karty jako PNG';
+    statusEl.textContent = '';
+  }, 3000);
+}
+// ─────────────────────────────────────────────
 function renderDailyPredictionCard(r, container, idx) {
   const card = document.createElement('div');
   card.className = 'daily-card';
+  card.setAttribute('data-png-target', '1');
   if (typeof idx === 'number') card.setAttribute('data-result-idx', String(idx));
 
   if (r.error) {
@@ -5808,6 +6737,7 @@ function renderDailyPredictionCard(r, container, idx) {
   const selectedB = daily_isBetSelected(r, 'B') ? ' dc-bet-selected' : '';
 
   card.innerHTML = `
+    <button class="dc-png-btn" data-home="${r.homeAbbr}" data-away="${r.awayAbbr}" onclick="exportCardAsPNG(this, this.parentElement, this.dataset.home, this.dataset.away)">📸 PNG</button>
     <div class="dc-header">
       <span class="dc-matchup">✈️ ${r.awayAbbr} @ 🏠 ${r.homeAbbr}</span>
       <span class="dc-time">${r.game.time || '—'} ET</span>
@@ -5849,6 +6779,20 @@ function renderDailyPredictionCard(r, container, idx) {
       <div class="dc-bar-wrap"><div class="dc-bar" style="width:${probAstr}%;"></div></div>
       <span style="font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;color:var(--text-dim);letter-spacing:0.05em;">${probAstr}% / ${probBstr}%</span>
     </div>
+    ${(() => {
+      const reasons = [];
+      const awayHand = pitcherHandMap[r.pitcherNameB] || null;
+      const homeHand = pitcherHandMap[r.pitcherNameA] || null;
+      if (awayHand === 'LH') reasons.push(`away pitcher <strong>${r.pitcherNameB}</strong> hází levou (LH) — tip na AWAY historicky −7,13u`);
+      if (homeHand === 'LH') reasons.push(`home pitcher <strong>${r.pitcherNameA}</strong> hází levou (LH) — tip na HOME historicky −9,04u`);
+      const totalRuns = parseFloat(r.res.total);
+      if (!isNaN(totalRuns) && totalRuns < 8) reasons.push(`expected runs <strong>${totalRuns.toFixed(1)}</strong> &lt; 8 — historicky −14,01u`);
+      if (!reasons.length) return '';
+      return `<div class="skip-rules-banner" style="margin:.5rem .4rem 0;">
+        <span class="srb-icon">📊</span>
+        <span class="srb-text"><strong>Doporučení přeskočit:</strong> ${reasons.join(' · ')}</span>
+      </div>`;
+    })()}
   `;
   container.appendChild(card);
 }
@@ -5982,7 +6926,7 @@ function exportDailyPredictions() {
 //  v19: MOJE TIPY + VYHODNOCENÍ MODELU
 // ═══════════════════════════════════════════════════════════════
 
-const LS_KEY_PICKS = 'baseball_model_picks_v19';
+const LS_KEY_PICKS = 'baseball_v26_picks';
 
 // In-memory mirror of currently displayed daily picks before save
 let _picksResults = [];        // pole result objektů z predictSingleGame
@@ -6003,6 +6947,7 @@ function loadAllPicks() {
 function saveAllPicks(picks) {
   try {
     localStorage.setItem(LS_KEY_PICKS, JSON.stringify(picks));
+    ghAutoSync();
     return true;
   } catch (e) {
     alert('Chyba při ukládání tipů do localStorage: ' + e.message + '\n\nDoporučujeme exportovat zálohu (📥 Export záloha JSON) a smazat staré tipy.');
@@ -6233,6 +7178,12 @@ function renderPicksCard(r, container, idx) {
   const handB = pitcherHandMap[r.pitcherNameB] || 'N/A';
   const sieraA = !isNaN(r.pitcherA.SIERA) ? r.pitcherA.SIERA.toFixed(2) : '—';
   const sieraB = !isNaN(r.pitcherB.SIERA) ? r.pitcherB.SIERA.toFixed(2) : '—';
+  const kbbA = !isNaN(r.pitcherA.KBB) ? r.pitcherA.KBB.toFixed(1) + '%' : '—';
+  const kbbB = !isNaN(r.pitcherB.KBB) ? r.pitcherB.KBB.toFixed(1) + '%' : '—';
+  const bullA = r.bullpenA ? r.bullpenA.SIERA.toFixed(2) : '—';
+  const bullB = r.bullpenB ? r.bullpenB.SIERA.toFixed(2) : '—';
+  const plA = r.platoonSourceA ? ` (${r.platoonSourceA})` : '';
+  const plB = r.platoonSourceB ? ` (${r.platoonSourceB})` : '';
   const wrcByA = Math.round(r.res.wrcB);
   const wrcByB = Math.round(r.res.wrcA);
   // v19.1: badge pro manuální výběr nadhazovače
@@ -6263,8 +7214,9 @@ function renderPicksCard(r, container, idx) {
            onclick="selectPick(${idx}, 'A')">
         <div class="dc-team-head">🏠 ${r.homeAbbr}</div>
         <div class="dc-pitcher">⚾ ${r.pitcherNameA}${manualBadgeA}</div>
-        <div class="dc-pitcher-stats">SIERA ${sieraA} · ${handA}</div>
-        <div class="dc-bat">⚔️ Soupeř wRC+ ${wrcByA}</div>
+        <div class="dc-pitcher-stats">SIERA ${sieraA} · K-BB% ${kbbA} · ${handA}</div>
+        <div class="dc-bat">⚔️ Soupeř wRC+ ${wrcByA}${plA}</div>
+        <div class="dc-bull">🛡️ Bullpen SIERA ${bullA}</div>
         <div class="dc-prob">${probAstr}%</div>
         <div class="dc-odds">Férový kurz: <strong>${oddsAstr}</strong></div>
       </div>
@@ -6279,8 +7231,9 @@ function renderPicksCard(r, container, idx) {
            onclick="selectPick(${idx}, 'B')">
         <div class="dc-team-head">✈️ ${r.awayAbbr}</div>
         <div class="dc-pitcher">⚾ ${r.pitcherNameB}${manualBadgeB}</div>
-        <div class="dc-pitcher-stats">SIERA ${sieraB} · ${handB}</div>
-        <div class="dc-bat">⚔️ Soupeř wRC+ ${wrcByB}</div>
+        <div class="dc-pitcher-stats">SIERA ${sieraB} · K-BB% ${kbbB} · ${handB}</div>
+        <div class="dc-bat">⚔️ Soupeř wRC+ ${wrcByB}${plB}</div>
+        <div class="dc-bull">🛡️ Bullpen SIERA ${bullB}</div>
         <div class="dc-prob">${probBstr}%</div>
         <div class="dc-odds">Férový kurz: <strong>${oddsBstr}</strong></div>
       </div>
@@ -6312,6 +7265,8 @@ function renderPicksCard(r, container, idx) {
   container.appendChild(card);
   // Po vykreslení dopočítej edge display
   refreshPickEdge(idx);
+  // Bod 3: zkontroluj skip pravidla
+  checkSkipRules(idx);
 }
 
 // v22: Přeskočení zápasu — zápas se bude ignorovat při validaci i ukládání
@@ -6362,6 +7317,7 @@ function selectPick(idx, side) {
     info.innerHTML = `Tip: <strong>${side === 'A' ? '🏠 ' + escapeHtml(r.homeAbbr) : '✈️ ' + escapeHtml(r.awayAbbr)}</strong> @ model ${side === 'A' ? oddsAstr : oddsBstr}`;
   }
   refreshPickEdge(idx);
+  checkSkipRules(idx);
   updatePicksValidation();
 }
 
@@ -6551,12 +7507,93 @@ function refreshPickEdge(idx) {
   if (!r || r.error || !sel || !sel.side) { span.textContent = ''; span.className = 'pick-edge-display'; return; }
   const odds = parseFloat(sel.odds);
   if (isNaN(odds) || odds <= 1) { span.textContent = ''; span.className = 'pick-edge-display'; return; }
-  const probModel = sel.side === 'A' ? r.finalProbA : r.finalProbB;
   const fairOdds  = sel.side === 'A' ? r.finalOddsA : r.finalOddsB;
   const edge = ((odds / fairOdds) - 1) * 100;
-  const cls = edge > 0 ? 'positive' : (edge < 0 ? 'negative' : '');
-  span.textContent = `Edge: ${edge >= 0 ? '+' : ''}${edge.toFixed(1)}%`;
-  span.className = `pick-edge-display ${cls}`;
+  const minEdge = getV9Settings().minEdge ?? 3;
+
+  // Vizuální stav karty podle edge filtru
+  const card = document.querySelector(`[data-pick-idx="${idx}"]`);
+  let edgeWarnEl = card ? card.querySelector('[data-edge-warn]') : null;
+
+  if (edge < minEdge) {
+    span.textContent = `Edge: ${edge >= 0 ? '+' : ''}${edge.toFixed(1)}% ⚠️`;
+    span.className = 'pick-edge-display negative';
+    if (card && !edgeWarnEl) {
+      edgeWarnEl = document.createElement('div');
+      edgeWarnEl.setAttribute('data-edge-warn', idx);
+      edgeWarnEl.style.cssText = 'background:rgba(192,16,32,0.10);border:1px solid rgba(192,16,32,0.35);border-radius:6px;padding:0.35rem 0.7rem;font-size:0.78rem;color:#d05050;margin:0 0 0.5rem;display:flex;align-items:center;gap:0.4rem;';
+      edgeWarnEl.innerHTML = `⚠️ Edge <strong>${edge.toFixed(1)}%</strong> je pod nastaveným minimem <strong>${minEdge}%</strong> — zvažte přeskočení tipu`;
+      const controlsDiv = card.querySelector('.pick-controls');
+      if (controlsDiv) controlsDiv.parentNode.insertBefore(edgeWarnEl, controlsDiv);
+    }
+  } else {
+    span.textContent = `Edge: ${edge >= 0 ? '+' : ''}${edge.toFixed(1)}%`;
+    span.className = `pick-edge-display ${edge > 0 ? 'positive' : ''}`;
+    if (edgeWarnEl) edgeWarnEl.remove();
+  }
+}
+
+function refreshAllPickEdges() {
+  _picksResults.forEach((_, idx) => refreshPickEdge(idx));
+}
+
+// ── BOD 3: SKIP PRAVIDLA — away LH pitcher + expected runs < 8 ──
+function checkSkipRules(idx) {
+  const card = document.querySelector(`[data-pick-idx="${idx}"]`);
+  if (!card) return;
+
+  const oldBanner = card.querySelector('[data-skip-rules-banner]');
+  if (oldBanner) oldBanner.remove();
+
+  const r = _picksResults[idx];
+  if (!r || r.error) return;
+
+  const sel = _picksSelections[idx];
+  if (sel && sel.skipped) return;
+
+  const reasons = [];
+
+  // Pravidlo 1: LH pitcher VYBRANÉHO týmu → přeskočit
+  // sel.side === 'A' = vsadili na HOME (pitcherNameA), 'B' = vsadili na AWAY (pitcherNameB)
+  // Bez výběru: zkontroluj oba (zobrazit varování preventivně)
+  const pickedSide = sel ? sel.side : null;
+  const homePitcherHand = pitcherHandMap[r.pitcherNameA] || null;
+  const awayPitcherHand = pitcherHandMap[r.pitcherNameB] || null;
+
+  if (pickedSide === 'A' && homePitcherHand === 'LH') {
+    reasons.push(`pitcher <strong>${r.pitcherNameA}</strong> (váš tým) hází levou (LH) — historicky −9,04u`);
+  } else if (pickedSide === 'B' && awayPitcherHand === 'LH') {
+    reasons.push(`pitcher <strong>${r.pitcherNameB}</strong> (váš tým) hází levou (LH) — historicky −7,13u`);
+  } else if (!pickedSide && (homePitcherHand === 'LH' || awayPitcherHand === 'LH')) {
+    const lhPitcher = homePitcherHand === 'LH' ? r.pitcherNameA : r.pitcherNameB;
+    reasons.push(`pitcher <strong>${lhPitcher}</strong> hází levou (LH) — pokud vsadíš na tento tým, historicky ztrátové`);
+  }
+
+  // Pravidlo 2: Expected total runs < 8
+  const totalRuns = parseFloat(r.res.total);
+  if (!isNaN(totalRuns) && totalRuns < 8) {
+    reasons.push(`expected runs <strong>${totalRuns.toFixed(1)}</strong> &lt; 8 — historicky −14,01u`);
+  }
+
+  if (reasons.length === 0) return;
+
+  const banner = document.createElement('div');
+  banner.className = 'skip-rules-banner';
+  banner.setAttribute('data-skip-rules-banner', idx);
+  banner.innerHTML = `
+    <span class="srb-icon">📊</span>
+    <span class="srb-text">
+      <strong>Doporučení přeskočit:</strong> ${reasons.join(' · ')}
+    </span>
+    <button class="srb-skip" onclick="skipPickGame(${idx})" title="Přeskočit tento zápas">⏭️ Skip</button>
+  `;
+
+  const controls = card.querySelector('.pick-controls');
+  if (controls) {
+    controls.parentNode.insertBefore(banner, controls);
+  } else {
+    card.appendChild(banner);
+  }
 }
 
 function updatePicksValidation() {
@@ -7826,301 +8863,13 @@ function evalClearAll() {
 })();
 
 loadV9SettingsUI();
-
-// ═══════════════════════════════════════════════
-//  GITHUB AUTO-FETCH (OndraSpalek/MLB_data)
-// ═══════════════════════════════════════════════
-(function() {
-  const GITHUB_BASE = 'https://raw.githubusercontent.com/OndraSpalek/MLB_data/main/';
-  const PROXIES = [
-    url => url,
-    url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
-    url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
-    url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
-  ];
-
-  const banner   = document.getElementById('ghFetchBanner');
-  const titleEl  = document.getElementById('ghFetchTitle');
-  const subEl    = document.getElementById('ghFetchSub');
-  const retryBtn = document.getElementById('ghRetryBtn');
-
-  function setBanner(title, sub, showRetry) {
-    titleEl.textContent = title;
-    subEl.textContent   = sub || '';
-    retryBtn.style.display = showRetry ? 'inline-block' : 'none';
-    banner.style.display = 'flex';
-  }
-  function hideBanner() { banner.style.display = 'none'; }
-
-  async function fetchWithFallback(filename) {
-    const url = GITHUB_BASE + filename + '?t=' + Date.now();
-    for (let i = 0; i < PROXIES.length; i++) {
-      try {
-        const proxyUrl = PROXIES[i](url);
-        const resp = await fetch(proxyUrl, { signal: AbortSignal.timeout(15000) });
-        if (!resp.ok) continue;
-        const buf = await resp.arrayBuffer();
-        if (buf.byteLength < 100) continue;
-        return buf;
-      } catch(e) { /* try next proxy */ }
-    }
-    return null;
-  }
-
-  async function parseAndApplyFangraphs(buf) {
-    const tmpFile = { name: 'fangraphs.xlsx (GitHub)', arrayBuffer: async () => buf };
-    // Reuse internal parse logic via ArrayBuffer directly
-    return new Promise((resolve, reject) => {
-      try {
-        const wb = XLSX.read(buf, { type:'array', cellDates:true });
-
-        // ── PITCHER ──
-        const pitcherSheetName = wb.SheetNames.find(n =>
-          /^(starting\s*pitcher|pitcher)$/i.test(n.trim())
-        ) || wb.SheetNames.find(n =>
-          /pitcher/i.test(n) && !/hand/i.test(n) && !/reliev/i.test(n) && !/bullpen/i.test(n)
-        ) || wb.SheetNames[0];
-        const rows = XLSX.utils.sheet_to_json(wb.Sheets[pitcherSheetName], { defval:'' });
-        if (!rows.length) { reject('Pitcher sheet prázdný'); return; }
-        const REQUIRED_LOCAL = ['Name','Team','FIP','xFIP','SIERA','BABIP','K-BB%'];
-        const cols = Object.keys(rows[0]);
-        const missing = REQUIRED_LOCAL.filter(c => !cols.includes(c));
-        if (missing.length) { reject('Chybí sloupce: ' + missing.join(', ')); return; }
-        const clean = rows.map(r => ({
-          Name:  String(r.Name||'').trim(),
-          Team:  String(r.Team||'').trim(),
-          ERA:   parseFloat(fixExcelDate(r.ERA)),
-          FIP:   parseFloat(fixExcelDate(r.FIP)),
-          xFIP:  parseFloat(fixExcelDate(r.xFIP)),
-          SIERA: parseFloat(fixExcelDate(r.SIERA)),
-          BABIP: parseFloat(fixExcelDate(r.BABIP)),
-          KBB:   parsePercent(r['K-BB%']),
-          IP:    parseFloat(r.IP)||30,
-        })).filter(r => r.Name && r.Team && !isNaN(r.FIP) && !isNaN(r.xFIP) && !isNaN(r.SIERA) && !isNaN(r.BABIP) && !isNaN(r.KBB));
-        if (!clean.length) { reject('Žádný nadhazovač s kompletními daty'); return; }
-
-        // ── BATTING ──
-        battingMap = {};
-        const batSN = wb.SheetNames.find(n => { const t=n.trim().toLowerCase(); return (t==='batting'||t==='batter')&&!/(lhp|rhp|vs)/i.test(n); });
-        if (batSN) XLSX.utils.sheet_to_json(wb.Sheets[batSN],{defval:''}).forEach(r => {
-          const team=String(r.Tm||r.Team||r.team||'').trim(); const wrc=parseFloat(fixExcelDate(r['wRC+'])); const pa=parseFloat(r.PA)||200;
-          if(team&&!isNaN(wrc)) battingMap[team]={wRC:wrc,PA:pa};
-        });
-
-        // ── BATTING vs LHP / RHP ──
-        battingVsLHPMap = {}; battingVsRHPMap = {};
-        const lhpSN = wb.SheetNames.find(n => /batting.*lhp/i.test(n));
-        if (lhpSN) XLSX.utils.sheet_to_json(wb.Sheets[lhpSN],{defval:''}).forEach(r => {
-          const team=String(r.Tm||r.Team||r.team||'').trim(); const wrc=parseFloat(fixExcelDate(r['wRC+'])); const pa=parseFloat(r.PA)||100;
-          if(team&&!isNaN(wrc)) battingVsLHPMap[team]={wRC:wrc,PA:pa};
-        });
-        const rhpSN = wb.SheetNames.find(n => /batting.*rhp/i.test(n));
-        if (rhpSN) XLSX.utils.sheet_to_json(wb.Sheets[rhpSN],{defval:''}).forEach(r => {
-          const team=String(r.Tm||r.Team||r.team||'').trim(); const wrc=parseFloat(fixExcelDate(r['wRC+'])); const pa=parseFloat(r.PA)||300;
-          if(team&&!isNaN(wrc)) battingVsRHPMap[team]={wRC:wrc,PA:pa};
-        });
-
-        // ── PITCHER HAND ──
-        pitcherHandMap = {};
-        const handSN = wb.SheetNames.find(n => /pitcher.*hand|hand/i.test(n)&&/hand/i.test(n));
-        if (handSN) XLSX.utils.sheet_to_json(wb.Sheets[handSN],{defval:''}).forEach(r => {
-          const name=String(r.Name||r.name||r.pitcher_name||'').trim(); const hand=String(r['Pitcher hand']||r['Hand']||r['hand']||'').trim().toUpperCase();
-          if(name&&(hand==='LH'||hand==='RH')) pitcherHandMap[name]=hand;
-        });
-
-        // ── BULLPEN ──
-        bullpenMap = {};
-        const relSN = wb.SheetNames.find(n => /relieving|bullpen/i.test(n));
-        if (relSN) XLSX.utils.sheet_to_json(wb.Sheets[relSN],{defval:''}).forEach(r => {
-          const team=String(r.Team||r.Tm||r.team||'').trim(); const siera=parseFloat(fixExcelDate(r.SIERA));
-          if(team&&!isNaN(siera)) bullpenMap[team]={ERA:parseFloat(fixExcelDate(r.ERA))||4.50,FIP:parseFloat(fixExcelDate(r.FIP))||4.20,xFIP:parseFloat(fixExcelDate(r.xFIP))||4.20,SIERA:siera,KBB:parsePercent(r['K-BB%'])||17,BABIP:parseFloat(fixExcelDate(r.BABIP))||0.290,IP:parseFloat(r.IP)||15};
-        });
-
-        // ── PARK FACTORS ──
-        parkFactorMap = {};
-        const pfSN = wb.SheetNames.find(n => /park/i.test(n));
-        if (pfSN) XLSX.utils.sheet_to_json(wb.Sheets[pfSN],{defval:''}).forEach(r => {
-          const fullName=String(r.Team||'').trim(); const pf=parseFloat(r['Basic (5yr)']);
-          if(fullName&&!isNaN(pf)&&typeof PARK_FACTOR_TEAM_MAP!=='undefined') {
-            const abbr=PARK_FACTOR_TEAM_MAP[fullName];
-            if(abbr){parkFactorMap[abbr]=pf;if(abbr==='KC')parkFactorMap['KCR']=pf;if(abbr==='WSH')parkFactorMap['WSN']=pf;}
-          }
-        });
-
-        // ── LAST 14 DAYS ──
-        last14Map = {};
-        const l14SN = wb.SheetNames.find(n => /pitcher_last14days|last.?14/i.test(n));
-        if (l14SN) XLSX.utils.sheet_to_json(wb.Sheets[l14SN],{defval:''}).forEach(r => {
-          const name=String(r.Name||r.name||'').trim(); const fip=parseFloat(fixExcelDate(r.FIP||r.fip||''));
-          if(name&&!isNaN(fip)){last14Map[name]=fip;last14Map[name.toLowerCase().trim()]=fip;const ln=name.toLowerCase().trim().split(' ').pop();if(ln)last14Map['__last__'+ln]=fip;}
-        });
-
-        pitcherData = clean;
-        buildTeamsMap();
-        saveToStorage('fangraphs.xlsx (GitHub)');
-        populateUI('fangraphs.xlsx (GitHub)', clean.length, 'GitHub · ' + new Date().toLocaleTimeString('cs-CZ',{hour:'2-digit',minute:'2-digit'}));
-        if (typeof checkDailyPrereqs === 'function') checkDailyPrereqs();
-        resolve(clean.length);
-      } catch(ex) { reject(ex.message); }
-    });
-  }
-
-  async function parseAndApplySchedule(buf) {
-    return new Promise((resolve, reject) => {
-      try {
-        const wb = XLSX.read(buf, { type:'array', cellDates:true });
-        const ws = wb.Sheets[wb.SheetNames[0]];
-        const rows = XLSX.utils.sheet_to_json(ws, { defval:'' });
-        if (!rows.length) { reject('Schedule prázdný'); return; }
-        const sample = rows[0];
-        const colKeys = {};
-        for (const [field, aliases] of Object.entries(SCH_COL_ALIASES)) {
-          colKeys[field] = findCol(sample, aliases);
-        }
-        const parsed = rows.map(r => ({
-          date:      formatScheduleDate(colKeys.date  ? r[colKeys.date]  : ''),
-          time:      formatTime(colKeys.time  ? r[colKeys.time]  : ''),
-          awayFull:  colKeys.awayFull  ? String(r[colKeys.awayFull] ||'').trim() : '',
-          awayAbbr:  colKeys.awayAbbr  ? String(r[colKeys.awayAbbr]||'').trim().toUpperCase() : '',
-          homeFull:  colKeys.homeFull  ? String(r[colKeys.homeFull] ||'').trim() : '',
-          homeAbbr:  colKeys.homeAbbr  ? String(r[colKeys.homeAbbr]||'').trim().toUpperCase() : '',
-          venue:     colKeys.venue     ? String(r[colKeys.venue]    ||'').trim() : '',
-          status:    colKeys.status    ? String(r[colKeys.status]   ||'').trim() : '',
-          scoreAway: colKeys.scoreAway ? parseFloat(r[colKeys.scoreAway]) : null,
-          scoreHome: colKeys.scoreHome ? parseFloat(r[colKeys.scoreHome]) : null,
-        })).filter(g => g.date && (g.awayAbbr || g.awayFull));
-        if (!parsed.length) { reject('Žádné zápasy v schedule'); return; }
-        scheduleData = parsed;
-        try {
-          localStorage.setItem(LS_KEY_SCHEDULE, JSON.stringify(scheduleData));
-          localStorage.setItem(LS_KEY_SCHED_META, JSON.stringify({ fileName:'schedule.xlsx (GitHub)', savedAt: new Date().toISOString() }));
-        } catch(e) {}
-        const dates = getAvailableDates();
-        const todayISO = new Date().toISOString().slice(0,10);
-        document.getElementById('scheduleUploadWrap').style.display = 'none';
-        document.getElementById('scheduleLoaded').style.display = 'flex';
-        document.getElementById('sch-name').textContent = 'schedule.xlsx (GitHub)';
-        document.getElementById('sch-meta').textContent = `${parsed.length} zápasů · ${dates.length} dnů`;
-        document.getElementById('scheduleSection').style.display = 'block';
-        const picker = document.getElementById('scheduleDatePicker');
-        const closest = dates.includes(todayISO) ? todayISO : (dates[0]||'');
-        picker.value = closest;
-        onScheduleDateChange();
-        if (typeof checkDailyPrereqs === 'function') checkDailyPrereqs();
-        if (typeof refreshDailyDateDisplay === 'function') refreshDailyDateDisplay();
-        resolve(parsed.length);
-      } catch(ex) { reject(ex.message); }
-    });
-  }
-
-  async function parseAndApplyPriors(buf) {
-    return new Promise((resolve, reject) => {
-      try {
-        const wb = XLSX.read(buf, { type:'array', cellDates:true });
-        const ws = wb.Sheets[wb.SheetNames[0]];
-        const rows = XLSX.utils.sheet_to_json(ws, { defval:'' });
-        if (!rows.length) { resolve(0); return; }
-        const map = {};
-        rows.forEach(r => {
-          const name = String(r.pitcher_name||r.Name||r.name||'').trim();
-          if (!name) return;
-          map[name] = {
-            SIERA: parseFloat(r.SIERA_proj)||null,
-            KBB:   parseFloat(r.KBB_proj)||null,
-            xFIP:  parseFloat(r.xFIP_proj)||null,
-            FIP:   parseFloat(r.FIP_proj)||null,
-          };
-        });
-        const count = Object.keys(map).length;
-        if (count > 0) {
-          priorsMap = map;
-          try { localStorage.setItem(LS_KEY_PRIORS, JSON.stringify(priorsMap)); } catch(e) {}
-          document.getElementById('priorsUploadWrap').style.display = 'none';
-          document.getElementById('priorsLoaded').style.display = 'flex';
-          document.getElementById('priors-name').textContent = 'priors.xlsx (GitHub)';
-          document.getElementById('priors-meta').textContent = `${count} pitcher priors`;
-        }
-        resolve(count);
-      } catch(ex) { resolve(0); }
-    });
-  }
-
-  window.fetchFromGitHub = async function(forceRefresh) {
-    // Pokud nejsme force refresh a cache je čerstvá (<6h), přeskočíme fetch
-    if (!forceRefresh) {
-      const meta = localStorage.getItem(LS_KEY_META);
-      if (meta) {
-        try {
-          const { savedAt, fileName } = JSON.parse(meta);
-          if (fileName && fileName.includes('GitHub')) {
-            const age = Date.now() - new Date(savedAt).getTime();
-            if (age < 6 * 3600 * 1000) {
-              // Cache je čerstvá, loadFromStorage se postará
-              return;
-            }
-          }
-        } catch(e) {}
-      }
-    }
-
-    setBanner('Načítám data z GitHubu…', 'OndraSpalek/MLB_data · fangraphs.xlsx', false);
-    banner.style.display = 'flex';
-    retryBtn.style.display = 'none';
-
-    let fgOk = false, schOk = false;
-
-    // 1. fangraphs.xlsx
-    setBanner('Načítám fangraphs.xlsx z GitHubu…', 'OndraSpalek/MLB_data', false);
-    const fgBuf = await fetchWithFallback('fangraphs.xlsx');
-    if (fgBuf) {
-      try {
-        const count = await parseAndApplyFangraphs(fgBuf);
-        fgOk = true;
-        setBanner(`✅ fangraphs.xlsx načten (${count} nadhazovačů)`, 'Načítám schedule.xlsx…', false);
-      } catch(err) {
-        setBanner('⚠️ fangraphs.xlsx — chyba parsování', err, true);
-      }
-    } else {
-      setBanner('⚠️ fangraphs.xlsx nedostupný', 'Zkontroluj připojení nebo nahraj soubor ručně', true);
-    }
-
-    // 2. schedule.xlsx
-    const schBuf = await fetchWithFallback('schedule.xlsx');
-    if (schBuf) {
-      try {
-        const count = await parseAndApplySchedule(schBuf);
-        schOk = true;
-        setBanner(fgOk ? `✅ Data načtena z GitHubu` : '⚠️ schedule.xlsx načten, fangraphs selhalo',
-          `${count} zápasů načteno · schedule.xlsx`, false);
-      } catch(err) {
-        setBanner('⚠️ schedule.xlsx — chyba parsování', err, true);
-      }
-    } else {
-      setBanner(fgOk ? '✅ fangraphs.xlsx načten · schedule nedostupný' : '⚠️ Soubory nedostupné', 'Nahraj soubory ručně', true);
-    }
-
-    // 3. priors.xlsx (volitelné, tiché selhání)
-    const prBuf = await fetchWithFallback('priors.xlsx');
-    if (prBuf) {
-      try { await parseAndApplyPriors(prBuf); } catch(e) {}
-    }
-
-    // Zavři banner po 4s pokud vše OK
-    if (fgOk && schOk) {
-      setTimeout(hideBanner, 4000);
-    }
-  };
-
-  // Spustit auto-fetch při načtení
-  window.addEventListener('DOMContentLoaded', () => {
-    fetchFromGitHub(false);
-  });
-})();
-
 loadFromStorage();
 loadScheduleFromStorage();
+// v26: auto-run při otevření souboru pokud jsou data v cache a přepínač je zapnutý
+if (pitcherData.length && scheduleData.length) maybeAutoRun();
 loadOwmKey();
 updateOwmTarget();
+ghLoadPat();
 
 // Načti priors z cache
 (function initPriors() {
@@ -8151,10 +8900,10 @@ try { evalRefresh(); } catch (e) { console.warn('Initial eval refresh failed:', 
 //  v23: PŘEHLED SÁZEK — z denní predikce
 // ═══════════════════════════════════════════════════════════════
 
-const LS_KEY_DAILY_BETS = 'baseball_daily_bets_v23';
+const LS_KEY_DAILY_BETS = 'baseball_v26_daily_bets';
 
 function dbLoad()   { try { return JSON.parse(localStorage.getItem(LS_KEY_DAILY_BETS) || '[]'); } catch { return []; } }
-function dbSave(d)  { localStorage.setItem(LS_KEY_DAILY_BETS, JSON.stringify(d)); }
+function dbSave(d)  { localStorage.setItem(LS_KEY_DAILY_BETS, JSON.stringify(d)); ghAutoSync(); }
 
 // Načte stav sázkovníku a zobrazí info
 function dbUpdateSlipStatus() {
@@ -8567,6 +9316,21 @@ function dbImportFile(event) {
 }
 
 // Renderuje tabulku + eval metriky
+// Parsování data pro řazení: zvládne ISO (2026-05-15), česky (15. 5. 2026) i US (5/15/2026)
+function parseDateSort(d) {
+  if (!d) return 0;
+  const s = String(d).trim();
+  // ISO: 2026-05-15
+  if (/^\d{4}-\d{2}-\d{2}/.test(s)) return new Date(s).getTime();
+  // Czech: 15. 5. 2026 nebo 15.5.2026
+  const czMatch = s.match(/(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4})/);
+  if (czMatch) return new Date(+czMatch[3], +czMatch[2]-1, +czMatch[1]).getTime();
+  // US: 5/15/2026
+  const usMatch = s.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+  if (usMatch) return new Date(+usMatch[3], +usMatch[1]-1, +usMatch[2]).getTime();
+  return new Date(s).getTime() || 0;
+}
+
 function dbRefresh() {
   dbUpdateSlipStatus();
   const bets = dbLoad();
@@ -8588,20 +9352,6 @@ function dbRefresh() {
   document.getElementById('dbBetCount').textContent = bets.length;
 
   // Sort by date desc
-  // Parsování data: zvládne ISO (2026-05-15), česky (15. 5. 2026) i US (5/15/2026)
-  const parseDateSort = d => {
-    if (!d) return 0;
-    const s = String(d).trim();
-    // ISO: 2026-05-15
-    if (/^\d{4}-\d{2}-\d{2}/.test(s)) return new Date(s).getTime();
-    // Czech: 15. 5. 2026 nebo 15.5.2026
-    const czMatch = s.match(/(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4})/);
-    if (czMatch) return new Date(+czMatch[3], +czMatch[2]-1, +czMatch[1]).getTime();
-    // US: 5/15/2026
-    const usMatch = s.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
-    if (usMatch) return new Date(+usMatch[3], +usMatch[1]-1, +usMatch[2]).getTime();
-    return new Date(s).getTime() || 0;
-  };
   const sorted = [...bets].sort((a,b) => parseDateSort(b.date) - parseDateSort(a.date));
 
   tbody.innerHTML = sorted.map(b => {
@@ -8818,7 +9568,8 @@ function dbRenderEval(bets) {
   }
 
   // ── TABULKA VÝSLEDKŮ ─────────────────────────────────────────
-  if (picksEl && resolved.length) {
+  // Tabulka tipů se v přehledu sázek nezobrazuje (skryta záměrně)
+  if (false && picksEl && resolved.length) {
     const sortedAll = [...resolved].sort((a,b) => parseDateSort(b.date) - parseDateSort(a.date));
     const tRows = sortedAll.map(b => {
       const mk = parseFloat(b.marketOdds);
