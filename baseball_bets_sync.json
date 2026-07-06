@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-06T07:08:07.190Z",
+  "savedAt": "2026-07-06T07:26:31.557Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1350,6 +1350,16 @@
         "tip": "Los Angeles Angels",
         "prob": "52.3",
         "odds": "1.91",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "6. 7. 2026",
+        "homeTeam": "Kansas City Royals",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Kansas City Royals",
+        "prob": "44.2",
+        "odds": "2.26",
         "marketOdds": "",
         "model": "v9"
       }
