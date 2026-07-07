@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-07T10:31:39.273Z",
+  "savedAt": "2026-07-07T10:33:02.808Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1410,6 +1410,26 @@
         "tip": "Athletics",
         "prob": "47.1",
         "odds": "2.12",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "7. 7. 2026",
+        "homeTeam": "Tampa Bay Rays",
+        "awayTeam": "New York Yankees",
+        "tip": "Tampa Bay Rays",
+        "prob": "56.0",
+        "odds": "1.78",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "7. 7. 2026",
+        "homeTeam": "Chicago White Sox",
+        "awayTeam": "Boston Red Sox",
+        "tip": "Chicago White Sox",
+        "prob": "49.7",
+        "odds": "2.01",
         "marketOdds": "",
         "model": "v9"
       }
@@ -8341,6 +8361,32 @@
         "odds": "1.83",
         "marketOdds": "1.94",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783420299302.1514,
+        "date": "7. 7. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Athletics",
+        "tip": "Athletics",
+        "prob": "47.1",
+        "odds": "2.12",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783420316733.4944,
+        "date": "7. 7. 2026",
+        "homeTeam": "Tampa Bay Rays",
+        "awayTeam": "New York Yankees",
+        "tip": "Tampa Bay Rays",
+        "prob": "56.0",
+        "odds": "1.78",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
