@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-07T10:33:02.808Z",
+  "savedAt": "2026-07-07T10:34:08.544Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1430,6 +1430,26 @@
         "tip": "Chicago White Sox",
         "prob": "49.7",
         "odds": "2.01",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "7. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Los Angeles Angels",
+        "tip": "Los Angeles Angels",
+        "prob": "44.9",
+        "odds": "2.23",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "7. 7. 2026",
+        "homeTeam": "San Diego Padres",
+        "awayTeam": "Arizona Diamondbacks",
+        "tip": "San Diego Padres",
+        "prob": "55.8",
+        "odds": "1.79",
         "marketOdds": "",
         "model": "v9"
       }
@@ -8385,6 +8405,32 @@
         "tip": "Tampa Bay Rays",
         "prob": "56.0",
         "odds": "1.78",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783420382841.271,
+        "date": "7. 7. 2026",
+        "homeTeam": "Chicago White Sox",
+        "awayTeam": "Boston Red Sox",
+        "tip": "Chicago White Sox",
+        "prob": "49.7",
+        "odds": "2.01",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783420426876.3638,
+        "date": "7. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Los Angeles Angels",
+        "tip": "Los Angeles Angels",
+        "prob": "44.9",
+        "odds": "2.23",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
