@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-06T08:17:08.665Z",
+  "savedAt": "2026-07-07T10:30:28.189Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -18499,7 +18499,7 @@
         "awayAbbr": "PHI",
         "homeFull": "Kansas City Royals",
         "awayFull": "Philadelphia Phillies",
-        "gamePk": null,
+        "gamePk": 824089,
         "pitcherHome": "Noah Cameron",
         "pitcherAway": "Cristopher Sánchez",
         "pitcherTBD": false,
@@ -18528,13 +18528,13 @@
         "P_model_pick": 0.441,
         "oddsModel_pick": 2.2675736961451247,
         "bookmakerOdds": 2.85,
-        "result": null,
-        "scoreHome": null,
-        "scoreAway": null,
-        "isWin": null,
-        "profit": null,
+        "result": "home",
+        "scoreHome": 15,
+        "scoreAway": 1,
+        "isWin": true,
+        "profit": 1.85,
         "modelVersion": "v9",
-        "savedAt": "2026-07-06T07:34:24.233Z"
+        "savedAt": "2026-07-06T07:34:31.818Z"
       },
       {
         "id": "2026-07-06_TBR_NYY",
@@ -18544,7 +18544,7 @@
         "awayAbbr": "NYY",
         "homeFull": "Tampa Bay Rays",
         "awayFull": "New York Yankees",
-        "gamePk": null,
+        "gamePk": 822958,
         "pitcherHome": "Griffin Jax",
         "pitcherAway": "Cam Schlittler",
         "pitcherTBD": false,
@@ -18573,13 +18573,13 @@
         "P_model_pick": 0.5670000000000001,
         "oddsModel_pick": 1.763668430335097,
         "bookmakerOdds": 2,
-        "result": null,
-        "scoreHome": null,
-        "scoreAway": null,
-        "isWin": null,
-        "profit": null,
+        "result": "away",
+        "scoreHome": 1,
+        "scoreAway": 5,
+        "isWin": false,
+        "profit": -1,
         "modelVersion": "v9",
-        "savedAt": "2026-07-06T07:34:24.233Z"
+        "savedAt": "2026-07-06T07:34:31.818Z"
       },
       {
         "id": "2026-07-06_WSN_HOU",
@@ -18589,7 +18589,7 @@
         "awayAbbr": "HOU",
         "homeFull": "Washington Nationals",
         "awayFull": "Houston Astros",
-        "gamePk": null,
+        "gamePk": 822712,
         "pitcherHome": "Miles Mikolas",
         "pitcherAway": "Mike Burrows",
         "pitcherTBD": false,
@@ -18618,13 +18618,13 @@
         "P_model_pick": 0.501,
         "oddsModel_pick": 1.996007984031936,
         "bookmakerOdds": 2.21,
-        "result": null,
-        "scoreHome": null,
-        "scoreAway": null,
-        "isWin": null,
-        "profit": null,
+        "result": "home",
+        "scoreHome": 12,
+        "scoreAway": 11,
+        "isWin": false,
+        "profit": -1,
         "modelVersion": "v9",
-        "savedAt": "2026-07-06T07:34:24.234Z"
+        "savedAt": "2026-07-06T07:34:31.818Z"
       },
       {
         "id": "2026-07-06_ATL_NYM",
@@ -18634,7 +18634,7 @@
         "awayAbbr": "NYM",
         "homeFull": "Atlanta Braves",
         "awayFull": "New York Mets",
-        "gamePk": null,
+        "gamePk": 824900,
         "pitcherHome": "Reynaldo López",
         "pitcherAway": "Freddy Peralta",
         "pitcherTBD": false,
@@ -18663,13 +18663,13 @@
         "P_model_pick": 0.5710000000000001,
         "oddsModel_pick": 1.7513134851138352,
         "bookmakerOdds": 1.88,
-        "result": null,
-        "scoreHome": null,
-        "scoreAway": null,
-        "isWin": null,
-        "profit": null,
+        "result": "away",
+        "scoreHome": 6,
+        "scoreAway": 7,
+        "isWin": false,
+        "profit": -1,
         "modelVersion": "v9",
-        "savedAt": "2026-07-06T07:34:24.234Z"
+        "savedAt": "2026-07-06T07:34:31.818Z"
       },
       {
         "id": "2026-07-06_STL_MIL",
@@ -18679,7 +18679,7 @@
         "awayAbbr": "MIL",
         "homeFull": "St. Louis Cardinals",
         "awayFull": "Milwaukee Brewers",
-        "gamePk": null,
+        "gamePk": 823036,
         "pitcherHome": "Dustin May",
         "pitcherAway": "Shane Drohan",
         "pitcherTBD": false,
@@ -18708,13 +18708,13 @@
         "P_model_pick": 0.581,
         "oddsModel_pick": 1.721170395869191,
         "bookmakerOdds": 2,
-        "result": null,
-        "scoreHome": null,
-        "scoreAway": null,
-        "isWin": null,
-        "profit": null,
+        "result": "away",
+        "scoreHome": 3,
+        "scoreAway": 4,
+        "isWin": true,
+        "profit": 1,
         "modelVersion": "v9",
-        "savedAt": "2026-07-06T07:34:24.234Z"
+        "savedAt": "2026-07-06T07:34:31.818Z"
       },
       {
         "id": "2026-07-06_SFG_TOR",
@@ -18724,7 +18724,7 @@
         "awayAbbr": "TOR",
         "homeFull": "San Francisco Giants",
         "awayFull": "Toronto Blue Jays",
-        "gamePk": null,
+        "gamePk": 823205,
         "pitcherHome": "Landen Roupp",
         "pitcherAway": "Kevin Gausman",
         "pitcherTBD": false,
@@ -18753,13 +18753,13 @@
         "P_model_pick": 0.544,
         "oddsModel_pick": 1.838235294117647,
         "bookmakerOdds": 2.09,
-        "result": null,
-        "scoreHome": null,
-        "scoreAway": null,
-        "isWin": null,
-        "profit": null,
+        "result": "home",
+        "scoreHome": 10,
+        "scoreAway": 1,
+        "isWin": true,
+        "profit": 1.0899999999999999,
         "modelVersion": "v9",
-        "savedAt": "2026-07-06T07:34:24.234Z"
+        "savedAt": "2026-07-06T07:34:31.818Z"
       }
     ]
   }
