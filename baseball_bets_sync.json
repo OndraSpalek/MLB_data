@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-08T12:44:15.492Z",
+  "savedAt": "2026-07-08T12:45:37.076Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -7154,6 +7154,19 @@
         "tip": "Houston Astros",
         "prob": "50.2",
         "odds": "1.99",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783514655528.0977,
+        "date": "8. 7. 2026",
+        "homeTeam": "Minnesota Twins",
+        "awayTeam": "Cleveland Guardians",
+        "tip": "Cleveland Guardians",
+        "prob": "54.4",
+        "odds": "1.84",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
