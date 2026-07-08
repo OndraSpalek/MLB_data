@@ -1646,6 +1646,26 @@
     transition: border-color 0.15s, color 0.15s;
   }
   .dc-unskip-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* ── SKIP RULES BANNER (Bod 3) ── */
+  .skip-rules-banner {
+    display: flex; align-items: flex-start; gap: 0.6rem;
+    background: rgba(200,95,0,0.10); border: 1px solid rgba(200,95,0,0.40);
+    border-radius: 7px; padding: 0.5rem 0.75rem;
+    margin: 0 0.4rem 0.5rem; font-size: 0.78rem; color: var(--gold-light);
+    line-height: 1.5;
+  }
+  .skip-rules-banner .srb-icon { font-size: 1rem; flex-shrink: 0; margin-top: 0.05rem; }
+  .skip-rules-banner .srb-text { flex: 1; }
+  .skip-rules-banner .srb-text strong { color: var(--gold); }
+  .skip-rules-banner .srb-skip {
+    flex-shrink: 0; background: none; border: 1px solid rgba(200,95,0,0.5);
+    border-radius: 5px; color: var(--gold); font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em;
+    padding: 0.25rem 0.6rem; cursor: pointer; transition: all 0.15s;
+  }
+  .skip-rules-banner .srb-skip:hover { background: rgba(200,95,0,0.2); border-color: var(--gold); }
+
   @media (max-width: 720px) {
     .manual-pitcher-grid { grid-template-columns: 1fr; }
   }
@@ -1924,6 +1944,7 @@
 </style>
 </head>
 <body>
+  <div id="ghGlobalBanner" style="display:none;position:fixed;top:0;left:0;right:0;z-index:99999;padding:0.6rem 1rem;font-size:0.85rem;line-height:1.5;text-align:center;cursor:pointer;"></div>
 <div class="app">
 
 <!-- HEADER -->
@@ -2355,6 +2376,7 @@
         <div class="setting-item"><label>NegBin Dispersion</label><input type="number" id="sDispersion" value="1.3" min="1.0" max="3.0" step="0.05" oninput="saveV9Settings()"></div>
         <div class="setting-item"><label>Logit k shrinkage</label><input type="number" id="sKShrinkage" value="0.80" min="0.3" max="1.0" step="0.05" oninput="saveV9Settings()"></div>
         <div class="setting-item"><label>Default cap (%)</label><input type="number" id="sDefaultCap" value="68" min="55" max="80" oninput="saveV9Settings()"></div>
+        <div class="setting-item"><label>Min. Edge filtr (%)</label><input type="number" id="sMinEdge" value="3" min="0" max="30" step="0.5" oninput="saveV9Settings(); refreshAllPickEdges();" title="Tipy s edge pod tímto prahem budou označeny varováním"></div>
       </div>
       <div class="debug-toggle">
         <input type="checkbox" id="debugMode" onchange="saveV9Settings()">
@@ -3555,7 +3577,7 @@ function getV9Settings() {
 }
 function getDefaultV9Settings() {
   return { K_SIERA:40, K_KBB:50, K_xFIP:50, K_FIP:60, K_BABIP:100,
-           dispersion:1.3, kShrinkage:0.80, defaultCap:68, debugMode:false };
+           dispersion:1.3, kShrinkage:0.80, defaultCap:68, debugMode:false, minEdge:3 };
 }
 function saveV9Settings() {
   const s = {
@@ -3568,6 +3590,7 @@ function saveV9Settings() {
     kShrinkage:  parseFloat(document.getElementById('sKShrinkage').value)  || 0.80,
     defaultCap:  parseFloat(document.getElementById('sDefaultCap').value)  || 68,
     debugMode:   document.getElementById('debugMode').checked,
+    minEdge:     parseFloat(document.getElementById('sMinEdge').value) ?? 3,
   };
   localStorage.setItem(LS_KEY_V9, JSON.stringify(s));
 }
@@ -3582,6 +3605,7 @@ function loadV9SettingsUI() {
   document.getElementById('sKShrinkage').value  = s.kShrinkage;
   document.getElementById('sDefaultCap').value  = s.defaultCap;
   document.getElementById('debugMode').checked  = s.debugMode || false;
+  document.getElementById('sMinEdge').value     = s.minEdge ?? 3;
 }
 function resetV9Settings() {
   localStorage.removeItem(LS_KEY_V9);
@@ -5253,10 +5277,48 @@ const GH_BRANCH  = 'main';
 const LS_KEY_PAT = 'baseball_gh_pat';
 
 const GH_SYNC_KEYS = [
-  { key: 'baseball_v26_bets',       label: 'Sázkovník' },
-  { key: 'baseball_v26_daily_bets', label: 'Přehled sázek' },
-  { key: 'baseball_v26_picks',      label: 'Tipy dle modelu' },
+  { key: 'baseball_v26_bets',       label: 'Sázkovník',       keyFn: b => `${b.date}|${b.homeTeam}|${b.awayTeam}|${b.tip}` },
+  { key: 'baseball_v26_daily_bets', label: 'Přehled sázek',   keyFn: b => (b.id !== undefined && b.id !== null) ? `id:${b.id}` : `${b.date}|${b.homeTeam}|${b.awayTeam}|${b.tip}` },
+  { key: 'baseball_v26_picks',      label: 'Tipy dle modelu', keyFn: p => (p.id !== undefined && p.id !== null) ? `id:${p.id}` : `${p.date}|${p.homeAbbr}|${p.awayAbbr}` },
 ];
+const LS_KEY_GH_ERR = 'baseball_gh_sync_error';
+
+// ── Sloučení lokálního a vzdáleného pole záznamů podle klíče ──
+// Cíl: nikdy neztratit záznam, který existuje jen na jedné straně.
+// Při kolizi stejného klíče vyhrává lokální verze (nejčerstvější úprava
+// na tomto zařízení), ale nic z druhé strany se nezahodí.
+function ghMergeArrays(remoteArr, localArr, keyFn) {
+  if (!Array.isArray(remoteArr)) remoteArr = [];
+  if (!Array.isArray(localArr)) localArr = [];
+  const map = new Map();
+  remoteArr.forEach(item => { try { map.set(keyFn(item), item); } catch(e) {} });
+  localArr.forEach(item => { try { map.set(keyFn(item), item); } catch(e) {} }); // lokální přepíše shodný klíč
+  return Array.from(map.values());
+}
+
+// ── Globální banner pro viditelné (ne tiché) chyby syncu ──
+function ghSetSyncError(message) {
+  try {
+    localStorage.setItem(LS_KEY_GH_ERR, JSON.stringify({ message, at: new Date().toISOString() }));
+  } catch(e) {}
+  ghRenderBanner();
+}
+function ghClearSyncError() {
+  localStorage.removeItem(LS_KEY_GH_ERR);
+  ghRenderBanner();
+}
+function ghRenderBanner() {
+  const el = document.getElementById('ghGlobalBanner');
+  if (!el) return;
+  let err = null;
+  try { err = JSON.parse(localStorage.getItem(LS_KEY_GH_ERR) || 'null'); } catch(e) {}
+  if (!err) { el.style.display = 'none'; return; }
+  const when = err.at ? new Date(err.at).toLocaleString('cs-CZ') : '';
+  el.setAttribute('style', 'display:block;position:fixed;top:0;left:0;right:0;z-index:99999;padding:0.6rem 1rem;font-size:0.85rem;line-height:1.5;text-align:center;cursor:pointer;background:#4a1414;border-bottom:1px solid #e05;color:#f88;');
+  el.innerHTML = `⚠️ GitHub sync selhal (${when}): ${err.message} — data se ukládají jen lokálně na tomto zařízení. Klikni pro skrytí.`;
+  el.onclick = () => { el.style.display = 'none'; };
+}
+document.addEventListener('DOMContentLoaded', ghRenderBanner);
 
 function ghSavePat() {
   const val = document.getElementById('ghPatInput').value.trim();
@@ -5316,33 +5378,102 @@ async function ghGetFileSha(pat) {
   return data.sha;
 }
 
-async function ghSyncPush() {
-  const pat = ghGetPat();
-  if (!pat) { ghShowMsg('❌ Nejdřív zadej GitHub Personal Access Token výše.', 'err'); return; }
-  ghShowMsg('⏳ Ukládám na GitHub…', 'info');
-  try {
-    const backup = { version: 'v26', savedAt: new Date().toISOString(), data: {} };
-    GH_SYNC_KEYS.forEach(({ key }) => {
-      const raw = localStorage.getItem(key);
-      backup.data[key] = raw ? JSON.parse(raw) : null;
-    });
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(backup, null, 2))));
+// ── Zámek proti souběžným zápisům (ghSyncPush + ghAutoSync by si jinak mohly
+//    „šlápnout na SHA“, když se spustí ve stejnou chvíli) ──
+let _ghPushChain = Promise.resolve();
+
+// Sdílený push helper s retry při SHA konfliktu (409/422 „does not match“).
+// Při konfliktu si znovu stáhne aktuální SHA a zkusí to znovu (max 3×).
+async function ghPushContent(pat, message, content) {
+  const url = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`;
+  let lastErr;
+  for (let attempt = 1; attempt <= 3; attempt++) {
     const sha = await ghGetFileSha(pat);
-    const body = { message: `sync: baseball bets ${new Date().toISOString().slice(0,10)}`, content, branch: GH_BRANCH };
+    const body = { message, content, branch: GH_BRANCH };
     if (sha) body.sha = sha;
-    const res = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
+    const res = await fetch(url, {
       method: 'PUT',
       headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
     });
-    if (!res.ok) { const err = await res.json(); throw new Error(err.message || `HTTP ${res.status}`); }
-    const counts = GH_SYNC_KEYS.map(({ key, label }) => {
-      const raw = localStorage.getItem(key);
-      const arr = raw ? JSON.parse(raw) : [];
-      return `${label}: ${Array.isArray(arr) ? arr.length : '?'}`;
-    }).join(' · ');
-    ghShowMsg(`✅ Uloženo na GitHub · ${new Date().toLocaleTimeString('cs-CZ')}<br><span style="font-size:0.78rem;opacity:0.8;">${counts}</span>`, 'ok');
+    if (res.ok) return await res.json();
+    const err = await res.json().catch(() => ({}));
+    const isShaConflict = res.status === 409 || res.status === 422 || /does not match|sha/i.test(err.message || '');
+    lastErr = new Error(err.message || `HTTP ${res.status}`);
+    if (!isShaConflict || attempt === 3) throw lastErr;
+    // Krátká pauza a zkusit znovu s čerstvým SHA
+    await new Promise(r => setTimeout(r, 300 * attempt));
+  }
+  throw lastErr;
+}
+
+// Zařadí push do fronty, aby se dva zápisy (ruční + auto) nikdy nepřekryly.
+function ghQueuePush(pat, message, content) {
+  const run = () => ghPushContent(pat, message, content);
+  const result = _ghPushChain.then(run, run);
+  // Řetěz pokračuje dál i po chybě, ať se fronta nezablokuje
+  _ghPushChain = result.catch(() => {});
+  return result;
+}
+
+// Stáhne aktuální zálohu z GitHubu (nebo null, pokud soubor ještě neexistuje).
+async function ghFetchRemoteBackup(pat) {
+  const url = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}?ref=${GH_BRANCH}`;
+  const res = await fetch(url, {
+    headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json' }
+  });
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+  const meta = await res.json();
+  const backup = JSON.parse(decodeURIComponent(escape(atob(meta.content.replace(/\n/g, '')))));
+  if (!backup.data) throw new Error('Neplatný formát zálohy na GitHubu');
+  return backup;
+}
+
+// Sloučí vzdálenou zálohu s lokálními daty (podle keyFn u každého klíče),
+// uloží sloučený výsledek zpět do localStorage a vrátí ho jako objekt zálohy
+// připravený k pushi. Tím se žádná strana (PC / telefon) nikdy nepřepíše,
+// jen se doplní o to, co ta druhá měla navíc.
+function ghBuildMergedBackup(remoteBackup) {
+  const backup = { version: 'v26', savedAt: new Date().toISOString(), data: {} };
+  const mergedCounts = [];
+  GH_SYNC_KEYS.forEach(({ key, label, keyFn }) => {
+    const rawLocal = localStorage.getItem(key);
+    let local = [];
+    try { local = rawLocal ? JSON.parse(rawLocal) : []; } catch(e) { local = []; }
+    let remote = (remoteBackup && remoteBackup.data && Array.isArray(remoteBackup.data[key])) ? remoteBackup.data[key] : [];
+    let merged;
+    if (Array.isArray(local) && Array.isArray(remote)) {
+      merged = ghMergeArrays(remote, local, keyFn);
+    } else {
+      // Nepolní data (např. null) — lokální má přednost, pokud existuje
+      merged = local !== null && local !== undefined ? local : remote;
+    }
+    backup.data[key] = merged;
+    // Zapiš sloučený výsledek i zpátky do localStorage tohoto zařízení,
+    // ať o nic nepřijde ani ono samo.
+    localStorage.setItem(key, JSON.stringify(merged));
+    mergedCounts.push(`${label}: ${Array.isArray(merged) ? merged.length : '?'}`);
+  });
+  return { backup, mergedCounts };
+}
+
+async function ghSyncPush() {
+  const pat = ghGetPat();
+  if (!pat) { ghShowMsg('❌ Nejdřív zadej GitHub Personal Access Token výše.', 'err'); return; }
+  ghShowMsg('⏳ Slučuji a ukládám na GitHub…', 'info');
+  try {
+    const remoteBackup = await ghFetchRemoteBackup(pat);
+    const { backup, mergedCounts } = ghBuildMergedBackup(remoteBackup);
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(backup, null, 2))));
+    await ghQueuePush(pat, `sync: baseball bets ${new Date().toISOString().slice(0,10)}`, content);
+    if (typeof updateBetCount === 'function') updateBetCount();
+    if (typeof dbRefresh === 'function') dbRefresh();
+    if (typeof evalRefresh === 'function') evalRefresh();
+    ghClearSyncError();
+    ghShowMsg(`✅ Sloučeno a uloženo na GitHub · ${new Date().toLocaleTimeString('cs-CZ')}<br><span style="font-size:0.78rem;opacity:0.8;">${mergedCounts.join(' · ')}</span>`, 'ok');
   } catch(e) {
+    ghSetSyncError(e.message);
     ghShowMsg(`❌ Chyba při ukládání: ${e.message}`, 'err');
   }
 }
@@ -5350,56 +5481,49 @@ async function ghSyncPush() {
 async function ghSyncPull() {
   const pat = ghGetPat();
   if (!pat) { ghShowMsg('❌ Nejdřív zadej GitHub Personal Access Token výše.', 'err'); return; }
-  ghShowMsg('⏳ Načítám z GitHubu…', 'info');
+  ghShowMsg('⏳ Načítám a slučuji z GitHubu…', 'info');
   try {
-    const url = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}?ref=${GH_BRANCH}`;
-    const res = await fetch(url, {
-      headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json' }
-    });
-    if (res.status === 404) {
+    const remoteBackup = await ghFetchRemoteBackup(pat);
+    if (!remoteBackup) {
       ghShowMsg('⚠️ Soubor baseball_bets_sync.json na GitHubu ještě neexistuje. Nejdřív použij ⬆️ Uložit na GitHub.', 'info');
       return;
     }
-    if (!res.ok) throw new Error(`GitHub API ${res.status}`);
-    const meta = await res.json();
-    const backup = JSON.parse(decodeURIComponent(escape(atob(meta.content.replace(/\n/g, '')))));
-    if (!backup.data) throw new Error('Neplatný formát zálohy');
-    let restored = 0;
-    GH_SYNC_KEYS.forEach(({ key }) => {
-      if (backup.data[key] !== undefined && backup.data[key] !== null) {
-        localStorage.setItem(key, JSON.stringify(backup.data[key]));
-        restored++;
-      }
-    });
+    // Sloučit (ne přepsat!) — místní záznamy, které ještě nebyly pushnuté,
+    // se tímhle pullem už nikdy neztratí.
+    const { backup, mergedCounts } = ghBuildMergedBackup(remoteBackup);
+    // Slučovaný výsledek zároveň rovnou pošleme zpět na GitHub, aby vzdálená
+    // kopie obsahovala i to, co mělo jen tohle zařízení lokálně.
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(backup, null, 2))));
+    await ghQueuePush(pat, `sync (pull+merge): ${new Date().toISOString().slice(0,16)}`, content);
     if (typeof updateBetCount === 'function') updateBetCount();
     if (typeof dbRefresh === 'function') dbRefresh();
     if (typeof evalRefresh === 'function') evalRefresh();
-    ghShowMsg(`✅ Načteno z GitHubu · záloha z ${backup.savedAt ? backup.savedAt.slice(0,10) : '?'}<br><span style="font-size:0.78rem;opacity:0.8;">Obnoveno ${restored} datových sad</span>`, 'ok');
+    ghClearSyncError();
+    ghShowMsg(`✅ Načteno a sloučeno z GitHubu · záloha z ${remoteBackup.savedAt ? remoteBackup.savedAt.slice(0,10) : '?'}<br><span style="font-size:0.78rem;opacity:0.8;">${mergedCounts.join(' · ')}</span>`, 'ok');
   } catch(e) {
+    ghSetSyncError(e.message);
     ghShowMsg(`❌ Chyba při načítání: ${e.message}`, 'err');
   }
 }
 
-// Auto-push po každém uložení sázek (tichý, bez alertu)
+// Auto-push po každém uložení sázek. Dřív selhávalo úplně potichu
+// (jen console.warn) — teď při chybě rozsvítí viditelný banner nahoře
+// stránky, ať si toho člověk hned všimne a nemyslí si, že je zálohováno,
+// když ve skutečnosti ne. Zároveň slučuje s remote, aby autosync nikdy
+// neztratil záznamy z jiného zařízení.
 async function ghAutoSync() {
   const pat = ghGetPat();
   if (!pat) return;
   try {
-    const backup = { version: 'v26', savedAt: new Date().toISOString(), data: {} };
-    GH_SYNC_KEYS.forEach(({ key }) => {
-      const raw = localStorage.getItem(key);
-      backup.data[key] = raw ? JSON.parse(raw) : null;
-    });
+    const remoteBackup = await ghFetchRemoteBackup(pat);
+    const { backup } = ghBuildMergedBackup(remoteBackup);
     const content = btoa(unescape(encodeURIComponent(JSON.stringify(backup, null, 2))));
-    const sha = await ghGetFileSha(pat);
-    const body = { message: `autosync: ${new Date().toISOString().slice(0,16)}`, content, branch: GH_BRANCH };
-    if (sha) body.sha = sha;
-    await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`, {
-      method: 'PUT',
-      headers: { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
-      body: JSON.stringify(body),
-    });
-  } catch(e) { console.warn('GitHub autosync selhal:', e.message); }
+    await ghQueuePush(pat, `autosync: ${new Date().toISOString().slice(0,16)}`, content);
+    ghClearSyncError();
+  } catch(e) {
+    console.warn('GitHub autosync selhal:', e.message);
+    ghSetSyncError(e.message);
+  }
 }
 // ─────────────────────────────────────────────
 
@@ -6733,6 +6857,20 @@ function renderDailyPredictionCard(r, container, idx) {
       <div class="dc-bar-wrap"><div class="dc-bar" style="width:${probAstr}%;"></div></div>
       <span style="font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;color:var(--text-dim);letter-spacing:0.05em;">${probAstr}% / ${probBstr}%</span>
     </div>
+    ${(() => {
+      const reasons = [];
+      const awayHand = pitcherHandMap[r.pitcherNameB] || null;
+      const homeHand = pitcherHandMap[r.pitcherNameA] || null;
+      if (awayHand === 'LH') reasons.push(`away pitcher <strong>${r.pitcherNameB}</strong> hází levou (LH) — tip na AWAY historicky −7,13u`);
+      if (homeHand === 'LH') reasons.push(`home pitcher <strong>${r.pitcherNameA}</strong> hází levou (LH) — tip na HOME historicky −9,04u`);
+      const totalRuns = parseFloat(r.res.total);
+      if (!isNaN(totalRuns) && totalRuns < 8) reasons.push(`expected runs <strong>${totalRuns.toFixed(1)}</strong> &lt; 8 — historicky −14,01u`);
+      if (!reasons.length) return '';
+      return `<div class="skip-rules-banner" style="margin:.5rem .4rem 0;">
+        <span class="srb-icon">📊</span>
+        <span class="srb-text"><strong>Doporučení přeskočit:</strong> ${reasons.join(' · ')}</span>
+      </div>`;
+    })()}
   `;
   container.appendChild(card);
 }
@@ -7205,6 +7343,8 @@ function renderPicksCard(r, container, idx) {
   container.appendChild(card);
   // Po vykreslení dopočítej edge display
   refreshPickEdge(idx);
+  // Bod 3: zkontroluj skip pravidla
+  checkSkipRules(idx);
 }
 
 // v22: Přeskočení zápasu — zápas se bude ignorovat při validaci i ukládání
@@ -7255,6 +7395,7 @@ function selectPick(idx, side) {
     info.innerHTML = `Tip: <strong>${side === 'A' ? '🏠 ' + escapeHtml(r.homeAbbr) : '✈️ ' + escapeHtml(r.awayAbbr)}</strong> @ model ${side === 'A' ? oddsAstr : oddsBstr}`;
   }
   refreshPickEdge(idx);
+  checkSkipRules(idx);
   updatePicksValidation();
 }
 
@@ -7444,12 +7585,93 @@ function refreshPickEdge(idx) {
   if (!r || r.error || !sel || !sel.side) { span.textContent = ''; span.className = 'pick-edge-display'; return; }
   const odds = parseFloat(sel.odds);
   if (isNaN(odds) || odds <= 1) { span.textContent = ''; span.className = 'pick-edge-display'; return; }
-  const probModel = sel.side === 'A' ? r.finalProbA : r.finalProbB;
   const fairOdds  = sel.side === 'A' ? r.finalOddsA : r.finalOddsB;
   const edge = ((odds / fairOdds) - 1) * 100;
-  const cls = edge > 0 ? 'positive' : (edge < 0 ? 'negative' : '');
-  span.textContent = `Edge: ${edge >= 0 ? '+' : ''}${edge.toFixed(1)}%`;
-  span.className = `pick-edge-display ${cls}`;
+  const minEdge = getV9Settings().minEdge ?? 3;
+
+  // Vizuální stav karty podle edge filtru
+  const card = document.querySelector(`[data-pick-idx="${idx}"]`);
+  let edgeWarnEl = card ? card.querySelector('[data-edge-warn]') : null;
+
+  if (edge < minEdge) {
+    span.textContent = `Edge: ${edge >= 0 ? '+' : ''}${edge.toFixed(1)}% ⚠️`;
+    span.className = 'pick-edge-display negative';
+    if (card && !edgeWarnEl) {
+      edgeWarnEl = document.createElement('div');
+      edgeWarnEl.setAttribute('data-edge-warn', idx);
+      edgeWarnEl.style.cssText = 'background:rgba(192,16,32,0.10);border:1px solid rgba(192,16,32,0.35);border-radius:6px;padding:0.35rem 0.7rem;font-size:0.78rem;color:#d05050;margin:0 0 0.5rem;display:flex;align-items:center;gap:0.4rem;';
+      edgeWarnEl.innerHTML = `⚠️ Edge <strong>${edge.toFixed(1)}%</strong> je pod nastaveným minimem <strong>${minEdge}%</strong> — zvažte přeskočení tipu`;
+      const controlsDiv = card.querySelector('.pick-controls');
+      if (controlsDiv) controlsDiv.parentNode.insertBefore(edgeWarnEl, controlsDiv);
+    }
+  } else {
+    span.textContent = `Edge: ${edge >= 0 ? '+' : ''}${edge.toFixed(1)}%`;
+    span.className = `pick-edge-display ${edge > 0 ? 'positive' : ''}`;
+    if (edgeWarnEl) edgeWarnEl.remove();
+  }
+}
+
+function refreshAllPickEdges() {
+  _picksResults.forEach((_, idx) => refreshPickEdge(idx));
+}
+
+// ── BOD 3: SKIP PRAVIDLA — away LH pitcher + expected runs < 8 ──
+function checkSkipRules(idx) {
+  const card = document.querySelector(`[data-pick-idx="${idx}"]`);
+  if (!card) return;
+
+  const oldBanner = card.querySelector('[data-skip-rules-banner]');
+  if (oldBanner) oldBanner.remove();
+
+  const r = _picksResults[idx];
+  if (!r || r.error) return;
+
+  const sel = _picksSelections[idx];
+  if (sel && sel.skipped) return;
+
+  const reasons = [];
+
+  // Pravidlo 1: LH pitcher VYBRANÉHO týmu → přeskočit
+  // sel.side === 'A' = vsadili na HOME (pitcherNameA), 'B' = vsadili na AWAY (pitcherNameB)
+  // Bez výběru: zkontroluj oba (zobrazit varování preventivně)
+  const pickedSide = sel ? sel.side : null;
+  const homePitcherHand = pitcherHandMap[r.pitcherNameA] || null;
+  const awayPitcherHand = pitcherHandMap[r.pitcherNameB] || null;
+
+  if (pickedSide === 'A' && homePitcherHand === 'LH') {
+    reasons.push(`pitcher <strong>${r.pitcherNameA}</strong> (váš tým) hází levou (LH) — historicky −9,04u`);
+  } else if (pickedSide === 'B' && awayPitcherHand === 'LH') {
+    reasons.push(`pitcher <strong>${r.pitcherNameB}</strong> (váš tým) hází levou (LH) — historicky −7,13u`);
+  } else if (!pickedSide && (homePitcherHand === 'LH' || awayPitcherHand === 'LH')) {
+    const lhPitcher = homePitcherHand === 'LH' ? r.pitcherNameA : r.pitcherNameB;
+    reasons.push(`pitcher <strong>${lhPitcher}</strong> hází levou (LH) — pokud vsadíš na tento tým, historicky ztrátové`);
+  }
+
+  // Pravidlo 2: Expected total runs < 8
+  const totalRuns = parseFloat(r.res.total);
+  if (!isNaN(totalRuns) && totalRuns < 8) {
+    reasons.push(`expected runs <strong>${totalRuns.toFixed(1)}</strong> &lt; 8 — historicky −14,01u`);
+  }
+
+  if (reasons.length === 0) return;
+
+  const banner = document.createElement('div');
+  banner.className = 'skip-rules-banner';
+  banner.setAttribute('data-skip-rules-banner', idx);
+  banner.innerHTML = `
+    <span class="srb-icon">📊</span>
+    <span class="srb-text">
+      <strong>Doporučení přeskočit:</strong> ${reasons.join(' · ')}
+    </span>
+    <button class="srb-skip" onclick="skipPickGame(${idx})" title="Přeskočit tento zápas">⏭️ Skip</button>
+  `;
+
+  const controls = card.querySelector('.pick-controls');
+  if (controls) {
+    controls.parentNode.insertBefore(banner, controls);
+  } else {
+    card.appendChild(banner);
+  }
 }
 
 function updatePicksValidation() {
