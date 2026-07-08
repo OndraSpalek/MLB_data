@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-08T18:48:02.001Z",
+  "savedAt": "2026-07-08T18:57:03.018Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2416,12 +2416,12 @@
       },
       {
         "id": 1779524721997.7095,
-        "date": "29. 4. 2026",
-        "homeTeam": "Pittsburgh Pirates",
+        "date": "9. 5. 2026",
+        "homeTeam": "San Diego Padres",
         "awayTeam": "St. Louis Cardinals",
         "tip": "St. Louis Cardinals",
-        "prob": "49.2",
-        "odds": "2.03",
+        "prob": "51.9",
+        "odds": "1.93",
         "marketOdds": "2.2",
         "result": "loss",
         "model": "v9",
@@ -3247,26 +3247,13 @@
         "stake": 2
       },
       {
-        "id": 1779524721997.7095,
-        "date": "9. 5. 2026",
-        "homeTeam": "San Diego Padres",
-        "awayTeam": "St. Louis Cardinals",
-        "tip": "St. Louis Cardinals",
-        "prob": "51.9",
-        "odds": "1.93",
-        "marketOdds": "2.2",
-        "result": "loss",
-        "model": "v9",
-        "stake": 2
-      },
-      {
         "id": 1779524721997.4724,
-        "date": "9. 5. 2026",
+        "date": "10. 5. 2026",
         "homeTeam": "San Francisco Giants",
         "awayTeam": "Pittsburgh Pirates",
         "tip": "Pittsburgh Pirates",
-        "prob": "60.2",
-        "odds": "1.66",
+        "prob": "58.6",
+        "odds": "1.71",
         "marketOdds": "1.99",
         "result": "loss",
         "model": "v9",
@@ -3321,19 +3308,6 @@
         "odds": "2.00",
         "marketOdds": "2.33",
         "result": "win",
-        "model": "v9",
-        "stake": 2
-      },
-      {
-        "id": 1779524721997.4724,
-        "date": "10. 5. 2026",
-        "homeTeam": "San Francisco Giants",
-        "awayTeam": "Pittsburgh Pirates",
-        "tip": "Pittsburgh Pirates",
-        "prob": "58.6",
-        "odds": "1.71",
-        "marketOdds": "1.99",
-        "result": "loss",
         "model": "v9",
         "stake": 2
       },
