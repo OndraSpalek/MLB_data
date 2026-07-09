@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-09T19:47:00.195Z",
+  "savedAt": "2026-07-09T19:49:02.018Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -940,6 +940,16 @@
         "tip": "Cleveland Guardians",
         "prob": "54.4",
         "odds": "1.84",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "9. 7. 2026",
+        "homeTeam": "Miami Marlins",
+        "awayTeam": "Seattle Mariners",
+        "tip": "Seattle Mariners",
+        "prob": "56.5",
+        "odds": "1.77",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7143,6 +7153,19 @@
         "odds": "1.84",
         "marketOdds": "",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783626539495.0513,
+        "date": "9. 7. 2026",
+        "homeTeam": "Miami Marlins",
+        "awayTeam": "Seattle Mariners",
+        "tip": "Seattle Mariners",
+        "prob": "56.5",
+        "odds": "1.77",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
