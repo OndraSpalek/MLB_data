@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-09T14:12:14.854Z",
+  "savedAt": "2026-07-09T19:47:00.195Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2416,12 +2416,12 @@
       },
       {
         "id": 1779524721997.7095,
-        "date": "29. 4. 2026",
-        "homeTeam": "Pittsburgh Pirates",
+        "date": "9. 5. 2026",
+        "homeTeam": "San Diego Padres",
         "awayTeam": "St. Louis Cardinals",
         "tip": "St. Louis Cardinals",
-        "prob": "49.2",
-        "odds": "2.03",
+        "prob": "51.9",
+        "odds": "1.93",
         "marketOdds": "2.2",
         "result": "loss",
         "model": "v9",
@@ -3247,26 +3247,13 @@
         "stake": 2
       },
       {
-        "id": 1779524721997.7095,
-        "date": "9. 5. 2026",
-        "homeTeam": "San Diego Padres",
-        "awayTeam": "St. Louis Cardinals",
-        "tip": "St. Louis Cardinals",
-        "prob": "51.9",
-        "odds": "1.93",
-        "marketOdds": "2.2",
-        "result": "loss",
-        "model": "v9",
-        "stake": 2
-      },
-      {
         "id": 1779524721997.4724,
-        "date": "9. 5. 2026",
+        "date": "10. 5. 2026",
         "homeTeam": "San Francisco Giants",
         "awayTeam": "Pittsburgh Pirates",
         "tip": "Pittsburgh Pirates",
-        "prob": "60.2",
-        "odds": "1.66",
+        "prob": "58.6",
+        "odds": "1.71",
         "marketOdds": "1.99",
         "result": "loss",
         "model": "v9",
@@ -3321,19 +3308,6 @@
         "odds": "2.00",
         "marketOdds": "2.33",
         "result": "win",
-        "model": "v9",
-        "stake": 2
-      },
-      {
-        "id": 1779524721997.4724,
-        "date": "10. 5. 2026",
-        "homeTeam": "San Francisco Giants",
-        "awayTeam": "Pittsburgh Pirates",
-        "tip": "Pittsburgh Pirates",
-        "prob": "58.6",
-        "odds": "1.71",
-        "marketOdds": "1.99",
-        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -7090,7 +7064,7 @@
         "prob": "51.0",
         "odds": "1.96",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -7103,7 +7077,7 @@
         "prob": "57.3",
         "odds": "1.75",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -7116,7 +7090,7 @@
         "prob": "51.7",
         "odds": "1.93",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -7129,7 +7103,7 @@
         "prob": "52.0",
         "odds": "1.92",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -7142,7 +7116,7 @@
         "prob": "55.5",
         "odds": "1.80",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -7155,7 +7129,20 @@
         "prob": "50.2",
         "odds": "1.99",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783536481999.0122,
+        "date": "8. 7. 2026",
+        "homeTeam": "Minnesota Twins",
+        "awayTeam": "Cleveland Guardians",
+        "tip": "Cleveland Guardians",
+        "prob": "54.4",
+        "odds": "1.84",
+        "marketOdds": "",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       }
