@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-10T17:39:36.450Z",
+  "savedAt": "2026-07-10T17:41:26.187Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -980,6 +980,36 @@
         "tip": "Washington Nationals",
         "prob": "56.3",
         "odds": "1.78",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "10. 7. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Chicago Cubs",
+        "tip": "Chicago Cubs",
+        "prob": "55.0",
+        "odds": "1.82",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "10. 7. 2026",
+        "homeTeam": "Miami Marlins",
+        "awayTeam": "Cleveland Guardians",
+        "tip": "Cleveland Guardians",
+        "prob": "51.1",
+        "odds": "1.96",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "10. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Houston Astros",
+        "tip": "Texas Rangers",
+        "prob": "51.3",
+        "odds": "1.95",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7233,6 +7263,45 @@
         "tip": "Washington Nationals",
         "prob": "56.3",
         "odds": "1.78",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783705191321.6702,
+        "date": "10. 7. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Chicago Cubs",
+        "tip": "Chicago Cubs",
+        "prob": "55.0",
+        "odds": "1.82",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783705209572.6943,
+        "date": "10. 7. 2026",
+        "homeTeam": "Miami Marlins",
+        "awayTeam": "Cleveland Guardians",
+        "tip": "Cleveland Guardians",
+        "prob": "51.1",
+        "odds": "1.96",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783705285389.3508,
+        "date": "10. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Houston Astros",
+        "tip": "Texas Rangers",
+        "prob": "51.3",
+        "odds": "1.95",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
