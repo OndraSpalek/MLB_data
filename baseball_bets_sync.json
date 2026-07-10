@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-10T17:41:26.187Z",
+  "savedAt": "2026-07-10T17:43:10.729Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1010,6 +1010,16 @@
         "tip": "Texas Rangers",
         "prob": "51.3",
         "odds": "1.95",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "10. 7. 2026",
+        "homeTeam": "St. Louis Cardinals",
+        "awayTeam": "Atlanta Braves",
+        "tip": "St. Louis Cardinals",
+        "prob": "48.4",
+        "odds": "2.07",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7302,6 +7312,19 @@
         "tip": "Texas Rangers",
         "prob": "51.3",
         "odds": "1.95",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783705315674.0088,
+        "date": "10. 7. 2026",
+        "homeTeam": "St. Louis Cardinals",
+        "awayTeam": "Atlanta Braves",
+        "tip": "St. Louis Cardinals",
+        "prob": "48.4",
+        "odds": "2.07",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
