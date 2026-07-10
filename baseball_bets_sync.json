@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-10T17:38:34.652Z",
+  "savedAt": "2026-07-10T17:39:36.450Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -960,6 +960,26 @@
         "tip": "Cincinnati Reds",
         "prob": "45.8",
         "odds": "2.18",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "10. 7. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Detroit Tigers",
+        "prob": "57.2",
+        "odds": "1.75",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "10. 7. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "New York Yankees",
+        "tip": "Washington Nationals",
+        "prob": "56.3",
+        "odds": "1.78",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7189,6 +7209,32 @@
         "odds": "2.18",
         "marketOdds": "",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783705157170.4712,
+        "date": "10. 7. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Detroit Tigers",
+        "prob": "57.2",
+        "odds": "1.75",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783705175752.04,
+        "date": "10. 7. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "New York Yankees",
+        "tip": "Washington Nationals",
+        "prob": "56.3",
+        "odds": "1.78",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
