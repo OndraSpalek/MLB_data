@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-11T07:19:04.065Z",
+  "savedAt": "2026-07-11T07:19:52.759Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1050,6 +1050,46 @@
         "tip": "Detroit Tigers",
         "prob": "48.7",
         "odds": "2.05",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "11. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Houston Astros",
+        "tip": "Texas Rangers",
+        "prob": "57.1",
+        "odds": "1.75",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "11. 7. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Chicago Cubs",
+        "tip": "Chicago Cubs",
+        "prob": "56.3",
+        "odds": "1.78",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "11. 7. 2026",
+        "homeTeam": "St. Louis Cardinals",
+        "awayTeam": "Atlanta Braves",
+        "tip": "St. Louis Cardinals",
+        "prob": "52.8",
+        "odds": "1.89",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "11. 7. 2026",
+        "homeTeam": "San Diego Padres",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Toronto Blue Jays",
+        "prob": "53.8",
+        "odds": "1.86",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7394,6 +7434,58 @@
         "tip": "Detroit Tigers",
         "prob": "48.7",
         "odds": "2.05",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783754356818.147,
+        "date": "11. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Houston Astros",
+        "tip": "Texas Rangers",
+        "prob": "57.1",
+        "odds": "1.75",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783754378111.8916,
+        "date": "11. 7. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Chicago Cubs",
+        "tip": "Chicago Cubs",
+        "prob": "56.3",
+        "odds": "1.78",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783754386035.74,
+        "date": "11. 7. 2026",
+        "homeTeam": "St. Louis Cardinals",
+        "awayTeam": "Atlanta Braves",
+        "tip": "St. Louis Cardinals",
+        "prob": "52.8",
+        "odds": "1.89",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783754392433.1758,
+        "date": "11. 7. 2026",
+        "homeTeam": "San Diego Padres",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Toronto Blue Jays",
+        "prob": "53.8",
+        "odds": "1.86",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
