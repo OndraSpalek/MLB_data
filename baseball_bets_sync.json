@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-11T07:16:40.435Z",
+  "savedAt": "2026-07-11T07:18:14.082Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1020,6 +1020,16 @@
         "tip": "St. Louis Cardinals",
         "prob": "48.4",
         "odds": "2.07",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "11. 7. 2026",
+        "homeTeam": "San Francisco Giants",
+        "awayTeam": "Colorado Rockies",
+        "tip": "Colorado Rockies",
+        "prob": "51.2",
+        "odds": "1.95",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7327,6 +7337,19 @@
         "odds": "2.07",
         "marketOdds": "2.36",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783754293098.7747,
+        "date": "11. 7. 2026",
+        "homeTeam": "San Francisco Giants",
+        "awayTeam": "Colorado Rockies",
+        "tip": "Colorado Rockies",
+        "prob": "51.2",
+        "odds": "1.95",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
