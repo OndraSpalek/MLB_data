@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-12T10:58:56.019Z",
+  "savedAt": "2026-07-12T11:01:12.921Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1100,6 +1100,26 @@
         "tip": "Milwaukee Brewers",
         "prob": "54.9",
         "odds": "1.82",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "12. 7. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "New York Yankees",
+        "tip": "Washington Nationals",
+        "prob": "56.8",
+        "odds": "1.76",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "12. 7. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Detroit Tigers",
+        "prob": "56.6",
+        "odds": "1.77",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7509,6 +7529,32 @@
         "tip": "Milwaukee Brewers",
         "prob": "54.9",
         "odds": "1.82",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783853969599.7117,
+        "date": "12. 7. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "New York Yankees",
+        "tip": "Washington Nationals",
+        "prob": "56.8",
+        "odds": "1.76",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783854071058.263,
+        "date": "12. 7. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Detroit Tigers",
+        "prob": "56.6",
+        "odds": "1.77",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
