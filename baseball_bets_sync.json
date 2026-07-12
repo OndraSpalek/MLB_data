@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-12T10:58:07.881Z",
+  "savedAt": "2026-07-12T10:58:56.019Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1090,6 +1090,16 @@
         "tip": "Toronto Blue Jays",
         "prob": "53.8",
         "odds": "1.86",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "12. 7. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Milwaukee Brewers",
+        "tip": "Milwaukee Brewers",
+        "prob": "54.9",
+        "odds": "1.82",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7488,6 +7498,19 @@
         "odds": "1.86",
         "marketOdds": "",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783853935791.5781,
+        "date": "12. 7. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Milwaukee Brewers",
+        "tip": "Milwaukee Brewers",
+        "prob": "54.9",
+        "odds": "1.82",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
