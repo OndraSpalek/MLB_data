@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-12T11:01:12.921Z",
+  "savedAt": "2026-07-12T11:02:00.470Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1120,6 +1120,16 @@
         "tip": "Detroit Tigers",
         "prob": "56.6",
         "odds": "1.77",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "12. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Houston Astros",
+        "tip": "Texas Rangers",
+        "prob": "58.8",
+        "odds": "1.70",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7555,6 +7565,19 @@
         "tip": "Detroit Tigers",
         "prob": "56.6",
         "odds": "1.77",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1783854119952.1777,
+        "date": "12. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Houston Astros",
+        "tip": "Texas Rangers",
+        "prob": "58.8",
+        "odds": "1.70",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
