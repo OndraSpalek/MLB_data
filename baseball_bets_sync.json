@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-17T07:41:25.881Z",
+  "savedAt": "2026-07-17T07:42:36.956Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1150,6 +1150,36 @@
         "tip": "New York Yankees",
         "prob": "54.9",
         "odds": "1.82",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "17. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "57.2",
+        "odds": "1.75",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "17. 7. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "52.4",
+        "odds": "1.91",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "17. 7. 2026",
+        "homeTeam": "Chicago Cubs",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "52.2",
+        "odds": "1.92",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7624,6 +7654,45 @@
         "tip": "New York Yankees",
         "prob": "54.9",
         "odds": "1.82",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784274105383.8433,
+        "date": "17. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "57.2",
+        "odds": "1.75",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784274127364.4858,
+        "date": "17. 7. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "52.4",
+        "odds": "1.91",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784274156191.5564,
+        "date": "17. 7. 2026",
+        "homeTeam": "Chicago Cubs",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "52.2",
+        "odds": "1.92",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
