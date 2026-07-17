@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-17T07:36:57.836Z",
+  "savedAt": "2026-07-17T07:41:25.881Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1140,6 +1140,16 @@
         "tip": "Toronto Blue Jays",
         "prob": "57.1",
         "odds": "1.75",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "17. 7. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Los Angeles Dodgers",
+        "tip": "New York Yankees",
+        "prob": "54.9",
+        "odds": "1.82",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7603,6 +7613,19 @@
         "odds": "1.75",
         "marketOdds": "",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784274085085.7283,
+        "date": "17. 7. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Los Angeles Dodgers",
+        "tip": "New York Yankees",
+        "prob": "54.9",
+        "odds": "1.82",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
