@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-18T19:35:57.293Z",
+  "savedAt": "2026-07-18T19:36:58.370Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -7806,7 +7806,7 @@
         "prob": "57.5",
         "odds": "1.74",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -17299,7 +17299,7 @@
         "awayAbbr": "PIT",
         "homeFull": "Cleveland Guardians",
         "awayFull": "Pittsburgh Pirates",
-        "gamePk": null,
+        "gamePk": 824414,
         "pitcherHome": "Gavin Williams",
         "pitcherAway": "Jared Jones",
         "pitcherTBD": false,
@@ -17337,11 +17337,11 @@
         "P_model_pick": 0.573,
         "oddsModel_pick": 1.7452006980802794,
         "bookmakerOdds": 2.11,
-        "result": null,
-        "scoreHome": null,
-        "scoreAway": null,
-        "isWin": null,
-        "profit": null,
+        "result": "away",
+        "scoreHome": 1,
+        "scoreAway": 7,
+        "isWin": true,
+        "profit": 1.1099999999999999,
         "modelVersion": "v9",
         "savedAt": "2026-07-18T19:35:52.968Z"
       },
