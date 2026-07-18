@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-18T19:25:23.463Z",
+  "savedAt": "2026-07-18T19:27:36.084Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1200,6 +1200,16 @@
         "tip": "Washington Nationals",
         "prob": "59.8",
         "odds": "1.67",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "18. 7. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Baltimore Orioles",
+        "prob": "56.4",
+        "odds": "1.77",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7741,6 +7751,19 @@
         "odds": "1.67",
         "marketOdds": "",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784402852056.8684,
+        "date": "18. 7. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Baltimore Orioles",
+        "prob": "56.4",
+        "odds": "1.77",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
