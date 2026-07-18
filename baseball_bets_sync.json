@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-18T19:27:36.084Z",
+  "savedAt": "2026-07-18T19:28:47.969Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1210,6 +1210,36 @@
         "tip": "Baltimore Orioles",
         "prob": "56.4",
         "odds": "1.77",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "18. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "57.5",
+        "odds": "1.74",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "18. 7. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Boston Red Sox",
+        "prob": "55.9",
+        "odds": "1.79",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "18. 7. 2026",
+        "homeTeam": "Los Angeles Angels",
+        "awayTeam": "Detroit Tigers",
+        "tip": "Los Angeles Angels",
+        "prob": "48.2",
+        "odds": "2.07",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7762,6 +7792,45 @@
         "tip": "Baltimore Orioles",
         "prob": "56.4",
         "odds": "1.77",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784402860403.9307,
+        "date": "18. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "57.5",
+        "odds": "1.74",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784402881101.6526,
+        "date": "18. 7. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Boston Red Sox",
+        "prob": "55.9",
+        "odds": "1.79",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784402926240.1956,
+        "date": "18. 7. 2026",
+        "homeTeam": "Los Angeles Angels",
+        "awayTeam": "Detroit Tigers",
+        "tip": "Los Angeles Angels",
+        "prob": "48.2",
+        "odds": "2.07",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
