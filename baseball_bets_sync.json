@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-19T06:35:56.988Z",
+  "savedAt": "2026-07-19T06:37:20.050Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1240,6 +1240,16 @@
         "tip": "Los Angeles Angels",
         "prob": "48.2",
         "odds": "2.07",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "19. 7. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "49.3",
+        "odds": "2.03",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7833,6 +7843,19 @@
         "odds": "2.07",
         "marketOdds": "2.62",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784443039175.9307,
+        "date": "19. 7. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "49.3",
+        "odds": "2.03",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
