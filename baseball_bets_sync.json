@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-19T06:37:20.050Z",
+  "savedAt": "2026-07-19T06:38:42.610Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1250,6 +1250,36 @@
         "tip": "Tampa Bay Rays",
         "prob": "49.3",
         "odds": "2.03",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "19. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Cleveland Guardians",
+        "prob": "52.8",
+        "odds": "1.89",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "19. 7. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Baltimore Orioles",
+        "prob": "51.9",
+        "odds": "1.93",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "19. 7. 2026",
+        "homeTeam": "Seattle Mariners",
+        "awayTeam": "San Francisco Giants",
+        "tip": "San Francisco Giants",
+        "prob": "52.8",
+        "odds": "1.89",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7854,6 +7884,45 @@
         "tip": "Tampa Bay Rays",
         "prob": "49.3",
         "odds": "2.03",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784443070081.0337,
+        "date": "19. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Cleveland Guardians",
+        "prob": "52.8",
+        "odds": "1.89",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784443079704.7886,
+        "date": "19. 7. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Baltimore Orioles",
+        "prob": "51.9",
+        "odds": "1.93",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784443121905.1567,
+        "date": "19. 7. 2026",
+        "homeTeam": "Seattle Mariners",
+        "awayTeam": "San Francisco Giants",
+        "tip": "San Francisco Giants",
+        "prob": "52.8",
+        "odds": "1.89",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
