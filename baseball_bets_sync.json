@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-20T08:57:59.314Z",
+  "savedAt": "2026-07-20T08:58:58.422Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1310,6 +1310,56 @@
         "tip": "Tampa Bay Rays",
         "prob": "46.3",
         "odds": "2.16",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "20. 7. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Baltimore Orioles",
+        "prob": "52.2",
+        "odds": "1.92",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "20. 7. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Los Angeles Dodgers",
+        "tip": "Los Angeles Dodgers",
+        "prob": "52.9",
+        "odds": "1.89",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "20. 7. 2026",
+        "homeTeam": "Atlanta Braves",
+        "awayTeam": "San Diego Padres",
+        "tip": "San Diego Padres",
+        "prob": "52.4",
+        "odds": "1.91",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "20. 7. 2026",
+        "homeTeam": "Kansas City Royals",
+        "awayTeam": "San Francisco Giants",
+        "tip": "San Francisco Giants",
+        "prob": "57.3",
+        "odds": "1.75",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "20. 7. 2026",
+        "homeTeam": "Colorado Rockies",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "61.2",
+        "odds": "1.63",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7992,6 +8042,71 @@
         "tip": "Tampa Bay Rays",
         "prob": "46.3",
         "odds": "2.16",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784537886385.9094,
+        "date": "20. 7. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Baltimore Orioles",
+        "prob": "52.2",
+        "odds": "1.92",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784537894031.1838,
+        "date": "20. 7. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Los Angeles Dodgers",
+        "tip": "Los Angeles Dodgers",
+        "prob": "52.9",
+        "odds": "1.89",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784537902659.6772,
+        "date": "20. 7. 2026",
+        "homeTeam": "Atlanta Braves",
+        "awayTeam": "San Diego Padres",
+        "tip": "San Diego Padres",
+        "prob": "52.4",
+        "odds": "1.91",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784537915113.3113,
+        "date": "20. 7. 2026",
+        "homeTeam": "Kansas City Royals",
+        "awayTeam": "San Francisco Giants",
+        "tip": "San Francisco Giants",
+        "prob": "57.3",
+        "odds": "1.75",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784537937988.4612,
+        "date": "20. 7. 2026",
+        "homeTeam": "Colorado Rockies",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "61.2",
+        "odds": "1.63",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
