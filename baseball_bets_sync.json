@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-20T08:57:14.013Z",
+  "savedAt": "2026-07-20T08:57:59.314Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1280,6 +1280,36 @@
         "tip": "San Francisco Giants",
         "prob": "52.8",
         "odds": "1.89",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "20. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "60.0",
+        "odds": "1.67",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "20. 7. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "New York Yankees",
+        "prob": "61.0",
+        "odds": "1.64",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "20. 7. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "46.3",
+        "odds": "2.16",
         "marketOdds": "",
         "model": "v9"
       }
@@ -7925,6 +7955,45 @@
         "odds": "1.89",
         "marketOdds": "",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784537859909.9473,
+        "date": "20. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "60.0",
+        "odds": "1.67",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784537867519.5022,
+        "date": "20. 7. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "New York Yankees",
+        "prob": "61.0",
+        "odds": "1.64",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784537878862.3398,
+        "date": "20. 7. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "46.3",
+        "odds": "2.16",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
