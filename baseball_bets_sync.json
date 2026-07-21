@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-21T09:24:20.403Z",
+  "savedAt": "2026-07-21T09:25:49.876Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1360,6 +1360,16 @@
         "tip": "Washington Nationals",
         "prob": "61.2",
         "odds": "1.63",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "21. 7. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Los Angeles Dodgers",
+        "tip": "Los Angeles Dodgers",
+        "prob": "54.6",
+        "odds": "1.83",
         "marketOdds": "",
         "model": "v9"
       }
@@ -8109,6 +8119,19 @@
         "odds": "1.63",
         "marketOdds": "",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784625948352.0078,
+        "date": "21. 7. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Los Angeles Dodgers",
+        "tip": "Los Angeles Dodgers",
+        "prob": "54.6",
+        "odds": "1.83",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
