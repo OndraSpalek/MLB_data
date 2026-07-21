@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-21T18:50:43.731Z",
+  "savedAt": "2026-07-21T18:55:09.040Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -8024,7 +8024,7 @@
         "tip": "Tampa Bay Rays",
         "prob": "49.3",
         "odds": "2.03",
-        "marketOdds": "",
+        "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -8037,7 +8037,7 @@
         "tip": "Cleveland Guardians",
         "prob": "52.8",
         "odds": "1.89",
-        "marketOdds": "",
+        "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -8050,7 +8050,7 @@
         "tip": "Baltimore Orioles",
         "prob": "51.9",
         "odds": "1.93",
-        "marketOdds": "",
+        "marketOdds": "1.99",
         "result": "win",
         "model": "v9",
         "stake": 2
@@ -8063,7 +8063,7 @@
         "tip": "San Francisco Giants",
         "prob": "52.8",
         "odds": "1.89",
-        "marketOdds": "",
+        "marketOdds": "2.47",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -8076,7 +8076,7 @@
         "tip": "Minnesota Twins",
         "prob": "60.0",
         "odds": "1.67",
-        "marketOdds": "",
+        "marketOdds": "1.86",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -8089,7 +8089,7 @@
         "tip": "New York Yankees",
         "prob": "61.0",
         "odds": "1.64",
-        "marketOdds": "",
+        "marketOdds": "1.86",
         "result": "win",
         "model": "v9",
         "stake": 2
@@ -8102,7 +8102,7 @@
         "tip": "Tampa Bay Rays",
         "prob": "46.3",
         "odds": "2.16",
-        "marketOdds": "",
+        "marketOdds": "2.28",
         "result": "win",
         "model": "v9",
         "stake": 2
@@ -8115,7 +8115,7 @@
         "tip": "Baltimore Orioles",
         "prob": "52.2",
         "odds": "1.92",
-        "marketOdds": "",
+        "marketOdds": "2.22",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -8128,7 +8128,7 @@
         "tip": "Los Angeles Dodgers",
         "prob": "52.9",
         "odds": "1.89",
-        "marketOdds": "",
+        "marketOdds": "2.13",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -8141,7 +8141,7 @@
         "tip": "San Diego Padres",
         "prob": "52.4",
         "odds": "1.91",
-        "marketOdds": "",
+        "marketOdds": "2.23",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -8154,7 +8154,7 @@
         "tip": "San Francisco Giants",
         "prob": "57.3",
         "odds": "1.75",
-        "marketOdds": "",
+        "marketOdds": "2.00",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -8167,7 +8167,7 @@
         "tip": "Washington Nationals",
         "prob": "61.2",
         "odds": "1.63",
-        "marketOdds": "",
+        "marketOdds": "1.83",
         "result": "win",
         "model": "v9",
         "stake": 2
@@ -8180,7 +8180,7 @@
         "tip": "Los Angeles Dodgers",
         "prob": "54.6",
         "odds": "1.83",
-        "marketOdds": "",
+        "marketOdds": "2.14",
         "result": "pending",
         "model": "v9",
         "stake": 2
@@ -8193,7 +8193,7 @@
         "tip": "Pittsburgh Pirates",
         "prob": "55.3",
         "odds": "1.81",
-        "marketOdds": "",
+        "marketOdds": "2.25",
         "result": "pending",
         "model": "v9",
         "stake": 2
@@ -8206,7 +8206,7 @@
         "tip": "Baltimore Orioles",
         "prob": "49.0",
         "odds": "2.04",
-        "marketOdds": "",
+        "marketOdds": "2.15",
         "result": "pending",
         "model": "v9",
         "stake": 2
@@ -8219,7 +8219,7 @@
         "tip": "San Francisco Giants",
         "prob": "53.8",
         "odds": "1.86",
-        "marketOdds": "",
+        "marketOdds": "1.93",
         "result": "pending",
         "model": "v9",
         "stake": 2
@@ -8232,7 +8232,7 @@
         "tip": "New York Mets",
         "prob": "49.7",
         "odds": "2.01",
-        "marketOdds": "",
+        "marketOdds": "2.21",
         "result": "pending",
         "model": "v9",
         "stake": 2
@@ -8245,7 +8245,7 @@
         "tip": "Miami Marlins",
         "prob": "50.5",
         "odds": "1.98",
-        "marketOdds": "",
+        "marketOdds": "2.04",
         "result": "pending",
         "model": "v9",
         "stake": 2
