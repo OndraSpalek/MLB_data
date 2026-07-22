@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-22T14:48:01.432Z",
+  "savedAt": "2026-07-22T14:49:09.206Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1430,6 +1430,36 @@
         "tip": "St. Louis Cardinals",
         "prob": "50.0",
         "odds": "2.00",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "22. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "51.8",
+        "odds": "1.93",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "22. 7. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "53.3",
+        "odds": "1.88",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "22. 7. 2026",
+        "homeTeam": "Atlanta Braves",
+        "awayTeam": "San Diego Padres",
+        "tip": "Atlanta Braves",
+        "prob": "58.6",
+        "odds": "1.71",
         "marketOdds": "",
         "model": "v9"
       }
@@ -8268,6 +8298,45 @@
         "tip": "St. Louis Cardinals",
         "prob": "50.0",
         "odds": "2.00",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784731690425.63,
+        "date": "22. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "51.8",
+        "odds": "1.93",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784731702061.3323,
+        "date": "22. 7. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "53.3",
+        "odds": "1.88",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784731747965.7563,
+        "date": "22. 7. 2026",
+        "homeTeam": "Atlanta Braves",
+        "awayTeam": "San Diego Padres",
+        "tip": "Atlanta Braves",
+        "prob": "58.6",
+        "odds": "1.71",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
