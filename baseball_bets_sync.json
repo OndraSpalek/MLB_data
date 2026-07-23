@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-23T11:12:34.639Z",
+  "savedAt": "2026-07-23T11:18:04.093Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1460,6 +1460,16 @@
         "tip": "Atlanta Braves",
         "prob": "58.6",
         "odds": "1.71",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "23. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "51.7",
+        "odds": "1.93",
         "marketOdds": "",
         "model": "v9"
       }
@@ -8339,6 +8349,19 @@
         "odds": "1.71",
         "marketOdds": "",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784805483088.6196,
+        "date": "23. 7. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "51.7",
+        "odds": "1.93",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
