@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-23T11:18:04.093Z",
+  "savedAt": "2026-07-24T07:48:01.896Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1470,6 +1470,16 @@
         "tip": "Minnesota Twins",
         "prob": "51.7",
         "odds": "1.93",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "23. 7. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "57.6",
+        "odds": "1.74",
         "marketOdds": "",
         "model": "v9"
       }
@@ -8361,7 +8371,20 @@
         "prob": "51.7",
         "odds": "1.93",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784805490970.5398,
+        "date": "23. 7. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "57.6",
+        "odds": "1.74",
+        "marketOdds": "",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       }
