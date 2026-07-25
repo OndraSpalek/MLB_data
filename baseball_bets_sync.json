@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-25T07:01:16.601Z",
+  "savedAt": "2026-07-25T07:02:17.364Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1500,6 +1500,16 @@
         "tip": "Texas Rangers",
         "prob": "54.6",
         "odds": "1.83",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "25. 7. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Toronto Blue Jays",
+        "prob": "52.8",
+        "odds": "1.89",
         "marketOdds": "",
         "model": "v9"
       }
@@ -8431,6 +8441,19 @@
         "odds": "1.83",
         "marketOdds": "",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784962936500.9202,
+        "date": "25. 7. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Toronto Blue Jays",
+        "prob": "52.8",
+        "odds": "1.89",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
