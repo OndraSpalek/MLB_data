@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-24T07:49:48.821Z",
+  "savedAt": "2026-07-25T07:01:16.601Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1490,6 +1490,16 @@
         "tip": "Athletics",
         "prob": "52.8",
         "odds": "1.89",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "24. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Seattle Mariners",
+        "tip": "Texas Rangers",
+        "prob": "54.6",
+        "odds": "1.83",
         "marketOdds": "",
         "model": "v9"
       }
@@ -8407,7 +8417,20 @@
         "prob": "52.8",
         "odds": "1.89",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1784879391807.921,
+        "date": "24. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Seattle Mariners",
+        "tip": "Texas Rangers",
+        "prob": "54.6",
+        "odds": "1.83",
+        "marketOdds": "",
+        "result": "win",
         "model": "v9",
         "stake": 2
       }
