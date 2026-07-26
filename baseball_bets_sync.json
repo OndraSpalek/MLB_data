@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-26T07:47:31.337Z",
+  "savedAt": "2026-07-26T07:53:16.924Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1620,6 +1620,26 @@
         "tip": "Seattle Mariners",
         "prob": "51.2",
         "odds": "1.95",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "26. 7. 2026",
+        "homeTeam": "San Francisco Giants",
+        "awayTeam": "Los Angeles Angels",
+        "tip": "Los Angeles Angels",
+        "prob": "54.9",
+        "odds": "1.82",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "26. 7. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Chicago Cubs",
+        "tip": "Pittsburgh Pirates",
+        "prob": "57.1",
+        "odds": "1.75",
         "marketOdds": "",
         "model": "v9"
       }
@@ -8705,6 +8725,32 @@
         "tip": "Seattle Mariners",
         "prob": "51.2",
         "odds": "1.95",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785052059572.4854,
+        "date": "26. 7. 2026",
+        "homeTeam": "San Francisco Giants",
+        "awayTeam": "Los Angeles Angels",
+        "tip": "Los Angeles Angels",
+        "prob": "54.9",
+        "odds": "1.82",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785052086202.3887,
+        "date": "26. 7. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Chicago Cubs",
+        "tip": "Pittsburgh Pirates",
+        "prob": "57.1",
+        "odds": "1.75",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
