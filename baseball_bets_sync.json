@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-26T07:42:33.615Z",
+  "savedAt": "2026-07-26T07:45:44.590Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1560,6 +1560,16 @@
         "tip": "Seattle Mariners",
         "prob": "55.3",
         "odds": "1.81",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "26. 7. 2026",
+        "homeTeam": "Baltimore Orioles",
+        "awayTeam": "Atlanta Braves",
+        "tip": "Baltimore Orioles",
+        "prob": "56.8",
+        "odds": "1.76",
         "marketOdds": "",
         "model": "v9"
       }
@@ -8569,6 +8579,19 @@
         "odds": "1.81",
         "marketOdds": "",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785051943206.2466,
+        "date": "26. 7. 2026",
+        "homeTeam": "Baltimore Orioles",
+        "awayTeam": "Atlanta Braves",
+        "tip": "Baltimore Orioles",
+        "prob": "56.8",
+        "odds": "1.76",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
