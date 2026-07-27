@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-27T17:14:12.115Z",
+  "savedAt": "2026-07-27T17:18:41.474Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1640,6 +1640,16 @@
         "tip": "Pittsburgh Pirates",
         "prob": "57.1",
         "odds": "1.75",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "27. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Seattle Mariners",
+        "tip": "Seattle Mariners",
+        "prob": "55.5",
+        "odds": "1.80",
         "marketOdds": "",
         "model": "v9"
       }
@@ -8753,6 +8763,19 @@
         "odds": "1.75",
         "marketOdds": "2.42",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785172720314.5554,
+        "date": "27. 7. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Seattle Mariners",
+        "tip": "Seattle Mariners",
+        "prob": "55.5",
+        "odds": "1.80",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
