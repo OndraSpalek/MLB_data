@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-28T11:28:05.683Z",
+  "savedAt": "2026-07-28T11:31:01.314Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1719,6 +1719,16 @@
         "awayTeam": "Milwaukee Brewers",
         "tip": "San Francisco Giants",
         "prob": "51.2",
+        "odds": "1.95",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "28. 7. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Baltimore Orioles",
+        "prob": "51.3",
         "odds": "1.95",
         "marketOdds": "",
         "model": "v9"
@@ -8937,6 +8947,19 @@
         "odds": "1.95",
         "marketOdds": "",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785238260408.2607,
+        "date": "28. 7. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Baltimore Orioles",
+        "prob": "51.3",
+        "odds": "1.95",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
