@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-29T12:42:32.005Z",
+  "savedAt": "2026-07-29T12:44:54.725Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1780,6 +1780,36 @@
         "tip": "Miami Marlins",
         "prob": "52.9",
         "odds": "1.89",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "29. 7. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Arizona Diamondbacks",
+        "tip": "Pittsburgh Pirates",
+        "prob": "60.5",
+        "odds": "1.65",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "29. 7. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Washington Nationals",
+        "prob": "52.9",
+        "odds": "1.89",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "29. 7. 2026",
+        "homeTeam": "San Francisco Giants",
+        "awayTeam": "Milwaukee Brewers",
+        "tip": "Milwaukee Brewers",
+        "prob": "59.1",
+        "odds": "1.69",
         "marketOdds": "",
         "model": "v9"
       }
@@ -9073,6 +9103,45 @@
         "tip": "Miami Marlins",
         "prob": "52.9",
         "odds": "1.89",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785328981049.0723,
+        "date": "29. 7. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Arizona Diamondbacks",
+        "tip": "Pittsburgh Pirates",
+        "prob": "60.5",
+        "odds": "1.65",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785328987376.2793,
+        "date": "29. 7. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Washington Nationals",
+        "prob": "52.9",
+        "odds": "1.89",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785329093869.788,
+        "date": "29. 7. 2026",
+        "homeTeam": "San Francisco Giants",
+        "awayTeam": "Milwaukee Brewers",
+        "tip": "Milwaukee Brewers",
+        "prob": "59.1",
+        "odds": "1.69",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
