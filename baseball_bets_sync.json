@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-30T07:48:50.787Z",
+  "savedAt": "2026-07-30T07:51:12.777Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1840,6 +1840,16 @@
         "tip": "Chicago White Sox",
         "prob": "51.3",
         "odds": "1.95",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "30. 7. 2026",
+        "homeTeam": "St. Louis Cardinals",
+        "awayTeam": "Chicago Cubs",
+        "tip": "Chicago Cubs",
+        "prob": "52.7",
+        "odds": "1.90",
         "marketOdds": "",
         "model": "v9"
       }
@@ -9213,6 +9223,19 @@
         "odds": "1.95",
         "marketOdds": "2.21",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785397871653.8325,
+        "date": "30. 7. 2026",
+        "homeTeam": "St. Louis Cardinals",
+        "awayTeam": "Chicago Cubs",
+        "tip": "Chicago Cubs",
+        "prob": "52.7",
+        "odds": "1.90",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
