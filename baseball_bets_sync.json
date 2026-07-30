@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-30T07:46:50.269Z",
+  "savedAt": "2026-07-30T07:48:07.872Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -9146,8 +9146,8 @@
         "tip": "Pittsburgh Pirates",
         "prob": "60.5",
         "odds": "1.65",
-        "marketOdds": "",
-        "result": "pending",
+        "marketOdds": "1.77",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
