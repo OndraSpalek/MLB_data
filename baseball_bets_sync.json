@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-07-30T07:51:12.777Z",
+  "savedAt": "2026-07-30T07:51:49.419Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1850,6 +1850,36 @@
         "tip": "Chicago Cubs",
         "prob": "52.7",
         "odds": "1.90",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "30. 7. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "61.0",
+        "odds": "1.64",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "30. 7. 2026",
+        "homeTeam": "New York Mets",
+        "awayTeam": "Miami Marlins",
+        "tip": "Miami Marlins",
+        "prob": "51.0",
+        "odds": "1.96",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "30. 7. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Boston Red Sox",
+        "tip": "Athletics",
+        "prob": "54.7",
+        "odds": "1.83",
         "marketOdds": "",
         "model": "v9"
       }
@@ -9234,6 +9264,45 @@
         "tip": "Chicago Cubs",
         "prob": "52.7",
         "odds": "1.90",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785397874669.9958,
+        "date": "30. 7. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "61.0",
+        "odds": "1.64",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785397884606.47,
+        "date": "30. 7. 2026",
+        "homeTeam": "New York Mets",
+        "awayTeam": "Miami Marlins",
+        "tip": "Miami Marlins",
+        "prob": "51.0",
+        "odds": "1.96",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785397909228.658,
+        "date": "30. 7. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Boston Red Sox",
+        "tip": "Athletics",
+        "prob": "54.7",
+        "odds": "1.83",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
