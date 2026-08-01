@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-01T19:28:05.798Z",
+  "savedAt": "2026-08-01T19:28:50.230Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1920,6 +1920,36 @@
         "tip": "Minnesota Twins",
         "prob": "52.3",
         "odds": "1.91",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "1. 8. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "56.3",
+        "odds": "1.78",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "1. 8. 2026",
+        "homeTeam": "Baltimore Orioles",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Baltimore Orioles",
+        "prob": "51.1",
+        "odds": "1.96",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "1. 8. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Texas Rangers",
+        "tip": "Texas Rangers",
+        "prob": "56.5",
+        "odds": "1.77",
         "marketOdds": "",
         "model": "v9"
       }
@@ -9395,6 +9425,45 @@
         "tip": "Minnesota Twins",
         "prob": "52.3",
         "odds": "1.91",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785612519784.7693,
+        "date": "1. 8. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "56.3",
+        "odds": "1.78",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785612520724.8323,
+        "date": "1. 8. 2026",
+        "homeTeam": "Baltimore Orioles",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Baltimore Orioles",
+        "prob": "51.1",
+        "odds": "1.96",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785612529529.4927,
+        "date": "1. 8. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Texas Rangers",
+        "tip": "Texas Rangers",
+        "prob": "56.5",
+        "odds": "1.77",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
