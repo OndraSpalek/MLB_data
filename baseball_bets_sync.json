@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-01T19:27:33.550Z",
+  "savedAt": "2026-08-01T19:28:05.798Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -1910,6 +1910,16 @@
         "tip": "Washington Nationals",
         "prob": "57.4",
         "odds": "1.74",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "1. 8. 2026",
+        "homeTeam": "Seattle Mariners",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "52.3",
+        "odds": "1.91",
         "marketOdds": "",
         "model": "v9"
       }
@@ -9374,6 +9384,19 @@
         "odds": "1.74",
         "marketOdds": "",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785612485554.975,
+        "date": "1. 8. 2026",
+        "homeTeam": "Seattle Mariners",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "52.3",
+        "odds": "1.91",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
