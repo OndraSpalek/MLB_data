@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-03T08:38:17.581Z",
+  "savedAt": "2026-08-03T08:39:19.815Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2030,6 +2030,16 @@
         "tip": "Pittsburgh Pirates",
         "prob": "51.8",
         "odds": "1.93",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "3. 8. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Houston Astros",
+        "prob": "58.5",
+        "odds": "1.71",
         "marketOdds": "",
         "model": "v9"
       }
@@ -9648,6 +9658,19 @@
         "tip": "Pittsburgh Pirates",
         "prob": "51.8",
         "odds": "1.93",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785746358974.6038,
+        "date": "3. 8. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Houston Astros",
+        "prob": "58.5",
+        "odds": "1.71",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
