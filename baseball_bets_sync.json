@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-03T08:35:56.734Z",
+  "savedAt": "2026-08-03T08:38:17.581Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2020,6 +2020,16 @@
         "tip": "San Francisco Giants",
         "prob": "50.7",
         "odds": "1.97",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "3. 8. 2026",
+        "homeTeam": "Milwaukee Brewers",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "51.8",
+        "odds": "1.93",
         "marketOdds": "",
         "model": "v9"
       }
@@ -9627,6 +9637,19 @@
         "odds": "1.97",
         "marketOdds": "2.25",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785746296490.177,
+        "date": "3. 8. 2026",
+        "homeTeam": "Milwaukee Brewers",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "51.8",
+        "odds": "1.93",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
