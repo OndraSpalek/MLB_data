@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-03T08:39:19.815Z",
+  "savedAt": "2026-08-03T09:12:22.023Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -6941,7 +6941,7 @@
         "tip": "Baltimore Orioles",
         "prob": "57.1",
         "odds": "1.75",
-        "marketOdds": "1:83",
+        "marketOdds": "1.83",
         "result": "loss",
         "model": "v9",
         "stake": 2
