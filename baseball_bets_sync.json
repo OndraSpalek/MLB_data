@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-03T08:35:00.056Z",
+  "savedAt": "2026-08-03T08:35:56.734Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -9469,7 +9469,7 @@
         "tip": "Miami Marlins",
         "prob": "52.3",
         "odds": "1.91",
-        "marketOdds": "",
+        "marketOdds": "2.08",
         "result": "win",
         "model": "v9",
         "stake": 2
