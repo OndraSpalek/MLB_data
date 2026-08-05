@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-05T10:13:05.950Z",
+  "savedAt": "2026-08-05T10:14:06.320Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2050,6 +2050,36 @@
         "tip": "Cleveland Guardians",
         "prob": "55.0",
         "odds": "1.82",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "5. 8. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "54.9",
+        "odds": "1.82",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "5. 8. 2026",
+        "homeTeam": "Atlanta Braves",
+        "awayTeam": "Miami Marlins",
+        "tip": "Miami Marlins",
+        "prob": "55.9",
+        "odds": "1.79",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "5. 8. 2026",
+        "homeTeam": "Milwaukee Brewers",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "50.4",
+        "odds": "1.98",
         "marketOdds": "",
         "model": "v9"
       }
@@ -9694,6 +9724,45 @@
         "tip": "Cleveland Guardians",
         "prob": "55.0",
         "odds": "1.82",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785924799773.5051,
+        "date": "5. 8. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "54.9",
+        "odds": "1.82",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785924837041.806,
+        "date": "5. 8. 2026",
+        "homeTeam": "Atlanta Braves",
+        "awayTeam": "Miami Marlins",
+        "tip": "Miami Marlins",
+        "prob": "55.9",
+        "odds": "1.79",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785924845775.7761,
+        "date": "5. 8. 2026",
+        "homeTeam": "Milwaukee Brewers",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "50.4",
+        "odds": "1.98",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
