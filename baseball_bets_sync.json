@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-05T10:05:32.488Z",
+  "savedAt": "2026-08-05T10:13:05.950Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2040,6 +2040,16 @@
         "tip": "Houston Astros",
         "prob": "58.5",
         "odds": "1.71",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "5. 8. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "New York Mets",
+        "tip": "Cleveland Guardians",
+        "prob": "55.0",
+        "odds": "1.82",
         "marketOdds": "",
         "model": "v9"
       }
@@ -9673,6 +9683,19 @@
         "odds": "1.71",
         "marketOdds": "",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1785924785083.498,
+        "date": "5. 8. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "New York Mets",
+        "tip": "Cleveland Guardians",
+        "prob": "55.0",
+        "odds": "1.82",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
