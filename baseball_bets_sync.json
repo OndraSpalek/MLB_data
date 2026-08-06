@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-06T10:28:06.715Z",
+  "savedAt": "2026-08-06T10:29:13.369Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2080,6 +2080,16 @@
         "tip": "Pittsburgh Pirates",
         "prob": "50.4",
         "odds": "1.98",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "6. 8. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Athletics",
+        "tip": "Athletics",
+        "prob": "55.6",
+        "odds": "1.80",
         "marketOdds": "",
         "model": "v9"
       }
@@ -9765,6 +9775,19 @@
         "odds": "1.98",
         "marketOdds": "",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786012152525.4783,
+        "date": "6. 8. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Athletics",
+        "tip": "Athletics",
+        "prob": "55.6",
+        "odds": "1.80",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
