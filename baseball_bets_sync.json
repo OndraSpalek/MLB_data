@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-06T10:29:13.369Z",
+  "savedAt": "2026-08-06T10:30:02.434Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2090,6 +2090,16 @@
         "tip": "Athletics",
         "prob": "55.6",
         "odds": "1.80",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "6. 8. 2026",
+        "homeTeam": "Kansas City Royals",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "55.0",
+        "odds": "1.82",
         "marketOdds": "",
         "model": "v9"
       }
@@ -9786,6 +9796,19 @@
         "tip": "Athletics",
         "prob": "55.6",
         "odds": "1.80",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786012202141.3413,
+        "date": "6. 8. 2026",
+        "homeTeam": "Kansas City Royals",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "55.0",
+        "odds": "1.82",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
