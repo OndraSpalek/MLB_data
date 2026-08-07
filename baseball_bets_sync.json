@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-07T07:35:28.152Z",
+  "savedAt": "2026-08-07T10:35:55.094Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2100,6 +2100,16 @@
         "tip": "Minnesota Twins",
         "prob": "55.0",
         "odds": "1.82",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "7. 8. 2026",
+        "homeTeam": "Chicago White Sox",
+        "awayTeam": "Cleveland Guardians",
+        "tip": "Chicago White Sox",
+        "prob": "52.2",
+        "odds": "1.92",
         "marketOdds": "",
         "model": "v9"
       }
@@ -9811,6 +9821,19 @@
         "odds": "1.82",
         "marketOdds": "",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786098954102.323,
+        "date": "7. 8. 2026",
+        "homeTeam": "Chicago White Sox",
+        "awayTeam": "Cleveland Guardians",
+        "tip": "Chicago White Sox",
+        "prob": "52.2",
+        "odds": "1.92",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
