@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-08T07:46:38.691Z",
+  "savedAt": "2026-08-08T07:47:12.846Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2110,6 +2110,46 @@
         "tip": "Chicago White Sox",
         "prob": "52.2",
         "odds": "1.92",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "8. 8. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Atlanta Braves",
+        "tip": "New York Yankees",
+        "prob": "55.6",
+        "odds": "1.80",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "8. 8. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Athletics",
+        "tip": "Athletics",
+        "prob": "52.9",
+        "odds": "1.89",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "8. 8. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Toronto Blue Jays",
+        "prob": "54.7",
+        "odds": "1.83",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "8. 8. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "Cincinnati Reds",
+        "tip": "Washington Nationals",
+        "prob": "55.0",
+        "odds": "1.82",
         "marketOdds": "",
         "model": "v9"
       }
@@ -9845,6 +9885,45 @@
         "tip": "New York Yankees",
         "prob": "55.6",
         "odds": "1.80",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786175206958.634,
+        "date": "8. 8. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Athletics",
+        "tip": "Athletics",
+        "prob": "52.9",
+        "odds": "1.89",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786175219673.379,
+        "date": "8. 8. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Toronto Blue Jays",
+        "prob": "54.7",
+        "odds": "1.83",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786175232692.8623,
+        "date": "8. 8. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "Cincinnati Reds",
+        "tip": "Washington Nationals",
+        "prob": "55.0",
+        "odds": "1.82",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
