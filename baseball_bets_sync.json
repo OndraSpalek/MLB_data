@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-08T07:45:14.226Z",
+  "savedAt": "2026-08-08T07:46:38.691Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -9832,6 +9832,19 @@
         "tip": "Chicago White Sox",
         "prob": "52.2",
         "odds": "1.92",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786175197823.4622,
+        "date": "8. 8. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Atlanta Braves",
+        "tip": "New York Yankees",
+        "prob": "55.6",
+        "odds": "1.80",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
