@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-09T08:34:36.652Z",
+  "savedAt": "2026-08-09T08:36:10.522Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2200,6 +2200,16 @@
         "tip": "Washington Nationals",
         "prob": "58.4",
         "odds": "1.71",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "9. 8. 2026",
+        "homeTeam": "San Francisco Giants",
+        "awayTeam": "Detroit Tigers",
+        "tip": "San Francisco Giants",
+        "prob": "50.3",
+        "odds": "1.99",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10039,6 +10049,32 @@
         "tip": "Washington Nationals",
         "prob": "58.4",
         "odds": "1.71",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786264497615.9011,
+        "date": "9. 8. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Toronto Blue Jays",
+        "prob": "48.0",
+        "odds": "2.08",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786264569382.4448,
+        "date": "9. 8. 2026",
+        "homeTeam": "San Francisco Giants",
+        "awayTeam": "Detroit Tigers",
+        "tip": "San Francisco Giants",
+        "prob": "50.3",
+        "odds": "1.99",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
