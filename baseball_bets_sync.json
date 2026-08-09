@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-09T08:33:33.262Z",
+  "savedAt": "2026-08-09T08:34:36.652Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2190,6 +2190,16 @@
         "tip": "Los Angeles Angels",
         "prob": "47.1",
         "odds": "2.12",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "9. 8. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "Cincinnati Reds",
+        "tip": "Washington Nationals",
+        "prob": "58.4",
+        "odds": "1.71",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10018,6 +10028,19 @@
         "odds": "2.12",
         "marketOdds": "2.33",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786264475076.2998,
+        "date": "9. 8. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "Cincinnati Reds",
+        "tip": "Washington Nationals",
+        "prob": "58.4",
+        "odds": "1.71",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
