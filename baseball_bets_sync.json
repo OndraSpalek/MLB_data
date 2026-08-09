@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-08T07:48:04.061Z",
+  "savedAt": "2026-08-09T08:29:44.237Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -9926,7 +9926,7 @@
         "prob": "55.6",
         "odds": "1.80",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -9939,7 +9939,7 @@
         "prob": "52.9",
         "odds": "1.89",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -9952,7 +9952,7 @@
         "prob": "54.7",
         "odds": "1.83",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -9965,7 +9965,7 @@
         "prob": "55.0",
         "odds": "1.82",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -9978,7 +9978,7 @@
         "prob": "51.2",
         "odds": "1.95",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -9991,7 +9991,7 @@
         "prob": "50.4",
         "odds": "1.98",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -10004,7 +10004,7 @@
         "prob": "59.3",
         "odds": "1.69",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -10017,7 +10017,7 @@
         "prob": "47.1",
         "odds": "2.12",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       }
