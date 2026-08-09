@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-09T08:31:06.843Z",
+  "savedAt": "2026-08-09T08:32:20.118Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -9886,7 +9886,7 @@
         "tip": "Athletics",
         "prob": "55.6",
         "odds": "1.80",
-        "marketOdds": "",
+        "marketOdds": "2.35",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -9899,7 +9899,7 @@
         "tip": "Minnesota Twins",
         "prob": "55.0",
         "odds": "1.82",
-        "marketOdds": "",
+        "marketOdds": "2.07",
         "result": "win",
         "model": "v9",
         "stake": 2
@@ -9912,8 +9912,8 @@
         "tip": "Chicago White Sox",
         "prob": "52.2",
         "odds": "1.92",
-        "marketOdds": "",
-        "result": "pending",
+        "marketOdds": "2.21",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
