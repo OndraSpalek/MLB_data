@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-10T10:27:16.620Z",
+  "savedAt": "2026-08-10T10:29:19.714Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2220,6 +2220,16 @@
         "tip": "Toronto Blue Jays",
         "prob": "48.3",
         "odds": "2.07",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "10. 8. 2026",
+        "homeTeam": "Atlanta Braves",
+        "awayTeam": "New York Mets",
+        "tip": "New York Mets",
+        "prob": "48.9",
+        "odds": "2.04",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10087,6 +10097,19 @@
         "odds": "1.99",
         "marketOdds": "",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786357664463.1394,
+        "date": "10. 8. 2026",
+        "homeTeam": "Atlanta Braves",
+        "awayTeam": "New York Mets",
+        "tip": "New York Mets",
+        "prob": "48.9",
+        "odds": "2.04",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
