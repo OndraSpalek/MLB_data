@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-11T07:38:19.950Z",
+  "savedAt": "2026-08-11T07:38:58.704Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2230,6 +2230,26 @@
         "tip": "New York Mets",
         "prob": "48.9",
         "odds": "2.04",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "11. 8. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Cleveland Guardians",
+        "tip": "Detroit Tigers",
+        "prob": "57.6",
+        "odds": "1.74",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "11. 8. 2026",
+        "homeTeam": "Miami Marlins",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Miami Marlins",
+        "prob": "50.0",
+        "odds": "2.00",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10110,6 +10130,32 @@
         "odds": "2.04",
         "marketOdds": "2.26",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786433932620.2764,
+        "date": "11. 8. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Cleveland Guardians",
+        "tip": "Detroit Tigers",
+        "prob": "57.6",
+        "odds": "1.74",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786433938500.1284,
+        "date": "11. 8. 2026",
+        "homeTeam": "Miami Marlins",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Miami Marlins",
+        "prob": "50.0",
+        "odds": "2.00",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
