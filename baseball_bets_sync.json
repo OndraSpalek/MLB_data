@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-12T11:22:55.670Z",
+  "savedAt": "2026-08-14T18:21:29.039Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2300,6 +2300,16 @@
         "tip": "Miami Marlins",
         "prob": "47.5",
         "odds": "2.11",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "12. 8. 2026",
+        "homeTeam": "Miami Marlins",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "52.5",
+        "odds": "1.90",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10270,7 +10280,20 @@
         "prob": "47.5",
         "odds": "2.11",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786533807461.6213,
+        "date": "12. 8. 2026",
+        "homeTeam": "Miami Marlins",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "Pittsburgh Pirates",
+        "prob": "52.5",
+        "odds": "1.90",
+        "marketOdds": "",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       }
