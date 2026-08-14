@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-14T18:23:34.209Z",
+  "savedAt": "2026-08-14T18:24:28.800Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2320,6 +2320,26 @@
         "tip": "Miami Marlins",
         "prob": "55.0",
         "odds": "1.82",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "14. 8. 2026",
+        "homeTeam": "New York Mets",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "53.7",
+        "odds": "1.86",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "14. 8. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Seattle Mariners",
+        "tip": "Houston Astros",
+        "prob": "55.5",
+        "odds": "1.80",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10315,6 +10335,32 @@
         "tip": "Miami Marlins",
         "prob": "55.0",
         "odds": "1.82",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786731844783.275,
+        "date": "14. 8. 2026",
+        "homeTeam": "New York Mets",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "53.7",
+        "odds": "1.86",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786731868387.5046,
+        "date": "14. 8. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Seattle Mariners",
+        "tip": "Houston Astros",
+        "prob": "55.5",
+        "odds": "1.80",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
