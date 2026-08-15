@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-15T11:01:07.076Z",
+  "savedAt": "2026-08-15T11:02:19.199Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2360,6 +2360,16 @@
         "tip": "Colorado Rockies",
         "prob": "53.5",
         "odds": "1.87",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "15. 8. 2026",
+        "homeTeam": "New York Mets",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "56.7",
+        "odds": "1.76",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10409,6 +10419,19 @@
         "odds": "1.87",
         "marketOdds": "2.10",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786791738165.1194,
+        "date": "15. 8. 2026",
+        "homeTeam": "New York Mets",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "56.7",
+        "odds": "1.76",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
