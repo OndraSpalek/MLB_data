@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-14T18:24:28.800Z",
+  "savedAt": "2026-08-15T10:57:08.696Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2340,6 +2340,26 @@
         "tip": "Houston Astros",
         "prob": "55.5",
         "odds": "1.80",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "14. 8. 2026",
+        "homeTeam": "Los Angeles Dodgers",
+        "awayTeam": "Milwaukee Brewers",
+        "tip": "Milwaukee Brewers",
+        "prob": "51.5",
+        "odds": "1.94",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "14. 8. 2026",
+        "homeTeam": "San Francisco Giants",
+        "awayTeam": "Colorado Rockies",
+        "tip": "Colorado Rockies",
+        "prob": "53.5",
+        "odds": "1.87",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10336,7 +10356,7 @@
         "prob": "55.0",
         "odds": "1.82",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -10349,7 +10369,7 @@
         "prob": "53.7",
         "odds": "1.86",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -10362,7 +10382,33 @@
         "prob": "55.5",
         "odds": "1.80",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786731892902.2344,
+        "date": "14. 8. 2026",
+        "homeTeam": "Los Angeles Dodgers",
+        "awayTeam": "Milwaukee Brewers",
+        "tip": "Milwaukee Brewers",
+        "prob": "51.5",
+        "odds": "1.94",
+        "marketOdds": "",
+        "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786731899791.8687,
+        "date": "14. 8. 2026",
+        "homeTeam": "San Francisco Giants",
+        "awayTeam": "Colorado Rockies",
+        "tip": "Colorado Rockies",
+        "prob": "53.5",
+        "odds": "1.87",
+        "marketOdds": "",
+        "result": "win",
         "model": "v9",
         "stake": 2
       }
