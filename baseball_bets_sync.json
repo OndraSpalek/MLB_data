@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-15T10:59:01.679Z",
+  "savedAt": "2026-08-15T11:00:00.916Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -10342,7 +10342,7 @@
         "tip": "Pittsburgh Pirates",
         "prob": "52.5",
         "odds": "1.90",
-        "marketOdds": "",
+        "marketOdds": "2.00",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -10355,7 +10355,7 @@
         "tip": "Miami Marlins",
         "prob": "55.0",
         "odds": "1.82",
-        "marketOdds": "",
+        "marketOdds": "1.99",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -10368,7 +10368,7 @@
         "tip": "Washington Nationals",
         "prob": "53.7",
         "odds": "1.86",
-        "marketOdds": "",
+        "marketOdds": "2.01",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -10381,7 +10381,7 @@
         "tip": "Houston Astros",
         "prob": "55.5",
         "odds": "1.80",
-        "marketOdds": "",
+        "marketOdds": "1.84",
         "result": "win",
         "model": "v9",
         "stake": 2
@@ -10394,7 +10394,7 @@
         "tip": "Milwaukee Brewers",
         "prob": "51.5",
         "odds": "1.94",
-        "marketOdds": "",
+        "marketOdds": "2.51",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -10407,7 +10407,7 @@
         "tip": "Colorado Rockies",
         "prob": "53.5",
         "odds": "1.87",
-        "marketOdds": "",
+        "marketOdds": "2.10",
         "result": "win",
         "model": "v9",
         "stake": 2
