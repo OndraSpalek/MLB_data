@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-16T16:42:41.399Z",
+  "savedAt": "2026-08-16T16:44:51.670Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -10470,7 +10470,7 @@
         "tip": "Washington Nationals",
         "prob": "56.7",
         "odds": "1.76",
-        "marketOdds": "",
+        "marketOdds": "2.17",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -10483,7 +10483,7 @@
         "tip": "Miami Marlins",
         "prob": "53.9",
         "odds": "1.86",
-        "marketOdds": "",
+        "marketOdds": "1.95",
         "result": "win",
         "model": "v9",
         "stake": 2
