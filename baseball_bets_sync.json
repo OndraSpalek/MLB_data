@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-15T11:02:19.199Z",
+  "savedAt": "2026-08-16T16:37:12.785Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2370,6 +2370,16 @@
         "tip": "Washington Nationals",
         "prob": "56.7",
         "odds": "1.76",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "15. 8. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Miami Marlins",
+        "tip": "Miami Marlins",
+        "prob": "53.9",
+        "odds": "1.86",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10431,7 +10441,20 @@
         "prob": "56.7",
         "odds": "1.76",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786791765010.2222,
+        "date": "15. 8. 2026",
+        "homeTeam": "Cincinnati Reds",
+        "awayTeam": "Miami Marlins",
+        "tip": "Miami Marlins",
+        "prob": "53.9",
+        "odds": "1.86",
+        "marketOdds": "",
+        "result": "win",
         "model": "v9",
         "stake": 2
       }
