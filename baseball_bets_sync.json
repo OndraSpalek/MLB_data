@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-16T16:37:12.785Z",
+  "savedAt": "2026-08-16T16:41:19.521Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2380,6 +2380,16 @@
         "tip": "Miami Marlins",
         "prob": "53.9",
         "odds": "1.86",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "16. 8. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "New York Yankees",
+        "tip": "New York Yankees",
+        "prob": "58.1",
+        "odds": "1.72",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10455,6 +10465,19 @@
         "odds": "1.86",
         "marketOdds": "",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1786898478065.5833,
+        "date": "16. 8. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "New York Yankees",
+        "tip": "New York Yankees",
+        "prob": "58.1",
+        "odds": "1.72",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
