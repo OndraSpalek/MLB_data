@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-16T16:44:51.670Z",
+  "savedAt": "2026-08-17T12:22:22.707Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -10496,8 +10496,8 @@
         "tip": "New York Yankees",
         "prob": "58.1",
         "odds": "1.72",
-        "marketOdds": "",
-        "result": "pending",
+        "marketOdds": "2.04",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -10509,8 +10509,8 @@
         "tip": "Washington Nationals",
         "prob": "47.3",
         "odds": "2.11",
-        "marketOdds": "",
-        "result": "pending",
+        "marketOdds": "2.39",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -10522,8 +10522,8 @@
         "tip": "Miami Marlins",
         "prob": "58.7",
         "odds": "1.70",
-        "marketOdds": "",
-        "result": "pending",
+        "marketOdds": "1.82",
+        "result": "win",
         "model": "v9",
         "stake": 2
       }
