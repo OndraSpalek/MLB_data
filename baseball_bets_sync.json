@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-17T12:22:22.707Z",
+  "savedAt": "2026-08-18T19:01:40.139Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2410,6 +2410,16 @@
         "tip": "Miami Marlins",
         "prob": "58.7",
         "odds": "1.70",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "18. 8. 2026",
+        "homeTeam": "Baltimore Orioles",
+        "awayTeam": "New York Yankees",
+        "tip": "Baltimore Orioles",
+        "prob": "52.0",
+        "odds": "1.92",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10524,6 +10534,19 @@
         "odds": "1.70",
         "marketOdds": "1.82",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1787079698984.3994,
+        "date": "18. 8. 2026",
+        "homeTeam": "Baltimore Orioles",
+        "awayTeam": "New York Yankees",
+        "tip": "Baltimore Orioles",
+        "prob": "52.0",
+        "odds": "1.92",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
