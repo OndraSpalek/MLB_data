@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-18T19:01:40.139Z",
+  "savedAt": "2026-08-18T19:02:48.811Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2420,6 +2420,16 @@
         "tip": "Baltimore Orioles",
         "prob": "52.0",
         "odds": "1.92",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "18. 8. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "51.3",
+        "odds": "1.95",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10545,6 +10555,19 @@
         "tip": "Baltimore Orioles",
         "prob": "52.0",
         "odds": "1.92",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1787079767577.6648,
+        "date": "18. 8. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "51.3",
+        "odds": "1.95",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
