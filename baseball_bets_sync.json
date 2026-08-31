@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-08-30T12:31:54.329Z",
+  "savedAt": "2026-08-31T21:19:15.864Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2460,6 +2460,26 @@
         "tip": "Washington Nationals",
         "prob": "56.5",
         "odds": "1.77",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "30. 8. 2026",
+        "homeTeam": "St. Louis Cardinals",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "St. Louis Cardinals",
+        "prob": "53.5",
+        "odds": "1.87",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "30. 8. 2026",
+        "homeTeam": "Los Angeles Angels",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Los Angeles Angels",
+        "prob": "51.9",
+        "odds": "1.93",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10638,7 +10658,33 @@
         "prob": "56.5",
         "odds": "1.77",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788093143208.8203,
+        "date": "30. 8. 2026",
+        "homeTeam": "St. Louis Cardinals",
+        "awayTeam": "Pittsburgh Pirates",
+        "tip": "St. Louis Cardinals",
+        "prob": "53.5",
+        "odds": "1.87",
+        "marketOdds": "",
+        "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788093151909.287,
+        "date": "30. 8. 2026",
+        "homeTeam": "Los Angeles Angels",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Los Angeles Angels",
+        "prob": "51.9",
+        "odds": "1.93",
+        "marketOdds": "",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       }
