@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-02T19:31:27.647Z",
+  "savedAt": "2026-09-02T19:32:33.206Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2530,6 +2530,16 @@
         "tip": "Washington Nationals",
         "prob": "53.0",
         "odds": "1.89",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "2. 9. 2026",
+        "homeTeam": "Los Angeles Angels",
+        "awayTeam": "New York Yankees",
+        "tip": "Los Angeles Angels",
+        "prob": "49.9",
+        "odds": "2.00",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10798,6 +10808,19 @@
         "tip": "Washington Nationals",
         "prob": "53.0",
         "odds": "1.89",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788377549772.199,
+        "date": "2. 9. 2026",
+        "homeTeam": "Los Angeles Angels",
+        "awayTeam": "New York Yankees",
+        "tip": "Los Angeles Angels",
+        "prob": "49.9",
+        "odds": "2.00",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
