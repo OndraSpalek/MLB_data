@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-02T19:28:22.707Z",
+  "savedAt": "2026-09-02T19:31:27.647Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2520,6 +2520,16 @@
         "tip": "Miami Marlins",
         "prob": "51.1",
         "odds": "1.96",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "2. 9. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "Atlanta Braves",
+        "tip": "Washington Nationals",
+        "prob": "53.0",
+        "odds": "1.89",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10777,6 +10787,19 @@
         "odds": "1.96",
         "marketOdds": "",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788377486438.4197,
+        "date": "2. 9. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "Atlanta Braves",
+        "tip": "Washington Nationals",
+        "prob": "53.0",
+        "odds": "1.89",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
