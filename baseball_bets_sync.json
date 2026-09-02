@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-01T20:55:04.347Z",
+  "savedAt": "2026-09-02T19:28:22.707Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2490,6 +2490,36 @@
         "tip": "Minnesota Twins",
         "prob": "55.6",
         "odds": "1.80",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "1. 9. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "Atlanta Braves",
+        "tip": "Washington Nationals",
+        "prob": "52.0",
+        "odds": "1.92",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "1. 9. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Toronto Blue Jays",
+        "prob": "51.0",
+        "odds": "1.96",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "1. 9. 2026",
+        "homeTeam": "Kansas City Royals",
+        "awayTeam": "Miami Marlins",
+        "tip": "Miami Marlins",
+        "prob": "51.1",
+        "odds": "1.96",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10707,7 +10737,46 @@
         "prob": "55.6",
         "odds": "1.80",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788296107888.5535,
+        "date": "1. 9. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "Atlanta Braves",
+        "tip": "Washington Nationals",
+        "prob": "52.0",
+        "odds": "1.92",
+        "marketOdds": "",
+        "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788296120070.4946,
+        "date": "1. 9. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Toronto Blue Jays",
+        "prob": "51.0",
+        "odds": "1.96",
+        "marketOdds": "",
+        "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788296130162.2493,
+        "date": "1. 9. 2026",
+        "homeTeam": "Kansas City Royals",
+        "awayTeam": "Miami Marlins",
+        "tip": "Miami Marlins",
+        "prob": "51.1",
+        "odds": "1.96",
+        "marketOdds": "",
+        "result": "win",
         "model": "v9",
         "stake": 2
       }
