@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-07T17:01:54.403Z",
+  "savedAt": "2026-09-07T17:02:54.884Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2570,6 +2570,26 @@
         "tip": "Athletics",
         "prob": "48.7",
         "odds": "2.05",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "7. 9. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "55.7",
+        "odds": "1.80",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "7. 9. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Los Angeles Angels",
+        "tip": "Los Angeles Angels",
+        "prob": "46.9",
+        "odds": "2.13",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10903,6 +10923,19 @@
         "tip": "Minnesota Twins",
         "prob": "53.3",
         "odds": "1.88",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788800573684.9253,
+        "date": "7. 9. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Los Angeles Angels",
+        "tip": "Los Angeles Angels",
+        "prob": "46.9",
+        "odds": "2.13",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
