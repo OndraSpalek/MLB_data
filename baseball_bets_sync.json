@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-04T10:41:48.632Z",
+  "savedAt": "2026-09-07T17:01:54.403Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -10892,6 +10892,19 @@
         "odds": "2.05",
         "marketOdds": "",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788800511246.7546,
+        "date": "7. 9. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "53.3",
+        "odds": "1.88",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
