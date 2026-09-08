@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-07T17:02:54.884Z",
+  "savedAt": "2026-09-08T17:04:20.920Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2590,6 +2590,16 @@
         "tip": "Los Angeles Angels",
         "prob": "46.9",
         "odds": "2.13",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "7. 9. 2026",
+        "homeTeam": "Milwaukee Brewers",
+        "awayTeam": "Chicago Cubs",
+        "tip": "Chicago Cubs",
+        "prob": "56.8",
+        "odds": "1.76",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10924,7 +10934,7 @@
         "prob": "53.3",
         "odds": "1.88",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -10937,7 +10947,20 @@
         "prob": "46.9",
         "odds": "2.13",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788800590490.7036,
+        "date": "7. 9. 2026",
+        "homeTeam": "Milwaukee Brewers",
+        "awayTeam": "Chicago Cubs",
+        "tip": "Chicago Cubs",
+        "prob": "56.8",
+        "odds": "1.76",
+        "marketOdds": "",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       }
