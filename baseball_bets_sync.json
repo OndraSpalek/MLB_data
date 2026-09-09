@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-09T16:20:19.567Z",
+  "savedAt": "2026-09-09T16:21:04.651Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2640,6 +2640,16 @@
         "tip": "New York Mets",
         "prob": "51.0",
         "odds": "1.96",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "9. 9. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "53.8",
+        "odds": "1.86",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11053,6 +11063,19 @@
         "odds": "1.96",
         "marketOdds": "",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788970864234.3806,
+        "date": "9. 9. 2026",
+        "homeTeam": "Detroit Tigers",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "53.8",
+        "odds": "1.86",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
