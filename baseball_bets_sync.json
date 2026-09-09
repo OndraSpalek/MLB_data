@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-08T17:10:02.016Z",
+  "savedAt": "2026-09-09T16:20:19.567Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2630,6 +2630,16 @@
         "tip": "Houston Astros",
         "prob": "51.9",
         "odds": "1.93",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "8. 9. 2026",
+        "homeTeam": "Miami Marlins",
+        "awayTeam": "New York Mets",
+        "tip": "New York Mets",
+        "prob": "51.0",
+        "odds": "1.96",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11016,7 +11026,7 @@
         "prob": "42.5",
         "odds": "2.35",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -11029,7 +11039,20 @@
         "prob": "51.9",
         "odds": "1.93",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788887411568.762,
+        "date": "8. 9. 2026",
+        "homeTeam": "Miami Marlins",
+        "awayTeam": "New York Mets",
+        "tip": "New York Mets",
+        "prob": "51.0",
+        "odds": "1.96",
+        "marketOdds": "",
+        "result": "win",
         "model": "v9",
         "stake": 2
       }
