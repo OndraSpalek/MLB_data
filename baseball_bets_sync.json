@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-09T16:21:04.651Z",
+  "savedAt": "2026-09-10T16:52:59.049Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2650,6 +2650,26 @@
         "tip": "Minnesota Twins",
         "prob": "53.8",
         "odds": "1.86",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "9. 9. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Athletics",
+        "prob": "58.2",
+        "odds": "1.72",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "9. 9. 2026",
+        "homeTeam": "Seattle Mariners",
+        "awayTeam": "Texas Rangers",
+        "tip": "Texas Rangers",
+        "prob": "48.5",
+        "odds": "2.06",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11075,7 +11095,33 @@
         "prob": "53.8",
         "odds": "1.86",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788970875705.7112,
+        "date": "9. 9. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Athletics",
+        "prob": "58.2",
+        "odds": "1.72",
+        "marketOdds": "",
+        "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1788970908906.187,
+        "date": "9. 9. 2026",
+        "homeTeam": "Seattle Mariners",
+        "awayTeam": "Texas Rangers",
+        "tip": "Texas Rangers",
+        "prob": "48.5",
+        "odds": "2.06",
+        "marketOdds": "",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       }
