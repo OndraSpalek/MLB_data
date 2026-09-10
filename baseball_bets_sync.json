@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-10T16:52:59.049Z",
+  "savedAt": "2026-09-10T16:56:14.118Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2670,6 +2670,16 @@
         "tip": "Texas Rangers",
         "prob": "48.5",
         "odds": "2.06",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "10. 9. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Houston Astros",
+        "tip": "Houston Astros",
+        "prob": "54.8",
+        "odds": "1.82",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11122,6 +11132,19 @@
         "odds": "2.06",
         "marketOdds": "",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789059373084.7341,
+        "date": "10. 9. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Houston Astros",
+        "tip": "Houston Astros",
+        "prob": "54.8",
+        "odds": "1.82",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
