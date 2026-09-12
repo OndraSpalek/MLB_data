@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-10T16:56:14.118Z",
+  "savedAt": "2026-09-12T13:38:32.320Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2680,6 +2680,16 @@
         "tip": "Houston Astros",
         "prob": "54.8",
         "odds": "1.82",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "12. 9. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Toronto Blue Jays",
+        "prob": "54.3",
+        "odds": "1.84",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11143,6 +11153,19 @@
         "tip": "Houston Astros",
         "prob": "54.8",
         "odds": "1.82",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789220311183.8337,
+        "date": "12. 9. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Toronto Blue Jays",
+        "prob": "54.3",
+        "odds": "1.84",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
