@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-13T15:15:31.847Z",
+  "savedAt": "2026-09-13T15:16:23.360Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2710,6 +2710,16 @@
         "tip": "San Francisco Giants",
         "prob": "52.8",
         "odds": "1.89",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "13. 9. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Baltimore Orioles",
+        "prob": "54.1",
+        "odds": "1.85",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11214,6 +11224,19 @@
         "odds": "1.89",
         "marketOdds": "",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789312583040.4739,
+        "date": "13. 9. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Baltimore Orioles",
+        "tip": "Baltimore Orioles",
+        "prob": "54.1",
+        "odds": "1.85",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
