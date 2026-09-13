@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-13T15:16:23.360Z",
+  "savedAt": "2026-09-13T15:17:31.039Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2720,6 +2720,26 @@
         "tip": "Baltimore Orioles",
         "prob": "54.1",
         "odds": "1.85",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "13. 9. 2026",
+        "homeTeam": "Miami Marlins",
+        "awayTeam": "Los Angeles Dodgers",
+        "tip": "Los Angeles Dodgers",
+        "prob": "59.0",
+        "odds": "1.69",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "13. 9. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Seattle Mariners",
+        "tip": "Athletics",
+        "prob": "53.2",
+        "odds": "1.88",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11235,6 +11255,32 @@
         "tip": "Baltimore Orioles",
         "prob": "54.1",
         "odds": "1.85",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789312615835.8252,
+        "date": "13. 9. 2026",
+        "homeTeam": "Miami Marlins",
+        "awayTeam": "Los Angeles Dodgers",
+        "tip": "Los Angeles Dodgers",
+        "prob": "59.0",
+        "odds": "1.69",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789312650830.9429,
+        "date": "13. 9. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Seattle Mariners",
+        "tip": "Athletics",
+        "prob": "53.2",
+        "odds": "1.88",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
