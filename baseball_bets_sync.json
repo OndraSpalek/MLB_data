@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-13T15:17:31.039Z",
+  "savedAt": "2026-09-14T17:07:31.545Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -11256,7 +11256,7 @@
         "prob": "54.1",
         "odds": "1.85",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -11269,7 +11269,7 @@
         "prob": "59.0",
         "odds": "1.69",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -11282,7 +11282,7 @@
         "prob": "53.2",
         "odds": "1.88",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       }
