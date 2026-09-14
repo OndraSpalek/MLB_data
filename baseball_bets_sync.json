@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-14T17:07:31.545Z",
+  "savedAt": "2026-09-14T17:31:25.192Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2740,6 +2740,16 @@
         "tip": "Athletics",
         "prob": "53.2",
         "odds": "1.88",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "14. 9. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Chicago White Sox",
+        "tip": "Chicago White Sox",
+        "prob": "48.5",
+        "odds": "2.06",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11283,6 +11293,19 @@
         "odds": "1.88",
         "marketOdds": "",
         "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789407083433.476,
+        "date": "14. 9. 2026",
+        "homeTeam": "Cleveland Guardians",
+        "awayTeam": "Chicago White Sox",
+        "tip": "Chicago White Sox",
+        "prob": "48.5",
+        "odds": "2.06",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
