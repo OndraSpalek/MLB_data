@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-15T19:26:46.449Z",
+  "savedAt": "2026-09-15T19:31:52.402Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -11396,6 +11396,19 @@
         "tip": "Miami Marlins",
         "prob": "54.0",
         "odds": "1.85",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789500710751.4487,
+        "date": "15. 9. 2026",
+        "homeTeam": "Washington Nationals",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "Philadelphia Phillies",
+        "prob": "45.1",
+        "odds": "2.22",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
