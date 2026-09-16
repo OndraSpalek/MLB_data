@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-16T08:27:20.742Z",
+  "savedAt": "2026-09-16T08:28:17.329Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2850,6 +2850,26 @@
         "tip": "New York Yankees",
         "prob": "56.8",
         "odds": "1.76",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "16. 9. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Detroit Tigers",
+        "tip": "Toronto Blue Jays",
+        "prob": "52.4",
+        "odds": "1.91",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "16. 9. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Milwaukee Brewers",
+        "tip": "Pittsburgh Pirates",
+        "prob": "49.6",
+        "odds": "2.02",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11547,6 +11567,32 @@
         "tip": "New York Yankees",
         "prob": "56.8",
         "odds": "1.76",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789547251138.4734,
+        "date": "16. 9. 2026",
+        "homeTeam": "Toronto Blue Jays",
+        "awayTeam": "Detroit Tigers",
+        "tip": "Toronto Blue Jays",
+        "prob": "52.4",
+        "odds": "1.91",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789547297116.07,
+        "date": "16. 9. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Milwaukee Brewers",
+        "tip": "Pittsburgh Pirates",
+        "prob": "49.6",
+        "odds": "2.02",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
