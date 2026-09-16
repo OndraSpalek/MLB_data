@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-15T19:32:14.539Z",
+  "savedAt": "2026-09-16T08:20:10.940Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2820,6 +2820,26 @@
         "tip": "Minnesota Twins",
         "prob": "47.8",
         "odds": "2.09",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "15. 9. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Boston Red Sox",
+        "tip": "Texas Rangers",
+        "prob": "58.6",
+        "odds": "1.71",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "15. 9. 2026",
+        "homeTeam": "Colorado Rockies",
+        "awayTeam": "San Diego Padres",
+        "tip": "Colorado Rockies",
+        "prob": "50.1",
+        "odds": "2.00",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11440,7 +11460,7 @@
         "prob": "45.1",
         "odds": "2.22",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -11453,7 +11473,7 @@
         "prob": "54.9",
         "odds": "1.82",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -11466,7 +11486,7 @@
         "prob": "50.7",
         "odds": "1.97",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -11479,7 +11499,33 @@
         "prob": "47.8",
         "odds": "2.09",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789500746880.8274,
+        "date": "15. 9. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Boston Red Sox",
+        "tip": "Texas Rangers",
+        "prob": "58.6",
+        "odds": "1.71",
+        "marketOdds": "",
+        "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789500759075.463,
+        "date": "15. 9. 2026",
+        "homeTeam": "Colorado Rockies",
+        "awayTeam": "San Diego Padres",
+        "tip": "Colorado Rockies",
+        "prob": "50.1",
+        "odds": "2.00",
+        "marketOdds": "",
+        "result": "win",
         "model": "v9",
         "stake": 2
       }
