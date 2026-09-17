@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-17T15:41:48.854Z",
+  "savedAt": "2026-09-17T15:42:37.894Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2920,6 +2920,36 @@
         "tip": "Pittsburgh Pirates",
         "prob": "48.8",
         "odds": "2.05",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "17. 9. 2026",
+        "homeTeam": "Tampa Bay Rays",
+        "awayTeam": "Athletics",
+        "tip": "Athletics",
+        "prob": "47.4",
+        "odds": "2.11",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "17. 9. 2026",
+        "homeTeam": "Colorado Rockies",
+        "awayTeam": "San Diego Padres",
+        "tip": "Colorado Rockies",
+        "prob": "48.7",
+        "odds": "2.05",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "17. 9. 2026",
+        "homeTeam": "New York Mets",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "New York Mets",
+        "prob": "54.2",
+        "odds": "1.85",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11708,6 +11738,45 @@
         "tip": "Pittsburgh Pirates",
         "prob": "48.8",
         "odds": "2.05",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789659733713.1904,
+        "date": "17. 9. 2026",
+        "homeTeam": "Tampa Bay Rays",
+        "awayTeam": "Athletics",
+        "tip": "Athletics",
+        "prob": "47.4",
+        "odds": "2.11",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789659747074.2358,
+        "date": "17. 9. 2026",
+        "homeTeam": "Colorado Rockies",
+        "awayTeam": "San Diego Padres",
+        "tip": "Colorado Rockies",
+        "prob": "48.7",
+        "odds": "2.05",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789659757514.3096,
+        "date": "17. 9. 2026",
+        "homeTeam": "New York Mets",
+        "awayTeam": "Philadelphia Phillies",
+        "tip": "New York Mets",
+        "prob": "54.2",
+        "odds": "1.85",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
