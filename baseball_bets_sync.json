@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-17T15:42:37.894Z",
+  "savedAt": "2026-09-18T06:34:58.191Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -10568,7 +10568,7 @@
         "tip": "Pittsburgh Pirates",
         "prob": "51.8",
         "odds": "1.93",
-        "marketOdds": "2.23",
+        "marketOdds": "",
         "result": "win",
         "model": "v9",
         "stake": 2
@@ -10581,7 +10581,7 @@
         "tip": "Houston Astros",
         "prob": "58.5",
         "odds": "1.71",
-        "marketOdds": "1.75",
+        "marketOdds": "",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -10594,7 +10594,7 @@
         "tip": "Cleveland Guardians",
         "prob": "55.0",
         "odds": "1.82",
-        "marketOdds": "1.94",
+        "marketOdds": "",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -10607,7 +10607,7 @@
         "tip": "Washington Nationals",
         "prob": "54.9",
         "odds": "1.82",
-        "marketOdds": "2.44",
+        "marketOdds": "",
         "result": "win",
         "model": "v9",
         "stake": 2
@@ -10620,7 +10620,7 @@
         "tip": "Miami Marlins",
         "prob": "55.9",
         "odds": "1.79",
-        "marketOdds": "2.10",
+        "marketOdds": "",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -10633,7 +10633,7 @@
         "tip": "Pittsburgh Pirates",
         "prob": "50.4",
         "odds": "1.98",
-        "marketOdds": "2.13",
+        "marketOdds": "",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -11648,7 +11648,7 @@
         "prob": "56.8",
         "odds": "1.76",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -11661,7 +11661,7 @@
         "prob": "52.4",
         "odds": "1.91",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -11674,7 +11674,7 @@
         "prob": "49.6",
         "odds": "2.02",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -11687,7 +11687,7 @@
         "prob": "48.7",
         "odds": "2.05",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -11700,7 +11700,7 @@
         "prob": "60.5",
         "odds": "1.65",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -11713,7 +11713,7 @@
         "prob": "56.7",
         "odds": "1.76",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -11726,7 +11726,7 @@
         "prob": "53.3",
         "odds": "1.88",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
