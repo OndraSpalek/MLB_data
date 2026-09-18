@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-18T06:34:58.191Z",
+  "savedAt": "2026-09-18T10:33:31.486Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2950,6 +2950,16 @@
         "tip": "New York Mets",
         "prob": "54.2",
         "odds": "1.85",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "18. 9. 2026",
+        "homeTeam": "Tampa Bay Rays",
+        "awayTeam": "Boston Red Sox",
+        "tip": "Boston Red Sox",
+        "prob": "56.5",
+        "odds": "1.77",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11739,7 +11749,7 @@
         "prob": "48.8",
         "odds": "2.05",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -11752,7 +11762,7 @@
         "prob": "47.4",
         "odds": "2.11",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -11765,7 +11775,7 @@
         "prob": "48.7",
         "odds": "2.05",
         "marketOdds": "",
-        "result": "pending",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       },
@@ -11777,6 +11787,19 @@
         "tip": "New York Mets",
         "prob": "54.2",
         "odds": "1.85",
+        "marketOdds": "",
+        "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789727606037.7458,
+        "date": "18. 9. 2026",
+        "homeTeam": "Tampa Bay Rays",
+        "awayTeam": "Boston Red Sox",
+        "tip": "Boston Red Sox",
+        "prob": "56.5",
+        "odds": "1.77",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
