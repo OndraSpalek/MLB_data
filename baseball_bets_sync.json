@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-19T07:15:53.102Z",
+  "savedAt": "2026-09-19T12:12:24.099Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -3056,7 +3056,8 @@
         "marketOdds": "1.76",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.3076,
@@ -3069,7 +3070,8 @@
         "marketOdds": "2.04",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.8276,
@@ -3082,7 +3084,8 @@
         "marketOdds": "2.44",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.8923,
@@ -3095,7 +3098,8 @@
         "marketOdds": "2.72",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.868,
@@ -3108,7 +3112,8 @@
         "marketOdds": "1.7",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.3193,
@@ -3121,7 +3126,8 @@
         "marketOdds": "2.54",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.326,
@@ -3134,7 +3140,8 @@
         "marketOdds": "1.72",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.7957,
@@ -3147,7 +3154,8 @@
         "marketOdds": "2",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.7146,
@@ -3160,7 +3168,8 @@
         "marketOdds": "1.88",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.8206,
@@ -3173,7 +3182,8 @@
         "marketOdds": "1.76",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.1301,
@@ -3186,7 +3196,8 @@
         "marketOdds": "2",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.4553,
@@ -3199,7 +3210,8 @@
         "marketOdds": "2.19",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.5293,
@@ -3212,7 +3224,8 @@
         "marketOdds": "2.12",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.612,
@@ -3225,7 +3238,8 @@
         "marketOdds": "1.57",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.49,
@@ -3238,7 +3252,8 @@
         "marketOdds": "2.08",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.386,
@@ -3251,7 +3266,8 @@
         "marketOdds": "1.93",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.072,
@@ -3264,7 +3280,8 @@
         "marketOdds": "2.04",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.287,
@@ -3277,7 +3294,8 @@
         "marketOdds": "2.53",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.9077,
@@ -3290,7 +3308,8 @@
         "marketOdds": "2.58",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.831,
@@ -3303,7 +3322,8 @@
         "marketOdds": "1.81",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.4636,
@@ -3316,7 +3336,8 @@
         "marketOdds": "2.04",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.8945,
@@ -3329,7 +3350,8 @@
         "marketOdds": "2.02",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.125,
@@ -3342,7 +3364,8 @@
         "marketOdds": "2.79",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.005,
@@ -3355,7 +3378,8 @@
         "marketOdds": "2.42",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.3975,
@@ -3368,7 +3392,8 @@
         "marketOdds": "1.68",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.8027,
@@ -3381,7 +3406,8 @@
         "marketOdds": "1.62",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.3333,
@@ -3394,7 +3420,8 @@
         "marketOdds": "2.54",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.3584,
@@ -3407,7 +3434,8 @@
         "marketOdds": "1.93",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.6511,
@@ -3420,7 +3448,8 @@
         "marketOdds": "2.2",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.05,
@@ -3433,7 +3462,8 @@
         "marketOdds": "1.64",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.3303,
@@ -3446,7 +3476,8 @@
         "marketOdds": "1.73",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.7073,
@@ -3459,7 +3490,8 @@
         "marketOdds": "1.86",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.158,
@@ -3472,7 +3504,8 @@
         "marketOdds": "1.88",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.5442,
@@ -3485,7 +3518,8 @@
         "marketOdds": "1.96",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.3145,
@@ -3498,7 +3532,8 @@
         "marketOdds": "1.78",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.1091,
@@ -3511,7 +3546,8 @@
         "marketOdds": "1.88",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.5115,
@@ -3524,7 +3560,8 @@
         "marketOdds": "2.11",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.0657,
@@ -3537,7 +3574,8 @@
         "marketOdds": "1.75",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.2156,
@@ -3550,7 +3588,8 @@
         "marketOdds": "1.74",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.389,
@@ -3563,7 +3602,8 @@
         "marketOdds": "1.89",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.8125,
@@ -3576,7 +3616,8 @@
         "marketOdds": "2.14",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.702,
@@ -3589,7 +3630,8 @@
         "marketOdds": "2.29",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.6143,
@@ -3602,7 +3644,8 @@
         "marketOdds": "2.08",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.7405,
@@ -3615,7 +3658,8 @@
         "marketOdds": "1.73",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.9692,
@@ -3628,7 +3672,8 @@
         "marketOdds": "1.76",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.071,
@@ -3641,7 +3686,8 @@
         "marketOdds": "1.86",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.6628,
@@ -3654,7 +3700,8 @@
         "marketOdds": "2.37",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.3494,
@@ -3667,7 +3714,8 @@
         "marketOdds": "1.98",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.9639,
@@ -3680,7 +3728,8 @@
         "marketOdds": "2.13",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.3477,
@@ -3693,7 +3742,8 @@
         "marketOdds": "1.8",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.0264,
@@ -3706,7 +3756,8 @@
         "marketOdds": "2.22",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.037,
@@ -3719,7 +3770,8 @@
         "marketOdds": "1.83",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.1418,
@@ -3732,7 +3784,8 @@
         "marketOdds": "1.89",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.0325,
@@ -3745,7 +3798,8 @@
         "marketOdds": "1.83",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.9368,
@@ -3758,7 +3812,8 @@
         "marketOdds": "1.69",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.8428,
@@ -3771,7 +3826,8 @@
         "marketOdds": "1.82",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.1409,
@@ -3784,7 +3840,8 @@
         "marketOdds": "1.99",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.6658,
@@ -3797,7 +3854,8 @@
         "marketOdds": "1.93",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.7322,
@@ -3810,7 +3868,8 @@
         "marketOdds": "2.21",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.2522,
@@ -3823,7 +3882,8 @@
         "marketOdds": "2.18",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.503,
@@ -3836,7 +3896,8 @@
         "marketOdds": "1.99",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.1543,
@@ -3849,7 +3910,8 @@
         "marketOdds": "1.96",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.9795,
@@ -3862,7 +3924,8 @@
         "marketOdds": "1.85",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.086,
@@ -3875,7 +3938,8 @@
         "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.262,
@@ -3888,7 +3952,8 @@
         "marketOdds": "2.28",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.7861,
@@ -3901,7 +3966,8 @@
         "marketOdds": "1.99",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.3665,
@@ -3914,7 +3980,8 @@
         "marketOdds": "1.93",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.7483,
@@ -3927,7 +3994,8 @@
         "marketOdds": "1.96",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.3315,
@@ -3940,7 +4008,8 @@
         "marketOdds": "2.49",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.3792,
@@ -3953,7 +4022,8 @@
         "marketOdds": "1.85",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721996.8223,
@@ -3966,7 +4036,8 @@
         "marketOdds": "2.11",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.1328,
@@ -3979,7 +4050,8 @@
         "marketOdds": "2.34",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.5176,
@@ -3992,7 +4064,8 @@
         "marketOdds": "2.43",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.579,
@@ -4005,7 +4078,8 @@
         "marketOdds": "2.19",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.813,
@@ -4018,7 +4092,8 @@
         "marketOdds": "1.74",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.6567,
@@ -4031,7 +4106,8 @@
         "marketOdds": "2.18",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.3103,
@@ -4044,7 +4120,8 @@
         "marketOdds": "2.19",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.6067,
@@ -4057,7 +4134,8 @@
         "marketOdds": "2.84",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.759,
@@ -4070,7 +4148,8 @@
         "marketOdds": "2.05",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.3398,
@@ -4083,7 +4162,8 @@
         "marketOdds": "2.11",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.5818,
@@ -4096,7 +4176,8 @@
         "marketOdds": "2.83",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.2422,
@@ -4109,7 +4190,8 @@
         "marketOdds": "2.24",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.681,
@@ -4122,7 +4204,8 @@
         "marketOdds": "1.98",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.4268,
@@ -4135,7 +4218,8 @@
         "marketOdds": "2.1",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.147,
@@ -4148,7 +4232,8 @@
         "marketOdds": "2.22",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.1223,
@@ -4161,7 +4246,8 @@
         "marketOdds": "1.92",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.8892,
@@ -4174,7 +4260,8 @@
         "marketOdds": "2.7",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.594,
@@ -4187,7 +4274,8 @@
         "marketOdds": "1.94",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.748,
@@ -4200,7 +4288,8 @@
         "marketOdds": "2.13",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.6692,
@@ -4213,7 +4302,8 @@
         "marketOdds": "1.8",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.6045,
@@ -4226,7 +4316,8 @@
         "marketOdds": "2.27",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.4521,
@@ -4239,7 +4330,8 @@
         "marketOdds": "1.91",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.6978,
@@ -4252,7 +4344,8 @@
         "marketOdds": "1.71",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.1924,
@@ -4265,7 +4358,8 @@
         "marketOdds": "1.93",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.1624,
@@ -4278,7 +4372,8 @@
         "marketOdds": "2.14",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.4543,
@@ -4291,7 +4386,8 @@
         "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.7012,
@@ -4304,7 +4400,8 @@
         "marketOdds": "2.09",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.1755,
@@ -4317,7 +4414,8 @@
         "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.8098,
@@ -4330,7 +4428,8 @@
         "marketOdds": "2.04",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.7097,
@@ -4343,7 +4442,8 @@
         "marketOdds": "1.77",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.6123,
@@ -4356,7 +4456,8 @@
         "marketOdds": "1.71",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.8162,
@@ -4369,7 +4470,8 @@
         "marketOdds": "2.18",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.8975,
@@ -4382,7 +4484,8 @@
         "marketOdds": "2.49",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.1997,
@@ -4395,7 +4498,8 @@
         "marketOdds": "1.9",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.805,
@@ -4408,7 +4512,8 @@
         "marketOdds": "3.42",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.9026,
@@ -4421,7 +4526,8 @@
         "marketOdds": "2.12",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.13,
@@ -4434,7 +4540,8 @@
         "marketOdds": "2.15",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.3137,
@@ -4447,7 +4554,8 @@
         "marketOdds": "2.5",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.224,
@@ -4460,7 +4568,8 @@
         "marketOdds": "1.84",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.486,
@@ -4473,7 +4582,8 @@
         "marketOdds": "2.03",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.6199,
@@ -4486,7 +4596,8 @@
         "marketOdds": "2.62",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.5496,
@@ -4499,7 +4610,8 @@
         "marketOdds": "2",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.3538,
@@ -4512,7 +4624,8 @@
         "marketOdds": "2.28",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.7095,
@@ -4525,7 +4638,8 @@
         "marketOdds": "2.2",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.924,
@@ -4538,7 +4652,8 @@
         "marketOdds": "2.23",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.3,
@@ -4551,7 +4666,8 @@
         "marketOdds": "2.36",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.7715,
@@ -4564,7 +4680,8 @@
         "marketOdds": "2.03",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.4763,
@@ -4577,7 +4694,8 @@
         "marketOdds": "2.43",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.6377,
@@ -4590,7 +4708,8 @@
         "marketOdds": "2.66",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.7815,
@@ -4603,7 +4722,8 @@
         "marketOdds": "2.07",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.7236,
@@ -4616,7 +4736,8 @@
         "marketOdds": "2.1",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.476,
@@ -4629,7 +4750,8 @@
         "marketOdds": "2",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.7422,
@@ -4642,7 +4764,8 @@
         "marketOdds": "1.76",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.206,
@@ -4655,7 +4778,8 @@
         "marketOdds": "2.15",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.8726,
@@ -4668,7 +4792,8 @@
         "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.5847,
@@ -4681,7 +4806,8 @@
         "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.4053,
@@ -4694,7 +4820,8 @@
         "marketOdds": "1.98",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.014,
@@ -4707,7 +4834,8 @@
         "marketOdds": "2.26",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.8438,
@@ -4720,7 +4848,8 @@
         "marketOdds": "2.15",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.6973,
@@ -4733,7 +4862,8 @@
         "marketOdds": "2.17",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.5713,
@@ -4746,7 +4876,8 @@
         "marketOdds": "1.76",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.7295,
@@ -4759,7 +4890,8 @@
         "marketOdds": "2.16",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.3997,
@@ -4772,7 +4904,8 @@
         "marketOdds": "1.96",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.978,
@@ -4785,7 +4918,8 @@
         "marketOdds": "2.06",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.4353,
@@ -4798,7 +4932,8 @@
         "marketOdds": "2.36",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.9753,
@@ -4811,7 +4946,8 @@
         "marketOdds": "1.93",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.037,
@@ -4824,7 +4960,8 @@
         "marketOdds": "2.37",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.0613,
@@ -4837,7 +4974,8 @@
         "marketOdds": "1.85",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.8352,
@@ -4850,7 +4988,8 @@
         "marketOdds": "2.15",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.0771,
@@ -4863,7 +5002,8 @@
         "marketOdds": "1.86",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.923,
@@ -4876,7 +5016,8 @@
         "marketOdds": "2.83",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.168,
@@ -4889,7 +5030,8 @@
         "marketOdds": "1.96",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.0718,
@@ -4902,7 +5044,8 @@
         "marketOdds": "2.89",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.5015,
@@ -4915,7 +5058,8 @@
         "marketOdds": "1.96",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.9656,
@@ -4928,7 +5072,8 @@
         "marketOdds": "2.6",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.319,
@@ -4941,7 +5086,8 @@
         "marketOdds": "2.25",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.4807,
@@ -4954,7 +5100,8 @@
         "marketOdds": "1.81",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.4302,
@@ -4967,7 +5114,8 @@
         "marketOdds": "1.83",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.7466,
@@ -4980,7 +5128,8 @@
         "marketOdds": "1.92",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.8196,
@@ -4993,7 +5142,8 @@
         "marketOdds": "2.03",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.6492,
@@ -5006,7 +5156,8 @@
         "marketOdds": "2.76",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.3713,
@@ -5019,7 +5170,8 @@
         "marketOdds": "2.34",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.2615,
@@ -5032,7 +5184,8 @@
         "marketOdds": "2.14",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.5608,
@@ -5045,7 +5198,8 @@
         "marketOdds": "2.17",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.166,
@@ -5058,7 +5212,8 @@
         "marketOdds": "1.93",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.9402,
@@ -5071,7 +5226,8 @@
         "marketOdds": "1.89",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.2874,
@@ -5084,7 +5240,8 @@
         "marketOdds": "2.11",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.5662,
@@ -5097,7 +5254,8 @@
         "marketOdds": "1.89",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.43,
@@ -5110,7 +5268,8 @@
         "marketOdds": "2.44",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.6904,
@@ -5123,7 +5282,8 @@
         "marketOdds": "1.89",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.9902,
@@ -5136,7 +5296,8 @@
         "marketOdds": "2",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.6208,
@@ -5149,7 +5310,8 @@
         "marketOdds": "2.12",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.0432,
@@ -5162,7 +5324,8 @@
         "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.2632,
@@ -5175,7 +5338,8 @@
         "marketOdds": "1.98",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.3337,
@@ -5188,7 +5352,8 @@
         "marketOdds": "2.37",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.852,
@@ -5201,7 +5366,8 @@
         "marketOdds": "2.33",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.0862,
@@ -5214,7 +5380,8 @@
         "marketOdds": "2.14",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.5242,
@@ -5227,7 +5394,8 @@
         "marketOdds": "2.22",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.9421,
@@ -5240,7 +5408,8 @@
         "marketOdds": "2.24",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.8403,
@@ -5253,7 +5422,8 @@
         "marketOdds": "2.1",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.3386,
@@ -5266,7 +5436,8 @@
         "marketOdds": "2.35",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.1118,
@@ -5279,7 +5450,8 @@
         "marketOdds": "2.55",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.2393,
@@ -5292,7 +5464,8 @@
         "marketOdds": "2.02",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.802,
@@ -5305,7 +5478,8 @@
         "marketOdds": "2.14",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.5652,
@@ -5318,7 +5492,8 @@
         "marketOdds": "2.13",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.5679,
@@ -5331,7 +5506,8 @@
         "marketOdds": "2.17",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.1003,
@@ -5344,7 +5520,8 @@
         "marketOdds": "2.19",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.4724,
@@ -5357,7 +5534,8 @@
         "marketOdds": "1.99",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.7043,
@@ -5370,7 +5548,8 @@
         "marketOdds": "2.14",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.853,
@@ -5383,7 +5562,8 @@
         "marketOdds": "1.92",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.2078,
@@ -5396,7 +5576,8 @@
         "marketOdds": "2.04",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.3813,
@@ -5409,7 +5590,8 @@
         "marketOdds": "2.33",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.4363,
@@ -5422,7 +5604,8 @@
         "marketOdds": "1.96",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.0225,
@@ -5435,7 +5618,8 @@
         "marketOdds": "2.11",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.7292,
@@ -5448,7 +5632,8 @@
         "marketOdds": "2.13",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.2727,
@@ -5461,7 +5646,8 @@
         "marketOdds": "2.09",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.739,
@@ -5474,7 +5660,8 @@
         "marketOdds": "2.09",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.9639,
@@ -5487,7 +5674,8 @@
         "marketOdds": "1.8",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.7952,
@@ -5500,7 +5688,8 @@
         "marketOdds": "2.19",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.1592,
@@ -5513,7 +5702,8 @@
         "marketOdds": "2.23",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.3613,
@@ -5526,7 +5716,8 @@
         "marketOdds": "2.03",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.9883,
@@ -5539,7 +5730,8 @@
         "marketOdds": "2.23",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.1304,
@@ -5552,7 +5744,8 @@
         "marketOdds": "2.04",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.216,
@@ -5565,7 +5758,8 @@
         "marketOdds": "1.94",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.289,
@@ -5578,7 +5772,8 @@
         "marketOdds": "2.15",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.2659,
@@ -5591,7 +5786,8 @@
         "marketOdds": "2.21",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.4624,
@@ -5604,7 +5800,8 @@
         "marketOdds": "2.22",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.6501,
@@ -5617,7 +5814,8 @@
         "marketOdds": "2.36",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721997.432,
@@ -5630,7 +5828,8 @@
         "marketOdds": "2.12",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.0317,
@@ -5643,7 +5842,8 @@
         "marketOdds": "1.93",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.8425,
@@ -5656,7 +5856,8 @@
         "marketOdds": "1.8",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.87,
@@ -5669,7 +5870,8 @@
         "marketOdds": "2.23",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.563,
@@ -5682,7 +5884,8 @@
         "marketOdds": "2.3",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.0977,
@@ -5695,7 +5898,8 @@
         "marketOdds": "2.39",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.562,
@@ -5708,7 +5912,8 @@
         "marketOdds": "2.13",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.6777,
@@ -5721,7 +5926,8 @@
         "marketOdds": "1.96",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.5273,
@@ -5734,7 +5940,8 @@
         "marketOdds": "2.15",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.5303,
@@ -5747,7 +5954,8 @@
         "marketOdds": "2.09",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.906,
@@ -5760,7 +5968,8 @@
         "marketOdds": "1.66",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.953,
@@ -5773,7 +5982,8 @@
         "marketOdds": "1.67",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.1243,
@@ -5786,7 +5996,8 @@
         "marketOdds": "1.93",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.6448,
@@ -5799,7 +6010,8 @@
         "marketOdds": "2.19",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.4429,
@@ -5812,7 +6024,8 @@
         "marketOdds": "1.91",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.2427,
@@ -5825,7 +6038,8 @@
         "marketOdds": "1.94",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.1462,
@@ -5838,7 +6052,8 @@
         "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.1746,
@@ -5851,7 +6066,8 @@
         "marketOdds": "2.13",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.7922,
@@ -5864,7 +6080,8 @@
         "marketOdds": "2.08",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.996,
@@ -5877,7 +6094,8 @@
         "marketOdds": "2.07",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.698,
@@ -5890,7 +6108,8 @@
         "marketOdds": "1.98",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.8433,
@@ -5903,7 +6122,8 @@
         "marketOdds": "2.01",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.5564,
@@ -5916,7 +6136,8 @@
         "marketOdds": "1.81",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.1296,
@@ -5929,7 +6150,8 @@
         "marketOdds": "1.95",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.0232,
@@ -5942,7 +6164,8 @@
         "marketOdds": "2.17",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.667,
@@ -5955,7 +6178,8 @@
         "marketOdds": "1.94",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.5676,
@@ -5968,7 +6192,8 @@
         "marketOdds": "2",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.2512,
@@ -5981,7 +6206,8 @@
         "marketOdds": "2.27",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.2598,
@@ -5994,7 +6220,8 @@
         "marketOdds": "1.72",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.32,
@@ -6007,7 +6234,8 @@
         "marketOdds": "2.23",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.2554,
@@ -6020,7 +6248,8 @@
         "marketOdds": "2.18",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.8855,
@@ -6033,7 +6262,8 @@
         "marketOdds": "1.91",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.2974,
@@ -6046,7 +6276,8 @@
         "marketOdds": "1.78",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.6428,
@@ -6059,7 +6290,8 @@
         "marketOdds": "2.31",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.9792,
@@ -6072,7 +6304,8 @@
         "marketOdds": "2.12",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.677,
@@ -6085,7 +6318,8 @@
         "marketOdds": "2.09",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.3906,
@@ -6098,7 +6332,8 @@
         "marketOdds": "1.86",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.5,
@@ -6111,7 +6346,8 @@
         "marketOdds": "2",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.0435,
@@ -6124,7 +6360,8 @@
         "marketOdds": "2.49",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.7786,
@@ -6137,7 +6374,8 @@
         "marketOdds": "2.21",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.6252,
@@ -6150,7 +6388,8 @@
         "marketOdds": "2.34",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.861,
@@ -6163,7 +6402,8 @@
         "marketOdds": "2.28",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.838,
@@ -6176,7 +6416,8 @@
         "marketOdds": "2.07",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.6648,
@@ -6189,7 +6430,8 @@
         "marketOdds": "2.11",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.6821,
@@ -6202,7 +6444,8 @@
         "marketOdds": "2.15",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.4385,
@@ -6215,7 +6458,8 @@
         "marketOdds": "1.92",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.1018,
@@ -6228,7 +6472,8 @@
         "marketOdds": "2.36",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.5408,
@@ -6241,7 +6486,8 @@
         "marketOdds": "2.62",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779524721998.4658,
@@ -6254,7 +6500,8 @@
         "marketOdds": "2.12",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779525313256.1658,
@@ -6267,7 +6514,8 @@
         "marketOdds": "1.91",
         "result": "win",
         "model": "0.536",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779563026694.6018,
@@ -6280,7 +6528,8 @@
         "marketOdds": "2.10",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779563026694.535,
@@ -6293,7 +6542,8 @@
         "marketOdds": "1.00",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779563026694.4932,
@@ -6306,7 +6556,8 @@
         "marketOdds": "1.97",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779563026694.0383,
@@ -6319,7 +6570,8 @@
         "marketOdds": "1.86",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779563026694.9277,
@@ -6332,7 +6584,8 @@
         "marketOdds": "1.82",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779563026694.3643,
@@ -6345,7 +6598,8 @@
         "marketOdds": "1.94",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401746.2822,
@@ -6358,7 +6612,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401746.647,
@@ -6371,7 +6626,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401747.6057,
@@ -6384,7 +6640,8 @@
         "marketOdds": "1.88",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401748.4797,
@@ -6397,7 +6654,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401748.7224,
@@ -6410,7 +6668,8 @@
         "marketOdds": "2.05",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401748.8376,
@@ -6423,7 +6682,8 @@
         "marketOdds": "2.20",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401748.1533,
@@ -6436,7 +6696,8 @@
         "marketOdds": "2.50",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401748.339,
@@ -6449,7 +6710,8 @@
         "marketOdds": "1.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401748.986,
@@ -6462,7 +6724,8 @@
         "marketOdds": "1.95",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401748.4036,
@@ -6475,7 +6738,8 @@
         "marketOdds": "1.95",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401748.9634,
@@ -6488,7 +6752,8 @@
         "marketOdds": "2.60",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401749.2595,
@@ -6501,7 +6766,8 @@
         "marketOdds": "2.10",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401749.594,
@@ -6514,7 +6780,8 @@
         "marketOdds": "2.60",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401749.8848,
@@ -6527,7 +6794,8 @@
         "marketOdds": "2.40",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401749.7441,
@@ -6540,7 +6808,8 @@
         "marketOdds": "2.35",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401749.2544,
@@ -6553,7 +6822,8 @@
         "marketOdds": "1.90",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737401749.1924,
@@ -6566,7 +6836,8 @@
         "marketOdds": "1.88",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737402707.802,
@@ -6579,7 +6850,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779737455060.0376,
@@ -6592,7 +6864,8 @@
         "marketOdds": "2.05",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779797839765.6177,
@@ -6605,7 +6878,8 @@
         "marketOdds": "1.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779797839766.3547,
@@ -6618,7 +6892,8 @@
         "marketOdds": "2.13",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779797893058.2598,
@@ -6631,7 +6906,8 @@
         "marketOdds": "1.94",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779798073654.5881,
@@ -6644,7 +6920,8 @@
         "marketOdds": "2.12",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779798083669.4858,
@@ -6657,7 +6934,8 @@
         "marketOdds": "1.97",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779871206257.1555,
@@ -6670,7 +6948,8 @@
         "marketOdds": "1",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779871206257.3906,
@@ -6683,7 +6962,8 @@
         "marketOdds": "1",
         "result": "win",
         "model": "",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779871206258.3376,
@@ -6696,7 +6976,8 @@
         "marketOdds": "1",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779871206258.6458,
@@ -6709,7 +6990,8 @@
         "marketOdds": "1",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779871206258.9106,
@@ -6722,7 +7004,8 @@
         "marketOdds": "1",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779871206259.7485,
@@ -6735,7 +7018,8 @@
         "marketOdds": "2.10",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779871230968.0522,
@@ -6748,7 +7032,8 @@
         "marketOdds": "2.10",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779871263014.4202,
@@ -6761,7 +7046,8 @@
         "marketOdds": "1.88",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779871270798.7603,
@@ -6774,7 +7060,8 @@
         "marketOdds": "1.86",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779871279538.2861,
@@ -6787,7 +7074,8 @@
         "marketOdds": "1.86",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779871305275.5432,
@@ -6800,7 +7088,8 @@
         "marketOdds": "1.82",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779871449476.3472,
@@ -6813,7 +7102,8 @@
         "marketOdds": "2.28",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779955068516.019,
@@ -6826,7 +7116,8 @@
         "marketOdds": "2.20",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1779955077974.7666,
@@ -6839,7 +7130,8 @@
         "marketOdds": "2.08",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780076907323.5537,
@@ -6852,7 +7144,8 @@
         "marketOdds": "1.80",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780076955176.0903,
@@ -6865,7 +7158,8 @@
         "marketOdds": "1.98",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780076963159.478,
@@ -6878,7 +7172,8 @@
         "marketOdds": "1.87",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780076989859.4614,
@@ -6891,7 +7186,8 @@
         "marketOdds": "2.09",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780077018644.1267,
@@ -6904,7 +7200,8 @@
         "marketOdds": "1.98",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780077062855.5254,
@@ -6917,7 +7214,8 @@
         "marketOdds": "2.03",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780077114836.2651,
@@ -6930,7 +7228,8 @@
         "marketOdds": "1.86",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780126349463.5024,
@@ -6943,7 +7242,8 @@
         "marketOdds": "2.22",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780126360924.5693,
@@ -6956,7 +7256,8 @@
         "marketOdds": "1.95",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780126395100.165,
@@ -6969,7 +7270,8 @@
         "marketOdds": "2.30",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780126449146.632,
@@ -6982,7 +7284,8 @@
         "marketOdds": "2.34",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780126535638.4453,
@@ -6995,7 +7298,8 @@
         "marketOdds": "1.89",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780228173428.4238,
@@ -7008,7 +7312,8 @@
         "marketOdds": "2.22",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780228215035.2402,
@@ -7021,7 +7326,8 @@
         "marketOdds": "2.90",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780228241130.222,
@@ -7034,7 +7340,8 @@
         "marketOdds": "2.55",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780228257633.1733,
@@ -7047,7 +7354,8 @@
         "marketOdds": "2.02",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780228312199.2563,
@@ -7060,7 +7368,8 @@
         "marketOdds": "2.15",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780228729764.2847,
@@ -7073,7 +7382,8 @@
         "marketOdds": "2.13",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780228755308.403,
@@ -7086,7 +7396,8 @@
         "marketOdds": "2.26",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780228813079.037,
@@ -7099,7 +7410,8 @@
         "marketOdds": "1.89",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780418965304.589,
@@ -7112,7 +7424,8 @@
         "marketOdds": "2.30",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780418972221.6409,
@@ -7125,7 +7438,8 @@
         "marketOdds": "1.97",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780419001690.7263,
@@ -7138,7 +7452,8 @@
         "marketOdds": "3.40",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780419016538.7566,
@@ -7151,7 +7466,8 @@
         "marketOdds": "2.01",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780419106427.862,
@@ -7164,7 +7480,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780419116732.5623,
@@ -7177,7 +7494,8 @@
         "marketOdds": "3.50",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780419133155.5293,
@@ -7190,7 +7508,8 @@
         "marketOdds": "2.24",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780419139060.3147,
@@ -7203,7 +7522,8 @@
         "marketOdds": "2.12",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780497215317.0857,
@@ -7216,7 +7536,8 @@
         "marketOdds": "1.93",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780497415639.5884,
@@ -7229,7 +7550,8 @@
         "marketOdds": "2.24",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780497455622.7014,
@@ -7242,7 +7564,8 @@
         "marketOdds": "2.00",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780601636994.835,
@@ -7255,7 +7578,8 @@
         "marketOdds": "1.98",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780685533672.2458,
@@ -7268,7 +7592,8 @@
         "marketOdds": "1.83",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780685555820.0437,
@@ -7281,7 +7606,8 @@
         "marketOdds": "2.25",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780685562572.703,
@@ -7294,7 +7620,8 @@
         "marketOdds": "2.15",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780685570932.1208,
@@ -7307,7 +7634,8 @@
         "marketOdds": "2.23",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780685670917.7026,
@@ -7320,7 +7648,8 @@
         "marketOdds": "2.07",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780731490166.7578,
@@ -7333,7 +7662,8 @@
         "marketOdds": "1.76",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780731509475.201,
@@ -7346,7 +7676,8 @@
         "marketOdds": "1.83",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780731526374.396,
@@ -7359,7 +7690,8 @@
         "marketOdds": "1.98",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780731552763.7234,
@@ -7372,7 +7704,8 @@
         "marketOdds": "2.25",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780731584715.365,
@@ -7385,7 +7718,8 @@
         "marketOdds": "1.87",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780731592284.4536,
@@ -7398,7 +7732,8 @@
         "marketOdds": "1.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780731604035.933,
@@ -7411,7 +7746,8 @@
         "marketOdds": "2.02",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780832754209.6365,
@@ -7424,7 +7760,8 @@
         "marketOdds": "3.10",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780832754209.681,
@@ -7437,7 +7774,8 @@
         "marketOdds": "2.34",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780832825233.957,
@@ -7450,7 +7788,8 @@
         "marketOdds": "2.40",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780832844262.698,
@@ -7463,7 +7802,8 @@
         "marketOdds": "2.15",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780832852579.0884,
@@ -7476,7 +7816,8 @@
         "marketOdds": "1.86",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780832880414.9683,
@@ -7489,7 +7830,8 @@
         "marketOdds": "1.94",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780832980130.4849,
@@ -7502,7 +7844,8 @@
         "marketOdds": "2.12",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780942360817.8525,
@@ -7515,7 +7858,8 @@
         "marketOdds": "1.81",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780942370046.2588,
@@ -7528,7 +7872,8 @@
         "marketOdds": "1.90",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780942378962.1726,
@@ -7541,7 +7886,8 @@
         "marketOdds": "2.09",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780942408818.898,
@@ -7554,7 +7900,8 @@
         "marketOdds": "2.44",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780942440912.5107,
@@ -7567,7 +7914,8 @@
         "marketOdds": "2.22",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780996324242.8618,
@@ -7580,7 +7928,8 @@
         "marketOdds": "2.03",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780996338232.6433,
@@ -7593,7 +7942,8 @@
         "marketOdds": "1.96",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780996346597.1428,
@@ -7606,7 +7956,8 @@
         "marketOdds": "2.07",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780996357879.6565,
@@ -7619,7 +7970,8 @@
         "marketOdds": "2.15",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780996381477.1208,
@@ -7632,7 +7984,8 @@
         "marketOdds": "1.99",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780996391166.692,
@@ -7645,7 +7998,8 @@
         "marketOdds": "2.06",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780996419908.6443,
@@ -7658,7 +8012,8 @@
         "marketOdds": "1.87",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1780996429219.9631,
@@ -7671,7 +8026,8 @@
         "marketOdds": "1.98",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781106963163.8218,
@@ -7684,7 +8040,8 @@
         "marketOdds": "2.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781106973672.2358,
@@ -7697,7 +8054,8 @@
         "marketOdds": "2.37",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781108400578.8499,
@@ -7710,7 +8068,8 @@
         "marketOdds": "2.11",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781108416270.7795,
@@ -7723,7 +8082,8 @@
         "marketOdds": "2.12",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781108431161.1624,
@@ -7736,7 +8096,8 @@
         "marketOdds": "1.83",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781108476021.8416,
@@ -7749,7 +8110,8 @@
         "marketOdds": "1.93",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781108613162.085,
@@ -7762,7 +8124,8 @@
         "marketOdds": "1.98",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781194664501.9954,
@@ -7775,7 +8138,8 @@
         "marketOdds": "2.23",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781194792448.0173,
@@ -7788,7 +8152,8 @@
         "marketOdds": "1.80",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781194826018.1348,
@@ -7801,7 +8166,8 @@
         "marketOdds": "2.28",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781194844026.548,
@@ -7814,7 +8180,8 @@
         "marketOdds": "1.87",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781275329700.098,
@@ -7827,7 +8194,8 @@
         "marketOdds": "1.76",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781275337646.7803,
@@ -7840,7 +8208,8 @@
         "marketOdds": "2.05",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781275345466.3171,
@@ -7853,7 +8222,8 @@
         "marketOdds": "2.09",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781275447756.9546,
@@ -7866,7 +8236,8 @@
         "marketOdds": "1.95",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781275459144.8333,
@@ -7879,7 +8250,8 @@
         "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781275545291.948,
@@ -7892,7 +8264,8 @@
         "marketOdds": "1.88",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781275554279.7864,
@@ -7905,7 +8278,8 @@
         "marketOdds": "2.17",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781275577295.22,
@@ -7918,7 +8292,8 @@
         "marketOdds": "2.39",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781376178184.2026,
@@ -7931,7 +8306,8 @@
         "marketOdds": "1.86",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781376188588.095,
@@ -7944,7 +8320,8 @@
         "marketOdds": "1.83",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781376202270.4177,
@@ -7957,7 +8334,8 @@
         "marketOdds": "2:00",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781376209102.753,
@@ -7970,7 +8348,8 @@
         "marketOdds": "1.90",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781376274713.7148,
@@ -7983,7 +8362,8 @@
         "marketOdds": "2.21",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781376290159.4595,
@@ -7996,7 +8376,8 @@
         "marketOdds": "1.99",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781376299905.7998,
@@ -8009,7 +8390,8 @@
         "marketOdds": "2.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781376337759.237,
@@ -8022,7 +8404,8 @@
         "marketOdds": "2.07",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781453142354.454,
@@ -8035,7 +8418,8 @@
         "marketOdds": "2.14",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781453155110.2092,
@@ -8048,7 +8432,8 @@
         "marketOdds": "1.79",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781453208061.981,
@@ -8061,7 +8446,8 @@
         "marketOdds": "1.91",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781453215708.085,
@@ -8074,7 +8460,8 @@
         "marketOdds": "1.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781453224428.9226,
@@ -8087,7 +8474,8 @@
         "marketOdds": "2.07",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781453233209.4739,
@@ -8100,7 +8488,8 @@
         "marketOdds": "2.02",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781453243187.057,
@@ -8113,7 +8502,8 @@
         "marketOdds": "1.96",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781453271235.9763,
@@ -8126,7 +8516,8 @@
         "marketOdds": "2.63",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781453294098.0596,
@@ -8139,7 +8530,8 @@
         "marketOdds": "2.11",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781453326469.3308,
@@ -8152,7 +8544,8 @@
         "marketOdds": "1.96",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781549119675.2212,
@@ -8165,7 +8558,8 @@
         "marketOdds": "2.60",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781549129648.5208,
@@ -8178,7 +8572,8 @@
         "marketOdds": "1.78",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781549237512.9976,
@@ -8191,7 +8586,8 @@
         "marketOdds": "2:09",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781549245322.7756,
@@ -8204,7 +8600,8 @@
         "marketOdds": "2.03",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781636042678.9124,
@@ -8217,7 +8614,8 @@
         "marketOdds": "2.21",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781636052747.87,
@@ -8230,7 +8628,8 @@
         "marketOdds": "2.17",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781636104065.9517,
@@ -8243,7 +8642,8 @@
         "marketOdds": "2.21",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781636124810.2246,
@@ -8256,7 +8656,8 @@
         "marketOdds": "2.41",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781636137936.6401,
@@ -8269,7 +8670,8 @@
         "marketOdds": "2.29",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781636147627.7148,
@@ -8282,7 +8684,8 @@
         "marketOdds": "1.85",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781636156070.7915,
@@ -8295,7 +8698,8 @@
         "marketOdds": "2.63",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781636191415.3345,
@@ -8308,7 +8712,8 @@
         "marketOdds": "1.95",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781636200902.6614,
@@ -8321,7 +8726,8 @@
         "marketOdds": "2.17",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781720597019.9058,
@@ -8334,7 +8740,8 @@
         "marketOdds": "2.32",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781720734046.0405,
@@ -8347,7 +8754,8 @@
         "marketOdds": "1.81",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781786768784.6929,
@@ -8360,7 +8768,8 @@
         "marketOdds": "2.25",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781786778396.5664,
@@ -8373,7 +8782,8 @@
         "marketOdds": "1.80",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781786901168.519,
@@ -8386,7 +8796,8 @@
         "marketOdds": "2.01",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781904562441.256,
@@ -8399,7 +8810,8 @@
         "marketOdds": "2.69",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781904607845.1797,
@@ -8412,7 +8824,8 @@
         "marketOdds": "2.42",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781904649809.3674,
@@ -8425,7 +8838,8 @@
         "marketOdds": "1.83",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781904657320.1108,
@@ -8438,7 +8852,8 @@
         "marketOdds": "2.19",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781904664874.6177,
@@ -8451,7 +8866,8 @@
         "marketOdds": "2.34",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781904692614.8635,
@@ -8464,7 +8880,8 @@
         "marketOdds": "2.40",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781947137250.0786,
@@ -8477,7 +8894,8 @@
         "marketOdds": "2.08",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781947150487.484,
@@ -8490,7 +8908,8 @@
         "marketOdds": "2.12",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781947183823.2664,
@@ -8503,7 +8922,8 @@
         "marketOdds": "2.15",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781947216559.128,
@@ -8516,7 +8936,8 @@
         "marketOdds": "1.78",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781947232975.2854,
@@ -8529,7 +8950,8 @@
         "marketOdds": "2.49",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781947247177.185,
@@ -8542,7 +8964,8 @@
         "marketOdds": "2.41",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781947254755.6938,
@@ -8555,7 +8978,8 @@
         "marketOdds": "3.08",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1781947282796.7056,
@@ -8568,7 +8992,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782029853558.609,
@@ -8581,7 +9006,8 @@
         "marketOdds": "1.90",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782029866960.6113,
@@ -8594,7 +9020,8 @@
         "marketOdds": "2.10",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782029876506.439,
@@ -8607,7 +9034,8 @@
         "marketOdds": "2.13",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782029958463.821,
@@ -8620,7 +9048,8 @@
         "marketOdds": "1.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782029995643.8953,
@@ -8633,7 +9062,8 @@
         "marketOdds": "2.09",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782030075174.018,
@@ -8646,7 +9076,8 @@
         "marketOdds": "2.62",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782147029741.8386,
@@ -8659,7 +9090,8 @@
         "marketOdds": "2.09",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782147037865.1072,
@@ -8672,7 +9104,8 @@
         "marketOdds": "1.79",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782147075667.236,
@@ -8685,7 +9118,8 @@
         "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782147138378.6506,
@@ -8698,7 +9132,8 @@
         "marketOdds": "1.94",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782147197878.6843,
@@ -8711,7 +9146,8 @@
         "marketOdds": "2.34",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782147205596.984,
@@ -8724,7 +9160,8 @@
         "marketOdds": "1.95",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782243972929.1365,
@@ -8737,7 +9174,8 @@
         "marketOdds": "2.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782243985251.6648,
@@ -8750,7 +9188,8 @@
         "marketOdds": "2.60",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782244082545.9832,
@@ -8763,7 +9202,8 @@
         "marketOdds": "2.03",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782244088807.3206,
@@ -8776,7 +9216,8 @@
         "marketOdds": "2.07",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782244097069.4854,
@@ -8789,7 +9230,8 @@
         "marketOdds": "2.60",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782244137712.4978,
@@ -8802,7 +9244,8 @@
         "marketOdds": "2.15",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782244163485.4204,
@@ -8815,7 +9258,8 @@
         "marketOdds": "2.00",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782244192717.4976,
@@ -8828,7 +9272,8 @@
         "marketOdds": "2.34",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782326029099.2168,
@@ -8841,7 +9286,8 @@
         "marketOdds": "1.16",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782326814137.7043,
@@ -8854,7 +9300,8 @@
         "marketOdds": "2.05",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782326841847.7554,
@@ -8867,7 +9314,8 @@
         "marketOdds": "2.25",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782326850273.4067,
@@ -8880,7 +9328,8 @@
         "marketOdds": "2.08",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782326856823.4136,
@@ -8893,7 +9342,8 @@
         "marketOdds": "2.05",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782326876658.8005,
@@ -8906,7 +9356,8 @@
         "marketOdds": "2.18",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782368195491.7239,
@@ -8919,7 +9370,8 @@
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782368195491.312,
@@ -8932,7 +9384,8 @@
         "marketOdds": "1.98",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782368211751.4016,
@@ -8945,7 +9398,8 @@
         "marketOdds": "2.52",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782368219695.8997,
@@ -8958,7 +9412,8 @@
         "marketOdds": "2.27",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782368226145.6902,
@@ -8971,7 +9426,8 @@
         "marketOdds": "1.97",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782498925993.266,
@@ -8984,7 +9440,8 @@
         "marketOdds": "2.55",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782498937031.9895,
@@ -8997,7 +9454,8 @@
         "marketOdds": "2.16",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782499064717.8096,
@@ -9010,7 +9468,8 @@
         "marketOdds": "1.73",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782499088862.0837,
@@ -9023,7 +9482,8 @@
         "marketOdds": "1.88",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782499115526.463,
@@ -9036,7 +9496,8 @@
         "marketOdds": "2.96",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782499132499.3562,
@@ -9049,7 +9510,8 @@
         "marketOdds": "2.07",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782547438987.457,
@@ -9062,7 +9524,8 @@
         "marketOdds": "2.09",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782547441859.9614,
@@ -9075,7 +9538,8 @@
         "marketOdds": "1.81",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782547446736.4124,
@@ -9088,7 +9552,8 @@
         "marketOdds": "2.50",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782547458839.6367,
@@ -9101,7 +9566,8 @@
         "marketOdds": "2.00",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782547468929.5813,
@@ -9114,7 +9580,8 @@
         "marketOdds": "2.16",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782547475495.242,
@@ -9127,7 +9594,8 @@
         "marketOdds": "2.03",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782547510053.944,
@@ -9140,7 +9608,8 @@
         "marketOdds": "2.19",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1782547522582.674,
@@ -9153,7 +9622,8 @@
         "marketOdds": "2.11",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783514584912.4504,
@@ -9166,7 +9636,8 @@
         "marketOdds": "2.01",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783514593072.8362,
@@ -9179,7 +9650,8 @@
         "marketOdds": "1:79",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783514598470.482,
@@ -9192,7 +9664,8 @@
         "marketOdds": "2.35",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783514611285.9998,
@@ -9205,7 +9678,8 @@
         "marketOdds": "2:01",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783514629802.3257,
@@ -9218,7 +9692,8 @@
         "marketOdds": "2.10",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783514639316.9055,
@@ -9231,7 +9706,8 @@
         "marketOdds": "2.14",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783536481999.0122,
@@ -9244,7 +9720,8 @@
         "marketOdds": "2.07",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783626539495.0513,
@@ -9257,7 +9734,8 @@
         "marketOdds": "1.82",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783626550715.9211,
@@ -9270,7 +9748,8 @@
         "marketOdds": "2.37",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783705157170.4712,
@@ -9283,7 +9762,8 @@
         "marketOdds": "1.85",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783705175752.04,
@@ -9296,7 +9776,8 @@
         "marketOdds": "2.32",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783705191321.6702,
@@ -9309,7 +9790,8 @@
         "marketOdds": "1.90",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783705209572.6943,
@@ -9322,7 +9804,8 @@
         "marketOdds": "2.03",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783705285389.3508,
@@ -9335,7 +9818,8 @@
         "marketOdds": "2.17",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783705315674.0088,
@@ -9348,7 +9832,8 @@
         "marketOdds": "2.36",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783754293098.7747,
@@ -9361,7 +9846,8 @@
         "marketOdds": "2.28",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783754309301.5857,
@@ -9374,7 +9860,8 @@
         "marketOdds": "2.63",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783754343749.8354,
@@ -9387,7 +9874,8 @@
         "marketOdds": "2.10",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783754356818.147,
@@ -9400,7 +9888,8 @@
         "marketOdds": "1:86",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783754378111.8916,
@@ -9413,7 +9902,8 @@
         "marketOdds": "1.82",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783754386035.74,
@@ -9426,7 +9916,8 @@
         "marketOdds": "2.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783754392433.1758,
@@ -9439,7 +9930,8 @@
         "marketOdds": "2.01",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783853935791.5781,
@@ -9452,7 +9944,8 @@
         "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783853969599.7117,
@@ -9465,7 +9958,8 @@
         "marketOdds": "1.96",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783854071058.263,
@@ -9478,7 +9972,8 @@
         "marketOdds": "1.88",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783854119952.1777,
@@ -9491,7 +9986,8 @@
         "marketOdds": "1.77",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1783854133709.4106,
@@ -9504,7 +10000,8 @@
         "marketOdds": "1.81",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784274085085.7283,
@@ -9517,7 +10014,8 @@
         "marketOdds": "1.95",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784274105383.8433,
@@ -9530,7 +10028,8 @@
         "marketOdds": "2.03",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784274127364.4858,
@@ -9543,7 +10042,8 @@
         "marketOdds": "2.11",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784274156191.5564,
@@ -9556,7 +10056,8 @@
         "marketOdds": "2.16",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784274164645.6628,
@@ -9569,7 +10070,8 @@
         "marketOdds": "1:90",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784274196587.484,
@@ -9582,7 +10084,8 @@
         "marketOdds": "1.94",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784402852056.8684,
@@ -9595,7 +10098,8 @@
         "marketOdds": "1.95",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784402860403.9307,
@@ -9608,7 +10112,8 @@
         "marketOdds": "1.96",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784402881101.6526,
@@ -9621,7 +10126,8 @@
         "marketOdds": "1.87",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784402926240.1956,
@@ -9634,7 +10140,8 @@
         "marketOdds": "2.62",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784443039175.9307,
@@ -9647,7 +10154,8 @@
         "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784443070081.0337,
@@ -9660,7 +10168,8 @@
         "marketOdds": "2.06",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784443079704.7886,
@@ -9673,7 +10182,8 @@
         "marketOdds": "1.99",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784443121905.1567,
@@ -9686,7 +10196,8 @@
         "marketOdds": "2.47",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784537859909.9473,
@@ -9699,7 +10210,8 @@
         "marketOdds": "1.86",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784537867519.5022,
@@ -9712,7 +10224,8 @@
         "marketOdds": "1.86",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784537878862.3398,
@@ -9725,7 +10238,8 @@
         "marketOdds": "2.28",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784537886385.9094,
@@ -9738,7 +10252,8 @@
         "marketOdds": "2.22",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784537894031.1838,
@@ -9751,7 +10266,8 @@
         "marketOdds": "2.13",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784537902659.6772,
@@ -9764,7 +10280,8 @@
         "marketOdds": "2.23",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784537915113.3113,
@@ -9777,7 +10294,8 @@
         "marketOdds": "2.00",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784537937988.4612,
@@ -9790,7 +10308,8 @@
         "marketOdds": "1.83",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784625948352.0078,
@@ -9803,7 +10322,8 @@
         "marketOdds": "2.14",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784625957825.9912,
@@ -9816,7 +10336,8 @@
         "marketOdds": "1.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784625970482.802,
@@ -9829,7 +10350,8 @@
         "marketOdds": "1.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784625998218.9722,
@@ -9842,7 +10364,8 @@
         "marketOdds": "1.93",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784626020145.7585,
@@ -9855,7 +10378,8 @@
         "marketOdds": "2.21",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784626036448.852,
@@ -9868,7 +10392,8 @@
         "marketOdds": "2.04",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784731680343.485,
@@ -9881,7 +10406,8 @@
         "marketOdds": "2.09",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784731690425.63,
@@ -9894,7 +10420,8 @@
         "marketOdds": "2.08",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784731702061.3323,
@@ -9907,7 +10434,8 @@
         "marketOdds": "1.95",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784731747965.7563,
@@ -9920,7 +10448,8 @@
         "marketOdds": "1.87",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784805483088.6196,
@@ -9933,7 +10462,8 @@
         "marketOdds": "2.19",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784805490970.5398,
@@ -9946,7 +10476,8 @@
         "marketOdds": "1.96",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784879387858.4768,
@@ -9959,7 +10490,8 @@
         "marketOdds": "2.14",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784879391807.921,
@@ -9972,7 +10504,8 @@
         "marketOdds": "2.02",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784962936500.9202,
@@ -9985,7 +10518,8 @@
         "marketOdds": "2.01",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784962956147.2124,
@@ -9998,7 +10532,8 @@
         "marketOdds": "2.13",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784962964596.6968,
@@ -10011,7 +10546,8 @@
         "marketOdds": "1.90",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784962990704.9675,
@@ -10024,7 +10560,8 @@
         "marketOdds": "2.36",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784962998387.7048,
@@ -10037,7 +10574,8 @@
         "marketOdds": "2.03",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1784963004616.428,
@@ -10050,7 +10588,8 @@
         "marketOdds": "1.92",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785051943206.2466,
@@ -10063,7 +10602,8 @@
         "marketOdds": "1.92",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785051978334.9153,
@@ -10076,7 +10616,8 @@
         "marketOdds": "2.56",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785052007924.82,
@@ -10089,7 +10630,8 @@
         "marketOdds": "2.17",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785052031290.6924,
@@ -10102,7 +10644,8 @@
         "marketOdds": "3.72",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785052039823.181,
@@ -10115,7 +10658,8 @@
         "marketOdds": "1.76",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785052050898.969,
@@ -10128,7 +10672,8 @@
         "marketOdds": "1.95",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785052059572.4854,
@@ -10141,7 +10686,8 @@
         "marketOdds": "2.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785052086202.3887,
@@ -10154,7 +10700,8 @@
         "marketOdds": "2.42",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785172720314.5554,
@@ -10167,7 +10714,8 @@
         "marketOdds": "1.80",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785172732483.17,
@@ -10180,7 +10728,8 @@
         "marketOdds": "2.01",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785172766885.6262,
@@ -10193,7 +10742,8 @@
         "marketOdds": "2.55",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785172814871.9666,
@@ -10206,7 +10756,8 @@
         "marketOdds": "1.83",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785172839309.4497,
@@ -10219,7 +10770,8 @@
         "marketOdds": "1.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785172859677.9802,
@@ -10232,7 +10784,8 @@
         "marketOdds": "1.91",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785172869134.4832,
@@ -10245,7 +10798,8 @@
         "marketOdds": "2.48",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785172890423.8386,
@@ -10258,7 +10812,8 @@
         "marketOdds": "2.15",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785238260408.2607,
@@ -10271,7 +10826,8 @@
         "marketOdds": "2.19",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785238289790.4954,
@@ -10284,7 +10840,8 @@
         "marketOdds": "1.89",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785238305829.4346,
@@ -10297,7 +10854,8 @@
         "marketOdds": "2.11",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785238324949.5823,
@@ -10310,7 +10868,8 @@
         "marketOdds": "1.92",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785238331479.2795,
@@ -10323,7 +10882,8 @@
         "marketOdds": "2.24",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785328951113.9656,
@@ -10336,7 +10896,8 @@
         "marketOdds": "2.43",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785328981049.0723,
@@ -10349,7 +10910,8 @@
         "marketOdds": "1.77",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785328987376.2793,
@@ -10362,7 +10924,8 @@
         "marketOdds": "2.00",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785329093869.788,
@@ -10375,7 +10938,8 @@
         "marketOdds": "1.82",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785329133187.1277,
@@ -10388,7 +10952,8 @@
         "marketOdds": "2.14",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785329209786.0168,
@@ -10401,7 +10966,8 @@
         "marketOdds": "2.46",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785329241181.4414,
@@ -10414,7 +10980,8 @@
         "marketOdds": "2.21",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785397871653.8325,
@@ -10427,7 +10994,8 @@
         "marketOdds": "2.02",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785397874669.9958,
@@ -10440,7 +11008,8 @@
         "marketOdds": "1.87",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785397884606.47,
@@ -10453,7 +11022,8 @@
         "marketOdds": "2.09",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785397909228.658,
@@ -10466,7 +11036,8 @@
         "marketOdds": "2.36",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785397922782.5618,
@@ -10479,7 +11050,8 @@
         "marketOdds": "2.19",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785480971629.6516,
@@ -10492,7 +11064,8 @@
         "marketOdds": "2.08",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785480978296.7937,
@@ -10505,7 +11078,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785612485554.975,
@@ -10518,7 +11092,8 @@
         "marketOdds": "2.40",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785612519784.7693,
@@ -10531,7 +11106,8 @@
         "marketOdds": "1.82",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785612520724.8323,
@@ -10544,7 +11120,8 @@
         "marketOdds": "2.25",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785612529529.4927,
@@ -10557,7 +11134,8 @@
         "marketOdds": "1.81",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785612542216.2786,
@@ -10570,7 +11148,8 @@
         "marketOdds": "2.01",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785612549683.8542,
@@ -10583,7 +11162,8 @@
         "marketOdds": "2.28",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785612565994.0134,
@@ -10596,7 +11176,8 @@
         "marketOdds": "2.42",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785665623707.8787,
@@ -10609,7 +11190,8 @@
         "marketOdds": "2.28",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785665641184.2805,
@@ -10622,7 +11204,8 @@
         "marketOdds": "2.07",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785665657714.2808,
@@ -10635,7 +11218,8 @@
         "marketOdds": "1.99",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785665666079.1,
@@ -10648,7 +11232,8 @@
         "marketOdds": "2.25",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785746296490.177,
@@ -10661,7 +11246,8 @@
         "marketOdds": "2.23",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785746358974.6038,
@@ -10674,7 +11260,8 @@
         "marketOdds": "1.75",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785924785083.498,
@@ -10687,7 +11274,8 @@
         "marketOdds": "1.94",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785924799773.5051,
@@ -10700,7 +11288,8 @@
         "marketOdds": "2.44",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785924837041.806,
@@ -10713,7 +11302,8 @@
         "marketOdds": "2.10",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1785924845775.7761,
@@ -10726,7 +11316,8 @@
         "marketOdds": "2.13",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786012152525.4783,
@@ -10739,7 +11330,8 @@
         "marketOdds": "2.35",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786012202141.3413,
@@ -10752,7 +11344,8 @@
         "marketOdds": "2.07",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786098954102.323,
@@ -10765,7 +11358,8 @@
         "marketOdds": "2.21",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786175197823.4622,
@@ -10778,7 +11372,8 @@
         "marketOdds": "2.13",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786175206958.634,
@@ -10791,7 +11386,8 @@
         "marketOdds": "3.11",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786175219673.379,
@@ -10804,7 +11400,8 @@
         "marketOdds": "2.30",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786175232692.8623,
@@ -10817,7 +11414,8 @@
         "marketOdds": "2.15",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786175249477.0425,
@@ -10830,7 +11428,8 @@
         "marketOdds": "2.05",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786175257234.2827,
@@ -10843,7 +11442,8 @@
         "marketOdds": "2.32",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786175270951.124,
@@ -10856,7 +11456,8 @@
         "marketOdds": "2.02",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786175283907.9658,
@@ -10869,7 +11470,8 @@
         "marketOdds": "2.33",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786264475076.2998,
@@ -10882,7 +11484,8 @@
         "marketOdds": "1.95",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786264497615.9011,
@@ -10895,7 +11498,8 @@
         "marketOdds": "2.67",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786264569382.4448,
@@ -10908,7 +11512,8 @@
         "marketOdds": "2.01",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786357664463.1394,
@@ -10921,7 +11526,8 @@
         "marketOdds": "2.26",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786433932620.2764,
@@ -10934,7 +11540,8 @@
         "marketOdds": "1.82",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786433938500.1284,
@@ -10947,7 +11554,8 @@
         "marketOdds": "2.00",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786433954266.1575,
@@ -10960,7 +11568,8 @@
         "marketOdds": "2.21",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786433966648.7292,
@@ -10973,7 +11582,8 @@
         "marketOdds": "1.87",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786433975805.0461,
@@ -10986,7 +11596,8 @@
         "marketOdds": "2.40",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786434005706.7705,
@@ -10999,7 +11610,8 @@
         "marketOdds": "2.35",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786533773997.8599,
@@ -11012,7 +11624,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786533807461.6213,
@@ -11025,7 +11638,8 @@
         "marketOdds": "2.00",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786731811910.155,
@@ -11038,7 +11652,8 @@
         "marketOdds": "1.99",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786731844783.275,
@@ -11051,7 +11666,8 @@
         "marketOdds": "2.01",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786731868387.5046,
@@ -11064,7 +11680,8 @@
         "marketOdds": "1.84",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786731892902.2344,
@@ -11077,7 +11694,8 @@
         "marketOdds": "2.51",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786731899791.8687,
@@ -11090,7 +11708,8 @@
         "marketOdds": "2.10",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786791738165.1194,
@@ -11103,7 +11722,8 @@
         "marketOdds": "2.17",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786791765010.2222,
@@ -11116,7 +11736,8 @@
         "marketOdds": "1.95",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786898478065.5833,
@@ -11129,7 +11750,8 @@
         "marketOdds": "2.04",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786898508927.1006,
@@ -11142,7 +11764,8 @@
         "marketOdds": "2.39",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1786898560319.5369,
@@ -11155,7 +11778,8 @@
         "marketOdds": "1.82",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1787079698984.3994,
@@ -11168,7 +11792,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1787079767577.6648,
@@ -11181,7 +11806,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1787236588825.3716,
@@ -11194,7 +11820,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1787236622564.8635,
@@ -11207,7 +11834,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788093113322.8713,
@@ -11220,7 +11848,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788093143208.8203,
@@ -11233,7 +11862,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788093151909.287,
@@ -11246,7 +11876,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788296103171.0754,
@@ -11259,7 +11890,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788296107888.5535,
@@ -11272,7 +11904,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788296120070.4946,
@@ -11285,7 +11918,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788296130162.2493,
@@ -11298,7 +11932,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788377486438.4197,
@@ -11311,7 +11946,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788377549772.199,
@@ -11324,7 +11960,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788464290279.1528,
@@ -11337,7 +11974,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788464297041.7485,
@@ -11350,7 +11988,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788464306753.6606,
@@ -11363,7 +12002,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788800511246.7546,
@@ -11376,7 +12016,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788800573684.9253,
@@ -11389,7 +12030,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788800590490.7036,
@@ -11402,7 +12044,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788887388796.8716,
@@ -11415,7 +12058,8 @@
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788887392137.6748,
@@ -11428,7 +12072,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788887400799.2192,
@@ -11441,7 +12086,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788887411568.762,
@@ -11454,7 +12100,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788970864234.3806,
@@ -11467,7 +12114,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788970875705.7112,
@@ -11480,7 +12128,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1788970908906.187,
@@ -11493,7 +12142,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789059373084.7341,
@@ -11506,7 +12156,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789220311183.8337,
@@ -11519,7 +12170,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789220325672.8481,
@@ -11532,7 +12184,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789220334153.3313,
@@ -11545,7 +12198,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789312583040.4739,
@@ -11558,7 +12212,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789312615835.8252,
@@ -11571,7 +12226,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789312650830.9429,
@@ -11584,7 +12240,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789407083433.476,
@@ -11597,7 +12254,8 @@
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789407108629.84,
@@ -11610,7 +12268,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789407118409.849,
@@ -11623,7 +12282,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789407127067.4717,
@@ -11636,7 +12296,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789407182630.9026,
@@ -11649,7 +12310,8 @@
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789500710751.4487,
@@ -11662,7 +12324,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789500712991.331,
@@ -11675,7 +12338,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789500716810.0378,
@@ -11688,7 +12352,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789500734084.9868,
@@ -11701,7 +12366,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789500746880.8274,
@@ -11714,7 +12380,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789500759075.463,
@@ -11727,7 +12394,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789547239739.6794,
@@ -11740,7 +12408,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789547251138.4734,
@@ -11753,7 +12422,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789547297116.07,
@@ -11766,7 +12436,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789547315650.282,
@@ -11779,7 +12450,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789547341290.8672,
@@ -11792,7 +12464,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789547348575.8765,
@@ -11805,7 +12478,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789547362639.8857,
@@ -11818,7 +12492,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789659707105.5015,
@@ -11831,7 +12506,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789659733713.1904,
@@ -11844,7 +12520,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789659747074.2358,
@@ -11857,7 +12534,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789659757514.3096,
@@ -11870,7 +12548,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789727606037.7458,
@@ -11883,7 +12562,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789659773947.327,
@@ -11896,7 +12576,8 @@
         "marketOdds": "",
         "result": "win",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789659789448.8794,
@@ -11909,7 +12590,8 @@
         "marketOdds": "",
         "result": "loss",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789799553929.402,
@@ -11922,7 +12604,8 @@
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789799584074.189,
@@ -11935,7 +12618,8 @@
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789799596953.351,
@@ -11948,7 +12632,8 @@
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789799633086.1582,
@@ -11961,7 +12646,8 @@
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789799646980.4985,
@@ -11974,7 +12660,8 @@
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       },
       {
         "id": 1789799658843.7288,
@@ -11987,7 +12674,8 @@
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
       }
     ],
     "baseball_v26_picks": [
