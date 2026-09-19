@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-18T10:33:31.486Z",
+  "savedAt": "2026-09-19T06:32:22.694Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -2960,6 +2960,26 @@
         "tip": "Boston Red Sox",
         "prob": "56.5",
         "odds": "1.77",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "17. 9. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Boston Red Sox",
+        "tip": "Boston Red Sox",
+        "prob": "54.5",
+        "odds": "1.83",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "17. 9. 2026",
+        "homeTeam": "Los Angeles Angels",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "54.6",
+        "odds": "1.83",
         "marketOdds": "",
         "model": "v9"
       }
@@ -10578,7 +10598,7 @@
         "tip": "Pittsburgh Pirates",
         "prob": "51.8",
         "odds": "1.93",
-        "marketOdds": "",
+        "marketOdds": "2.23",
         "result": "win",
         "model": "v9",
         "stake": 2
@@ -10591,7 +10611,7 @@
         "tip": "Houston Astros",
         "prob": "58.5",
         "odds": "1.71",
-        "marketOdds": "",
+        "marketOdds": "1.75",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -10604,7 +10624,7 @@
         "tip": "Cleveland Guardians",
         "prob": "55.0",
         "odds": "1.82",
-        "marketOdds": "",
+        "marketOdds": "1.94",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -10617,7 +10637,7 @@
         "tip": "Washington Nationals",
         "prob": "54.9",
         "odds": "1.82",
-        "marketOdds": "",
+        "marketOdds": "2.44",
         "result": "win",
         "model": "v9",
         "stake": 2
@@ -10630,7 +10650,7 @@
         "tip": "Miami Marlins",
         "prob": "55.9",
         "odds": "1.79",
-        "marketOdds": "",
+        "marketOdds": "2.10",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -10643,7 +10663,7 @@
         "tip": "Pittsburgh Pirates",
         "prob": "50.4",
         "odds": "1.98",
-        "marketOdds": "",
+        "marketOdds": "2.13",
         "result": "loss",
         "model": "v9",
         "stake": 2
@@ -11802,6 +11822,32 @@
         "odds": "1.77",
         "marketOdds": "",
         "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789659773947.327,
+        "date": "17. 9. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Boston Red Sox",
+        "tip": "Boston Red Sox",
+        "prob": "54.5",
+        "odds": "1.83",
+        "marketOdds": "",
+        "result": "win",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789659789448.8794,
+        "date": "17. 9. 2026",
+        "homeTeam": "Los Angeles Angels",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "54.6",
+        "odds": "1.83",
+        "marketOdds": "",
+        "result": "loss",
         "model": "v9",
         "stake": 2
       }
