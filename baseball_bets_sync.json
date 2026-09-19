@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-19T06:34:07.314Z",
+  "savedAt": "2026-09-19T07:15:53.102Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -3030,6 +3030,16 @@
         "tip": "Texas Rangers",
         "prob": "51.6",
         "odds": "1.94",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "19. 9. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Atlanta Braves",
+        "tip": "Houston Astros",
+        "prob": "53.1",
+        "odds": "1.88",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11871,7 +11881,7 @@
         "prob": "56.5",
         "odds": "1.77",
         "marketOdds": "",
-        "result": "pending",
+        "result": "win",
         "model": "v9",
         "stake": 2
       },
@@ -11961,6 +11971,19 @@
         "tip": "Texas Rangers",
         "prob": "51.6",
         "odds": "1.94",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789799658843.7288,
+        "date": "19. 9. 2026",
+        "homeTeam": "Houston Astros",
+        "awayTeam": "Atlanta Braves",
+        "tip": "Houston Astros",
+        "prob": "53.1",
+        "odds": "1.88",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
