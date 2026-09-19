@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-19T06:33:17.142Z",
+  "savedAt": "2026-09-19T06:34:07.314Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -3010,6 +3010,26 @@
         "tip": "Athletics",
         "prob": "47.4",
         "odds": "2.11",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "19. 9. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Kansas City Royals",
+        "tip": "Kansas City Royals",
+        "prob": "56.0",
+        "odds": "1.79",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "19. 9. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Texas Rangers",
+        "prob": "51.6",
+        "odds": "1.94",
         "marketOdds": "",
         "model": "v9"
       }
@@ -11915,6 +11935,32 @@
         "tip": "Athletics",
         "prob": "47.4",
         "odds": "2.11",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789799633086.1582,
+        "date": "19. 9. 2026",
+        "homeTeam": "Pittsburgh Pirates",
+        "awayTeam": "Kansas City Royals",
+        "tip": "Kansas City Royals",
+        "prob": "56.0",
+        "odds": "1.79",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1789799646980.4985,
+        "date": "19. 9. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Texas Rangers",
+        "prob": "51.6",
+        "odds": "1.94",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
