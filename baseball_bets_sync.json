@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-20T17:09:09.183Z",
+  "savedAt": "2026-09-20T17:47:36.504Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -3040,6 +3040,16 @@
         "tip": "Houston Astros",
         "prob": "53.1",
         "odds": "1.88",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "20. 9. 2026",
+        "homeTeam": "St. Louis Cardinals",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "50.7",
+        "odds": "1.97",
         "marketOdds": "",
         "model": "v9"
       }
@@ -12676,6 +12686,19 @@
         "model": "v9",
         "stake": 2,
         "sentToSheet": true
+      },
+      {
+        "id": 1789926455256.2642,
+        "date": "20. 9. 2026",
+        "homeTeam": "St. Louis Cardinals",
+        "awayTeam": "Washington Nationals",
+        "tip": "Washington Nationals",
+        "prob": "50.7",
+        "odds": "1.97",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
       }
     ],
     "baseball_v26_picks": [
