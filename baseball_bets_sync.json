@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-20T17:47:36.504Z",
+  "savedAt": "2026-09-20T17:48:59.964Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -3050,6 +3050,26 @@
         "tip": "Washington Nationals",
         "prob": "50.7",
         "odds": "1.97",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "20. 9. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Toronto Blue Jays",
+        "prob": "49.2",
+        "odds": "2.03",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "20. 9. 2026",
+        "homeTeam": "Los Angeles Angels",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "58.3",
+        "odds": "1.71",
         "marketOdds": "",
         "model": "v9"
       }
@@ -12698,7 +12718,36 @@
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
-        "stake": 2
+        "stake": 2,
+        "sentToSheet": true
+      },
+      {
+        "id": 1789926464903.8484,
+        "date": "20. 9. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Toronto Blue Jays",
+        "prob": "49.2",
+        "odds": "2.03",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2,
+        "sentToSheet": true
+      },
+      {
+        "id": 1789926479467.2776,
+        "date": "20. 9. 2026",
+        "homeTeam": "Los Angeles Angels",
+        "awayTeam": "Minnesota Twins",
+        "tip": "Minnesota Twins",
+        "prob": "58.3",
+        "odds": "1.71",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2,
+        "sentToSheet": true
       }
     ],
     "baseball_v26_picks": [
