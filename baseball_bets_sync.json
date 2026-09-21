@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-21T17:46:04.759Z",
+  "savedAt": "2026-09-21T17:48:24.565Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -3070,6 +3070,16 @@
         "tip": "Minnesota Twins",
         "prob": "58.3",
         "odds": "1.71",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "21. 9. 2026",
+        "homeTeam": "Baltimore Orioles",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Baltimore Orioles",
+        "prob": "53.0",
+        "odds": "1.89",
         "marketOdds": "",
         "model": "v9"
       }
@@ -12748,6 +12758,19 @@
         "model": "v9",
         "stake": 2,
         "sentToSheet": true
+      },
+      {
+        "id": 1790012900813.9124,
+        "date": "21. 9. 2026",
+        "homeTeam": "Baltimore Orioles",
+        "awayTeam": "Toronto Blue Jays",
+        "tip": "Baltimore Orioles",
+        "prob": "53.0",
+        "odds": "1.89",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
       }
     ],
     "baseball_v26_picks": [
