@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-22T18:40:27.990Z",
+  "savedAt": "2026-09-22T18:43:18.086Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -3120,6 +3120,26 @@
         "tip": "Texas Rangers",
         "prob": "58.8",
         "odds": "1.70",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "22. 9. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Los Angeles Angels",
+        "tip": "Athletics",
+        "prob": "52.0",
+        "odds": "1.92",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "22. 9. 2026",
+        "homeTeam": "Seattle Mariners",
+        "awayTeam": "Houston Astros",
+        "tip": "Houston Astros",
+        "prob": "47.9",
+        "odds": "2.09",
         "marketOdds": "",
         "model": "v9"
       }
@@ -12835,7 +12855,7 @@
         "tip": "Boston Red Sox",
         "prob": "59.9",
         "odds": "1.67",
-        "marketOdds": "",
+        "marketOdds": "1.91",
         "result": "pending",
         "model": "v9",
         "stake": 2
@@ -12848,7 +12868,7 @@
         "tip": "New York Yankees",
         "prob": "56.8",
         "odds": "1.76",
-        "marketOdds": "",
+        "marketOdds": "1.90",
         "result": "pending",
         "model": "v9",
         "stake": 2
@@ -12861,7 +12881,33 @@
         "tip": "Texas Rangers",
         "prob": "58.8",
         "odds": "1.70",
-        "marketOdds": "",
+        "marketOdds": "1.90",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1790102447494.3076,
+        "date": "22. 9. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Los Angeles Angels",
+        "tip": "Athletics",
+        "prob": "52.0",
+        "odds": "1.92",
+        "marketOdds": "2.00",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1790102464577.5283,
+        "date": "22. 9. 2026",
+        "homeTeam": "Seattle Mariners",
+        "awayTeam": "Houston Astros",
+        "tip": "Houston Astros",
+        "prob": "47.9",
+        "odds": "2.09",
+        "marketOdds": "2.25",
         "result": "pending",
         "model": "v9",
         "stake": 2
