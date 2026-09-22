@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-22T18:39:25.735Z",
+  "savedAt": "2026-09-22T18:40:27.990Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -3100,6 +3100,26 @@
         "tip": "Boston Red Sox",
         "prob": "59.9",
         "odds": "1.67",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "22. 9. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "New York Yankees",
+        "prob": "56.8",
+        "odds": "1.76",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "22. 9. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "New York Mets",
+        "tip": "Texas Rangers",
+        "prob": "58.8",
+        "odds": "1.70",
         "marketOdds": "",
         "model": "v9"
       }
@@ -12815,6 +12835,32 @@
         "tip": "Boston Red Sox",
         "prob": "59.9",
         "odds": "1.67",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1790102379200.7812,
+        "date": "22. 9. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "New York Yankees",
+        "prob": "56.8",
+        "odds": "1.76",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1790102426880.4011,
+        "date": "22. 9. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "New York Mets",
+        "tip": "Texas Rangers",
+        "prob": "58.8",
+        "odds": "1.70",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
