@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-23T18:27:19.746Z",
+  "savedAt": "2026-09-23T18:28:29.183Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -3160,6 +3160,16 @@
         "tip": "Tampa Bay Rays",
         "prob": "54.9",
         "odds": "1.82",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "23. 9. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "New York Mets",
+        "tip": "Texas Rangers",
+        "prob": "45.8",
+        "odds": "2.18",
         "marketOdds": "",
         "model": "v9"
       }
@@ -12958,6 +12968,19 @@
         "tip": "Tampa Bay Rays",
         "prob": "54.9",
         "odds": "1.82",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1790188108056.4524,
+        "date": "23. 9. 2026",
+        "homeTeam": "Texas Rangers",
+        "awayTeam": "New York Mets",
+        "tip": "Texas Rangers",
+        "prob": "45.8",
+        "odds": "2.18",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
