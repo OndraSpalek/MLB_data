@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-24T18:47:36.708Z",
+  "savedAt": "2026-09-24T18:49:32.597Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -3190,6 +3190,16 @@
         "tip": "St. Louis Cardinals",
         "prob": "51.2",
         "odds": "1.95",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "24. 9. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Milwaukee Brewers",
+        "tip": "Milwaukee Brewers",
+        "prob": "52.2",
+        "odds": "1.92",
         "marketOdds": "",
         "model": "v9"
       }
@@ -12349,6 +12359,19 @@
         "odds": "1.95",
         "marketOdds": "",
         "result": "loss",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1790275771623.8486,
+        "date": "24. 9. 2026",
+        "homeTeam": "Philadelphia Phillies",
+        "awayTeam": "Milwaukee Brewers",
+        "tip": "Milwaukee Brewers",
+        "prob": "52.2",
+        "odds": "1.92",
+        "marketOdds": "",
+        "result": "pending",
         "model": "v9",
         "stake": 2
       }
