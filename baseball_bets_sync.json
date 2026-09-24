@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-24T18:49:32.597Z",
+  "savedAt": "2026-09-24T18:50:03.684Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -3200,6 +3200,26 @@
         "tip": "Milwaukee Brewers",
         "prob": "52.2",
         "odds": "1.92",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "24. 9. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Cleveland Guardians",
+        "tip": "Cleveland Guardians",
+        "prob": "51.8",
+        "odds": "1.93",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "24. 9. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "48.6",
+        "odds": "2.06",
         "marketOdds": "",
         "model": "v9"
       }
@@ -12370,6 +12390,32 @@
         "tip": "Milwaukee Brewers",
         "prob": "52.2",
         "odds": "1.92",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1790275786477.7698,
+        "date": "24. 9. 2026",
+        "homeTeam": "Boston Red Sox",
+        "awayTeam": "Cleveland Guardians",
+        "tip": "Cleveland Guardians",
+        "prob": "51.8",
+        "odds": "1.93",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1790275803238.7214,
+        "date": "24. 9. 2026",
+        "homeTeam": "New York Yankees",
+        "awayTeam": "Tampa Bay Rays",
+        "tip": "Tampa Bay Rays",
+        "prob": "48.6",
+        "odds": "2.06",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
