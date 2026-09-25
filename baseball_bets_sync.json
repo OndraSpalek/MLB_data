@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-25T11:42:55.021Z",
+  "savedAt": "2026-09-25T11:43:48.479Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -3240,6 +3240,26 @@
         "tip": "Kansas City Royals",
         "prob": "50.7",
         "odds": "1.97",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "25. 9. 2026",
+        "homeTeam": "Minnesota Twins",
+        "awayTeam": "Texas Rangers",
+        "tip": "Minnesota Twins",
+        "prob": "49.8",
+        "odds": "2.01",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "25. 9. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Houston Astros",
+        "tip": "Athletics",
+        "prob": "44.2",
+        "odds": "2.26",
         "marketOdds": "",
         "model": "v9"
       }
@@ -12462,6 +12482,32 @@
         "tip": "Kansas City Royals",
         "prob": "50.7",
         "odds": "1.97",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1790336609269.9233,
+        "date": "25. 9. 2026",
+        "homeTeam": "Minnesota Twins",
+        "awayTeam": "Texas Rangers",
+        "tip": "Minnesota Twins",
+        "prob": "49.8",
+        "odds": "2.01",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1790336628224.3896,
+        "date": "25. 9. 2026",
+        "homeTeam": "Athletics",
+        "awayTeam": "Houston Astros",
+        "tip": "Athletics",
+        "prob": "44.2",
+        "odds": "2.26",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
