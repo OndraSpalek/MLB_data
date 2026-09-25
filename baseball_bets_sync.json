@@ -1,6 +1,6 @@
 {
   "version": "v26",
-  "savedAt": "2026-09-25T11:43:48.479Z",
+  "savedAt": "2026-09-25T11:45:20.876Z",
   "data": {
     "baseball_v26_bets": [
       {
@@ -3260,6 +3260,16 @@
         "tip": "Athletics",
         "prob": "44.2",
         "odds": "2.26",
+        "marketOdds": "",
+        "model": "v9"
+      },
+      {
+        "date": "25. 9. 2026",
+        "homeTeam": "Seattle Mariners",
+        "awayTeam": "Los Angeles Angels",
+        "tip": "Los Angeles Angels",
+        "prob": "55.2",
+        "odds": "1.81",
         "marketOdds": "",
         "model": "v9"
       }
@@ -12508,6 +12518,19 @@
         "tip": "Athletics",
         "prob": "44.2",
         "odds": "2.26",
+        "marketOdds": "",
+        "result": "pending",
+        "model": "v9",
+        "stake": 2
+      },
+      {
+        "id": 1790336650019.5566,
+        "date": "25. 9. 2026",
+        "homeTeam": "Seattle Mariners",
+        "awayTeam": "Los Angeles Angels",
+        "tip": "Los Angeles Angels",
+        "prob": "55.2",
+        "odds": "1.81",
         "marketOdds": "",
         "result": "pending",
         "model": "v9",
